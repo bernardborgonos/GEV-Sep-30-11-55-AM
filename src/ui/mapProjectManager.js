@@ -48,21 +48,11 @@ import {
   haversineDistanceMeters,
 } from '../tools/geodesicMath.js';
 import { updateItemGeodeticData } from '../tools/geodeticItemExtractor.js';
-import { getSharedMapToolsEngine } from '../tools/mapToolsEngine.js';
 import { getCustomIconForPreset, getDomainColor } from '../data/itemCategories.js';
 import {
   showTacticalHoverTooltip,
   hideTacticalHoverTooltip,
 } from './tacticalHoverTooltip.js';
-import {
-  HANDLE_TYPES,
-  computeHandleCentroid,
-  restoreCameraControlState,
-  setCameraControlState,
-  snapshotCameraControlState,
-  translateCoordinates,
-  updateVertexCoordinate,
-} from './mapItemDragHelpers.js';
 
 const ACTIVE_MAP_STORAGE_KEY = 'gev_current_active_map_id';
 
@@ -401,92 +391,6 @@ export class MapProjectManager {
     }
   }
 
-  resolveCartographicPosition(screenPosition) {
-    if (!screenPosition) return null;
-    let cartesian = null;
-    const { scene, camera } = this.viewer;
-
-    if (scene?.pickPositionSupported && typeof scene.pickPosition === 'function') {
-      cartesian = scene.pickPosition(screenPosition);
-    }
-
-    if (!Cesium.defined(cartesian) && scene?.globe && typeof camera?.getPickRay === 'function') {
-      const ray = camera.getPickRay(screenPosition);
-      if (ray) {
-        cartesian = scene.globe.pick(ray, scene);
-      }
-    }
-
-    if (!Cesium.defined(cartesian) && typeof camera?.pickEllipsoid === 'function') {
-      cartesian = camera.pickEllipsoid(screenPosition, Cesium.Ellipsoid.WGS84);
-    }
-
-    if (!Cesium.defined(cartesian)) return null;
-    return Cesium.Cartographic.fromCartesian(cartesian);
-  }
-
-  updateMainEntityGeometry(itemId, coords) {
-    const mainEntity = this.dataSource.entities.getById(itemId);
-    if (!mainEntity || !Array.isArray(coords)) return;
-    const newPositions = coords.map((c) => Cesium.Cartesian3.fromDegrees(c.lng, c.lat, c.alt || 0));
-    if (mainEntity.polyline) {
-      mainEntity.polyline.positions = mainEntity.polygon ? [...newPositions, newPositions[0]] : newPositions;
-    }
-    if (mainEntity.polygon) {
-      mainEntity.polygon.hierarchy = new Cesium.PolygonHierarchy(newPositions);
-    }
-  }
-
-  updateHandleGeometry(item, coords) {
-    if (!item || !Array.isArray(coords)) return;
-
-    coords.forEach((pt, idx) => {
-      const handle = this.handlesDataSource.entities.getById(`handle-${item.id}-${idx}`);
-      if (handle) {
-        handle.position = Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1);
-      }
-    });
-
-    const centroidHandle = this.handlesDataSource.entities.getById(`handle-centroid-${item.id}`);
-    const centroid = computeHandleCentroid(coords);
-    if (centroidHandle && centroid) {
-      centroidHandle.position = Cesium.Cartesian3.fromDegrees(
-        centroid.lng,
-        centroid.lat,
-        (centroid.alt || 0) + 2,
-      );
-    }
-  }
-
-  _isMapToolsFeatureLocked(itemId) {
-    try {
-      const feature = getSharedMapToolsEngine(this.viewer).getFeature(itemId);
-      return Boolean(feature?.locked);
-    } catch (_e) {
-      return false;
-    }
-  }
-
-  _syncMapToolsFeatureCoordinates(itemId, coords) {
-    try {
-      const engine = getSharedMapToolsEngine(this.viewer);
-      const feature = engine.getFeature(itemId);
-      if (!feature) return;
-      if (feature.locked) {
-        console.warn(`[MapProjectManager] Skipping locked MapTools feature update for "${itemId}".`);
-        return;
-      }
-      const normalizedCoords = coords.map((pt) => (
-        Number.isFinite(Number(pt.alt))
-          ? [Number(pt.lng), Number(pt.lat), Number(pt.alt)]
-          : [Number(pt.lng), Number(pt.lat)]
-      ));
-      engine.updateFeature(itemId, { coordinates: normalizedCoords });
-    } catch (_e) {
-      // Best-effort sync only.
-    }
-  }
-
   /**
    * Sets up 3D entity picking for clicking markers, lines, polygons,
    * rendering interactive vertex modify handles, and dragging vertices.
@@ -506,9 +410,8 @@ export class MapProjectManager {
 
       const pickedObject = this.viewer.scene.pick(click.position);
       if (Cesium.defined(pickedObject) && pickedObject.id) {
-        const handleType = pickedObject.id.properties?.handleType?.getValue?.()
-          || pickedObject.id.properties?.handleType;
-        if (handleType === HANDLE_TYPES.VERTEX || handleType === HANDLE_TYPES.CENTROID) return;
+        // Do not dismiss when clicking on a vertex handle
+        if (pickedObject.id.properties?.isVertexHandle) return;
 
         if (pickedObject.id.properties?.mapItem) {
           const item = pickedObject.id.properties.mapItem.getValue();
@@ -585,27 +488,45 @@ export class MapProjectManager {
 
         if (!Number.isFinite(deltaLng) || !Number.isFinite(deltaLat)) return;
 
-        if (this.dragState.dragMode === HANDLE_TYPES.CENTROID) {
-          this.dragState.currentCoordinates = translateCoordinates(
-            this.dragState.currentCoordinates,
-            deltaLng,
-            deltaLat,
-          );
-        } else if (this.dragState.dragMode === HANDLE_TYPES.VERTEX) {
-          const alt = Number.isFinite(carto.height)
-            ? carto.height
-            : this.dragState.currentCoordinates[this.dragState.vertexIndex]?.alt || 0;
-          this.dragState.currentCoordinates = updateVertexCoordinate(
-            this.dragState.currentCoordinates,
-            this.dragState.vertexIndex,
-            { lng: currentLng, lat: currentLat, alt },
-          );
+          // Update all corner vertex handle positions
+          newCoords.forEach((pt, idx) => {
+            const hEnt = this.handlesDataSource.entities.getById(`handle-${this.dragState.itemId}-${idx}`);
+            if (hEnt) {
+              hEnt.position = Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1);
+            }
+          });
+        } else if (this.dragState.dragMode === 'VERTEX') {
+          const activePt = newCoords[this.dragState.vertexIndex];
+          if (activePt) {
+            const hEnt = this.handlesDataSource.entities.getById(`handle-${this.dragState.itemId}-${this.dragState.vertexIndex}`);
+            if (hEnt) {
+              hEnt.position = Cesium.Cartesian3.fromDegrees(activePt.lng, activePt.lat, (activePt.alt || 0) + 1);
+            }
+          }
+          // Also re-sync centroid handle
+          try {
+            const centroid = calculateCentroid(newCoords);
+            const cEnt = this.handlesDataSource.entities.getById(`handle-centroid-${this.dragState.itemId}`);
+            if (cEnt) {
+              cEnt.position = Cesium.Cartesian3.fromDegrees(centroid[0], centroid[1], (newCoords[0]?.alt || 0) + 2);
+            }
+          } catch (_e) {}
         }
 
-        this.dragState.lastCartographic = carto;
-        this.dragState.item.coordinates = JSON.stringify(this.dragState.currentCoordinates);
-        this.updateMainEntityGeometry(this.dragState.itemId, this.dragState.currentCoordinates);
-        this.updateHandleGeometry(this.dragState.item, this.dragState.currentCoordinates);
+        // Live update marker, polyline, or polygon entity on main 3D CustomDataSource
+        const mainEntity = this.dataSource.entities.getById(this.dragState.itemId);
+        if (mainEntity) {
+          const newPositions = newCoords.map((c) => Cesium.Cartesian3.fromDegrees(c.lng, c.lat, c.alt || 0));
+          if (mainEntity.position) {
+            mainEntity.position = newPositions[0];
+          }
+          if (mainEntity.polyline) {
+            mainEntity.polyline.positions = newPositions;
+          }
+          if (mainEntity.polygon) {
+            mainEntity.polygon.hierarchy = new Cesium.PolygonHierarchy(newPositions);
+          }
+        }
         return;
       }
 
@@ -650,7 +571,6 @@ export class MapProjectManager {
             finalItem.measurementType || finalItem.type
           );
           await saveItem(this.activeMapId, updatedWithMetrics);
-          this._syncMapToolsFeatureCoordinates(updatedWithMetrics.id, this.dragState.currentCoordinates);
           this.selectedItem = updatedWithMetrics;
 
           // If POI callout card is open, refresh it dynamically with the new measurements
@@ -769,30 +689,16 @@ export class MapProjectManager {
    * Clears interactive vertex and centroid modification handles.
    */
   clearVertexHandles() {
-    if (this.dragState?.isDragging) {
-      restoreCameraControlState(this.viewer.scene.screenSpaceCameraController, this.dragState.cameraState);
-      this.dragState = {
-        isDragging: false,
-        dragMode: null,
-        itemId: null,
-        vertexIndex: -1,
-        item: null,
-        initialCoordinates: [],
-        currentCoordinates: [],
-        lastCartographic: null,
-        cameraState: null,
-      };
-    }
     this.handlesDataSource.entities.removeAll();
   }
 
   /**
    * Renders interactive vertex control handles along the perimeter or route of a shape,
-   * plus a central amber '✥ MOVE' handle for whole-shape translation.
+   * plus a central amber '✥ MOVE' handle for whole-shape / POI marker translation.
    */
   renderVertexHandles(item) {
     this.clearVertexHandles();
-    if (!item || (item.type !== 'polyline' && item.type !== 'polygon')) return;
+    if (!item || !item.type) return;
 
     let coords = [];
     try {
@@ -803,9 +709,9 @@ export class MapProjectManager {
 
     if (!Array.isArray(coords) || coords.length === 0) return;
 
-    // 1. Render Centroid '✥ MOVE' Handle for Whole-Polygon / Whole-Polyline Translation
+    // 1. Render Centroid / Move Handle '✥ MOVE'
     try {
-      const centroid = calculateCentroid(coords);
+      const centroid = item.type === 'marker' ? [coords[0].lng, coords[0].lat] : calculateCentroid(coords);
       const cLon = centroid[0];
       const cLat = centroid[1];
       const cAlt = (coords[0]?.alt || 0) + 2;
@@ -841,60 +747,29 @@ export class MapProjectManager {
       });
     } catch (_e) {}
 
-    const centroid = computeHandleCentroid(coords);
-    if (centroid && (item.type === 'polygon' || item.type === 'polyline')) {
-      this.handlesDataSource.entities.add({
-        id: `handle-centroid-${item.id}`,
-        name: 'MOVE',
-        position: Cesium.Cartesian3.fromDegrees(centroid.lng, centroid.lat, (centroid.alt || 0) + 2),
-        point: {
-          pixelSize: 14,
-          color: Cesium.Color.fromCssColorString('#f59e0b'),
-          outlineColor: Cesium.Color.WHITE,
-          outlineWidth: 2.5,
-          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-          disableDepthTestDistance: Number.POSITIVE_INFINITY,
-        },
-        label: {
-          text: 'MOVE',
-          font: 'bold 12px Inter, sans-serif',
-          fillColor: Cesium.Color.WHITE,
-          outlineColor: Cesium.Color.BLACK,
-          outlineWidth: 2,
-          style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-          pixelOffset: new Cesium.Cartesian2(0, -20),
-          disableDepthTestDistance: Number.POSITIVE_INFINITY,
-          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-        },
-        properties: {
-          handleType: HANDLE_TYPES.CENTROID,
-          itemId: item.id,
-          vertexIndex: -1,
-        },
+    // 2. Render Individual Corner Vertex Handles (for polylines & polygons)
+    if (item.type === 'polyline' || item.type === 'polygon') {
+      coords.forEach((pt, idx) => {
+        this.handlesDataSource.entities.add({
+          id: `handle-${item.id}-${idx}`,
+          position: Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1),
+          point: {
+            pixelSize: 12,
+            color: Cesium.Color.WHITE,
+            outlineColor: Cesium.Color.fromCssColorString(item.color || '#0284c7'),
+            outlineWidth: 3,
+            heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+            disableDepthTestDistance: Number.POSITIVE_INFINITY,
+          },
+          properties: {
+            isVertexHandle: true,
+            handleType: 'VERTEX',
+            vertexIndex: idx,
+            itemId: item.id,
+          },
+        });
       });
     }
-
-    coords.forEach((pt, idx) => {
-      this.handlesDataSource.entities.add({
-        id: `handle-${item.id}-${idx}`,
-        position: Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1),
-        point: {
-          pixelSize: 12,
-          color: Cesium.Color.WHITE,
-          outlineColor: Cesium.Color.fromCssColorString(item.color || '#0284c7'),
-          outlineWidth: 3,
-          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-          disableDepthTestDistance: Number.POSITIVE_INFINITY,
-        },
-        properties: {
-          handleType: HANDLE_TYPES.VERTEX,
-          isVertexHandle: true,
-          handleType: 'VERTEX',
-          vertexIndex: idx,
-          itemId: item.id,
-        },
-      });
-    });
   }
 
   /**
