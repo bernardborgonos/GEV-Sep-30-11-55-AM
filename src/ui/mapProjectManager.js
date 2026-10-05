@@ -43,6 +43,7 @@ import {
 import {
   calculatePathDistance,
   calculatePolygonGeodesicArea,
+  calculateCentroid,
   initialBearing,
   haversineDistanceMeters,
 } from '../tools/geodesicMath.js';
@@ -527,7 +528,7 @@ export class MapProjectManager {
       this.selectedItem = null;
     }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
-    // 2. LEFT_DOWN: Start dragging a vertex handle if clicked
+    // 2. LEFT_DOWN: Start dragging a vertex or centroid handle if clicked
     this.clickHandler.setInputAction((click) => {
       hideTacticalHoverTooltip();
       if (this.isDrawing) return;
@@ -570,7 +571,7 @@ export class MapProjectManager {
       }
     }, Cesium.ScreenSpaceEventType.LEFT_DOWN);
 
-    // 3. MOUSE_MOVE: Real-time vertex position adjustment on 3D globe & Tactical Hover Tooltips
+    // 3. MOUSE_MOVE: Real-time vertex position adjustment or whole-shape centroid translation on 3D globe
     this.clickHandler.setInputAction((movement) => {
       if (this.dragState.isDragging && this.dragState.item) {
         hideTacticalHoverTooltip();
@@ -765,7 +766,7 @@ export class MapProjectManager {
   }
 
   /**
-   * Clears interactive vertex modification handles.
+   * Clears interactive vertex and centroid modification handles.
    */
   clearVertexHandles() {
     if (this.dragState?.isDragging) {
@@ -786,7 +787,8 @@ export class MapProjectManager {
   }
 
   /**
-   * Renders interactive vertex control handles along the perimeter or route of a shape.
+   * Renders interactive vertex control handles along the perimeter or route of a shape,
+   * plus a central amber '✥ MOVE' handle for whole-shape translation.
    */
   renderVertexHandles(item) {
     this.clearVertexHandles();
@@ -799,7 +801,45 @@ export class MapProjectManager {
       return;
     }
 
-    if (!Array.isArray(coords)) return;
+    if (!Array.isArray(coords) || coords.length === 0) return;
+
+    // 1. Render Centroid '✥ MOVE' Handle for Whole-Polygon / Whole-Polyline Translation
+    try {
+      const centroid = calculateCentroid(coords);
+      const cLon = centroid[0];
+      const cLat = centroid[1];
+      const cAlt = (coords[0]?.alt || 0) + 2;
+
+      this.handlesDataSource.entities.add({
+        id: `handle-centroid-${item.id}`,
+        position: Cesium.Cartesian3.fromDegrees(cLon, cLat, cAlt),
+        point: {
+          pixelSize: 16,
+          color: Cesium.Color.fromCssColorString('#f59e0b'), // Warning Amber
+          outlineColor: Cesium.Color.WHITE,
+          outlineWidth: 3,
+          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+          disableDepthTestDistance: Number.POSITIVE_INFINITY,
+        },
+        label: {
+          text: '✥ MOVE',
+          font: 'bold 11px Inter, sans-serif',
+          fillColor: Cesium.Color.WHITE,
+          showBackground: true,
+          backgroundColor: Cesium.Color.fromCssColorString('#0f172a').withAlpha(0.85),
+          backgroundPadding: new Cesium.Cartesian2(6, 4),
+          pixelOffset: new Cesium.Cartesian2(0, -20),
+          verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
+          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+          disableDepthTestDistance: Number.POSITIVE_INFINITY,
+        },
+        properties: {
+          isVertexHandle: true,
+          handleType: 'CENTROID',
+          itemId: item.id,
+        },
+      });
+    } catch (_e) {}
 
     const centroid = computeHandleCentroid(coords);
     if (centroid && (item.type === 'polygon' || item.type === 'polyline')) {
@@ -849,11 +889,43 @@ export class MapProjectManager {
         properties: {
           handleType: HANDLE_TYPES.VERTEX,
           isVertexHandle: true,
+          handleType: 'VERTEX',
           vertexIndex: idx,
           itemId: item.id,
         },
       });
     });
+  }
+
+  /**
+   * Helper: Resolves 3D cartographic position using scene.pickPosition(), globe.pick(), or camera.pickEllipsoid().
+   */
+  resolveCartographicPosition(screenPosition) {
+    if (!this.viewer || !screenPosition) return null;
+    const scene = this.viewer.scene;
+    let cartesian = null;
+
+    if (scene.pickPositionSupported) {
+      try {
+        cartesian = scene.pickPosition(screenPosition);
+      } catch (_e) {}
+    }
+
+    if (!cartesian || !Cesium.defined(cartesian)) {
+      const ray = this.viewer.camera.getPickRay(screenPosition);
+      if (ray) {
+        cartesian = scene.globe.pick(ray, scene);
+      }
+    }
+
+    if (!cartesian || !Cesium.defined(cartesian)) {
+      cartesian = this.viewer.camera.pickEllipsoid(screenPosition, scene.globe.ellipsoid);
+    }
+
+    if (cartesian && Cesium.defined(cartesian)) {
+      return Cesium.Cartographic.fromCartesian(cartesian);
+    }
+    return null;
   }
 
   /**
