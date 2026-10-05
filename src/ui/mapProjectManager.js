@@ -110,20 +110,16 @@ export class MapProjectManager {
     // Shaper & CAD state
     this.currentShaperMode = SHAPER_MODES.SELECT_MODIFY;
     this.selectedItem = null;
-    this.isDraggingVertex = false; // Backward compatibility
-    this.draggedVertexIndex = -1;  // Backward compatibility
-    this.draggedItemId = null;     // Backward compatibility
-    this.draggedItem = null;       // Backward compatibility
-
-    // Unified Geometry Drag State (Centroid Whole-Shape & Vertex Dragging)
     this.dragState = {
       isDragging: false,
-      dragMode: null, // 'CENTROID' | 'VERTEX' | null
+      dragMode: null,
       itemId: null,
       vertexIndex: -1,
-      targetItem: null,
-      startCartographic: null,
+      item: null,
       initialCoordinates: [],
+      currentCoordinates: [],
+      lastCartographic: null,
+      cameraState: null,
     };
 
     // Entity picking handler for POIs, lines, polygons
@@ -538,135 +534,72 @@ export class MapProjectManager {
       if (this.isDrawing) return;
 
       const picked = this.viewer.scene.pick(click.position);
-      if (Cesium.defined(picked) && picked.id && picked.id.properties?.isVertexHandle) {
-        const handleType = picked.id.properties.handleType?.getValue?.() || 'VERTEX';
-        const itemId = picked.id.properties.itemId.getValue();
-        const targetItem = this.items.find((it) => it.id === itemId) || this.selectedItem;
+      if (Cesium.defined(picked) && picked.id) {
+        const handleType = picked.id.properties?.handleType?.getValue?.()
+          || picked.id.properties?.handleType;
+        if (handleType !== HANDLE_TYPES.VERTEX && handleType !== HANDLE_TYPES.CENTROID) return;
 
-        if (!targetItem) return;
+        const itemId = picked.id.properties?.itemId?.getValue?.() ?? picked.id.properties?.itemId;
+        const vertexIndex = Number(picked.id.properties?.vertexIndex?.getValue?.() ?? picked.id.properties?.vertexIndex ?? -1);
+        const item = this.items.find((it) => it.id === itemId) || this.selectedItem;
+        if (!item || this._isMapToolsFeatureLocked(itemId)) return;
 
-        let initialCoords = [];
+        let coordinates = [];
         try {
-          initialCoords = typeof targetItem.coordinates === 'string' ? JSON.parse(targetItem.coordinates) : [...targetItem.coordinates];
+          coordinates = typeof item.coordinates === 'string' ? JSON.parse(item.coordinates) : item.coordinates;
         } catch (_e) {
-          initialCoords = [];
+          coordinates = [];
         }
+        if (!Array.isArray(coordinates) || coordinates.length === 0) return;
 
-        const carto = this.resolveCartographicPosition(click.position);
-        if (!carto) return;
+        const cartographic = this.resolveCartographicPosition(click.position);
+        if (!cartographic) return;
 
+        const cameraController = this.viewer.scene.screenSpaceCameraController;
         this.dragState = {
           isDragging: true,
-          dragMode: handleType, // 'CENTROID' | 'VERTEX'
+          dragMode: handleType,
           itemId,
-          vertexIndex: handleType === 'VERTEX' ? picked.id.properties.vertexIndex.getValue() : -1,
-          targetItem,
-          startCartographic: carto,
-          initialCoordinates: initialCoords,
+          vertexIndex,
+          item,
+          initialCoordinates: coordinates.map((coord) => ({ ...coord })),
+          currentCoordinates: coordinates.map((coord) => ({ ...coord })),
+          lastCartographic: cartographic,
+          cameraState: snapshotCameraControlState(cameraController),
         };
-
-        // Backward compatibility flags
-        this.isDraggingVertex = true;
-        this.draggedItemId = itemId;
-        this.draggedItem = targetItem;
-        this.draggedVertexIndex = this.dragState.vertexIndex;
-
-        // Temporarily lock camera controls while dragging
-        this.viewer.scene.screenSpaceCameraController.enableRotate = false;
-        this.viewer.scene.screenSpaceCameraController.enableTranslate = false;
-        this.viewer.scene.screenSpaceCameraController.enableZoom = false;
-        this.viewer.scene.screenSpaceCameraController.enableTilt = false;
-        this.viewer.scene.screenSpaceCameraController.enableLook = false;
+        setCameraControlState(cameraController, false);
       }
     }, Cesium.ScreenSpaceEventType.LEFT_DOWN);
 
     // 3. MOUSE_MOVE: Real-time vertex position adjustment or whole-shape centroid translation on 3D globe
     this.clickHandler.setInputAction((movement) => {
-      if (this.dragState.isDragging && this.dragState.targetItem) {
+      if (this.dragState.isDragging && this.dragState.item) {
         hideTacticalHoverTooltip();
-        const currentCarto = this.resolveCartographicPosition(movement.endPosition);
-        if (!currentCarto || !this.dragState.startCartographic) return;
+        const carto = this.resolveCartographicPosition(movement.endPosition);
+        if (!carto || !this.dragState.lastCartographic) return;
 
-        const startLat = Cesium.Math.toDegrees(this.dragState.startCartographic.latitude);
-        const startLng = Cesium.Math.toDegrees(this.dragState.startCartographic.longitude);
-        const currentLat = Cesium.Math.toDegrees(currentCarto.latitude);
-        const currentLng = Cesium.Math.toDegrees(currentCarto.longitude);
+        const currentLng = Cesium.Math.toDegrees(carto.longitude);
+        const currentLat = Cesium.Math.toDegrees(carto.latitude);
+        const deltaLng = currentLng - Cesium.Math.toDegrees(this.dragState.lastCartographic.longitude);
+        const deltaLat = currentLat - Cesium.Math.toDegrees(this.dragState.lastCartographic.latitude);
 
-        const deltaLat = currentLat - startLat;
-        const deltaLng = currentLng - startLng;
+        if (!Number.isFinite(deltaLng) || !Number.isFinite(deltaLat)) return;
 
-        let newCoords = [];
-
-        if (this.dragState.dragMode === 'CENTROID') {
-          // Whole-Polygon / Whole-Polyline Translation by Delta
-          newCoords = this.dragState.initialCoordinates.map((c) => ({
-            ...c,
-            lat: c.lat + deltaLat,
-            lng: c.lng + deltaLng,
-          }));
-        } else if (this.dragState.dragMode === 'VERTEX') {
-          // Single Vertex Dragging
-          newCoords = this.dragState.initialCoordinates.map((c, idx) => {
-            if (idx === this.dragState.vertexIndex) {
-              return {
-                ...c,
-                lat: currentLat,
-                lng: currentLng,
-                alt: currentCarto.height || c.alt || 0,
-              };
-            }
-            return c;
-          });
-        }
-
-        this.dragState.targetItem.coordinates = JSON.stringify(newCoords);
-
-        // Update active handles live
-        if (this.dragState.dragMode === 'CENTROID') {
-          // Update centroid handle position
-          try {
-            const centroid = calculateCentroid(newCoords);
-            const cEnt = this.handlesDataSource.entities.getById(`handle-centroid-${this.dragState.itemId}`);
-            if (cEnt) {
-              cEnt.position = Cesium.Cartesian3.fromDegrees(centroid[0], centroid[1], (newCoords[0]?.alt || 0) + 2);
-            }
-          } catch (_e) {}
-
-          // Update all corner vertex handle positions
-          newCoords.forEach((pt, idx) => {
-            const hEnt = this.handlesDataSource.entities.getById(`handle-${this.dragState.itemId}-${idx}`);
-            if (hEnt) {
-              hEnt.position = Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1);
-            }
-          });
-        } else if (this.dragState.dragMode === 'VERTEX') {
-          const activePt = newCoords[this.dragState.vertexIndex];
-          if (activePt) {
-            const hEnt = this.handlesDataSource.entities.getById(`handle-${this.dragState.itemId}-${this.dragState.vertexIndex}`);
-            if (hEnt) {
-              hEnt.position = Cesium.Cartesian3.fromDegrees(activePt.lng, activePt.lat, (activePt.alt || 0) + 1);
-            }
-          }
-          // Also re-sync centroid handle
-          try {
-            const centroid = calculateCentroid(newCoords);
-            const cEnt = this.handlesDataSource.entities.getById(`handle-centroid-${this.dragState.itemId}`);
-            if (cEnt) {
-              cEnt.position = Cesium.Cartesian3.fromDegrees(centroid[0], centroid[1], (newCoords[0]?.alt || 0) + 2);
-            }
-          } catch (_e) {}
-        }
-
-        // Live update polyline or polygon entity on main 3D CustomDataSource
-        const mainEntity = this.dataSource.entities.getById(this.dragState.itemId);
-        if (mainEntity) {
-          const newPositions = newCoords.map((c) => Cesium.Cartesian3.fromDegrees(c.lng, c.lat, c.alt || 0));
-          if (mainEntity.polyline) {
-            mainEntity.polyline.positions = newPositions;
-          }
-          if (mainEntity.polygon) {
-            mainEntity.polygon.hierarchy = new Cesium.PolygonHierarchy(newPositions);
-          }
+        if (this.dragState.dragMode === HANDLE_TYPES.CENTROID) {
+          this.dragState.currentCoordinates = translateCoordinates(
+            this.dragState.currentCoordinates,
+            deltaLng,
+            deltaLat,
+          );
+        } else if (this.dragState.dragMode === HANDLE_TYPES.VERTEX) {
+          const alt = Number.isFinite(carto.height)
+            ? carto.height
+            : this.dragState.currentCoordinates[this.dragState.vertexIndex]?.alt || 0;
+          this.dragState.currentCoordinates = updateVertexCoordinate(
+            this.dragState.currentCoordinates,
+            this.dragState.vertexIndex,
+            { lng: currentLng, lat: currentLat, alt },
+          );
         }
 
         this.dragState.lastCartographic = carto;
@@ -701,21 +634,20 @@ export class MapProjectManager {
 
     // 4. LEFT_UP: Release drag, restore camera, and save updated coordinates
     this.clickHandler.setInputAction(async () => {
-      if (this.dragState.isDragging || this.isDraggingVertex) {
-        this.viewer.scene.screenSpaceCameraController.enableRotate = true;
-        this.viewer.scene.screenSpaceCameraController.enableTranslate = true;
-        this.viewer.scene.screenSpaceCameraController.enableZoom = true;
-        this.viewer.scene.screenSpaceCameraController.enableTilt = true;
-        this.viewer.scene.screenSpaceCameraController.enableLook = true;
+      if (this.dragState.isDragging) {
+        const cameraController = this.viewer.scene.screenSpaceCameraController;
+        restoreCameraControlState(cameraController, this.dragState.cameraState);
 
-        const targetItem = this.dragState.targetItem || this.draggedItem;
-
-        if (targetItem && this.activeMapId) {
+        if (this.dragState.item && this.activeMapId && Array.isArray(this.dragState.currentCoordinates)) {
+          const finalItem = {
+            ...this.dragState.item,
+            coordinates: JSON.stringify(this.dragState.currentCoordinates),
+          };
           // Dynamically recalculate and persist fresh geodetic metrics for the updated vertices
           const updatedWithMetrics = updateItemGeodeticData(
-            targetItem,
-            targetItem.coordinates,
-            targetItem.measurementType || targetItem.type
+            finalItem,
+            this.dragState.currentCoordinates,
+            finalItem.measurementType || finalItem.type
           );
           await saveItem(this.activeMapId, updatedWithMetrics);
           this._syncMapToolsFeatureCoordinates(updatedWithMetrics.id, this.dragState.currentCoordinates);
@@ -731,21 +663,17 @@ export class MapProjectManager {
             });
           }
         }
-
         this.dragState = {
           isDragging: false,
           dragMode: null,
           itemId: null,
           vertexIndex: -1,
-          targetItem: null,
-          startCartographic: null,
+          item: null,
           initialCoordinates: [],
+          currentCoordinates: [],
+          lastCartographic: null,
+          cameraState: null,
         };
-
-        this.isDraggingVertex = false;
-        this.draggedVertexIndex = -1;
-        this.draggedItemId = null;
-        this.draggedItem = null;
       }
     }, Cesium.ScreenSpaceEventType.LEFT_UP);
   }
@@ -913,7 +841,39 @@ export class MapProjectManager {
       });
     } catch (_e) {}
 
-    // 2. Render Individual Corner Vertex Handles
+    const centroid = computeHandleCentroid(coords);
+    if (centroid && (item.type === 'polygon' || item.type === 'polyline')) {
+      this.handlesDataSource.entities.add({
+        id: `handle-centroid-${item.id}`,
+        name: 'MOVE',
+        position: Cesium.Cartesian3.fromDegrees(centroid.lng, centroid.lat, (centroid.alt || 0) + 2),
+        point: {
+          pixelSize: 14,
+          color: Cesium.Color.fromCssColorString('#f59e0b'),
+          outlineColor: Cesium.Color.WHITE,
+          outlineWidth: 2.5,
+          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+          disableDepthTestDistance: Number.POSITIVE_INFINITY,
+        },
+        label: {
+          text: 'MOVE',
+          font: 'bold 12px Inter, sans-serif',
+          fillColor: Cesium.Color.WHITE,
+          outlineColor: Cesium.Color.BLACK,
+          outlineWidth: 2,
+          style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+          pixelOffset: new Cesium.Cartesian2(0, -20),
+          disableDepthTestDistance: Number.POSITIVE_INFINITY,
+          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+        },
+        properties: {
+          handleType: HANDLE_TYPES.CENTROID,
+          itemId: item.id,
+          vertexIndex: -1,
+        },
+      });
+    }
+
     coords.forEach((pt, idx) => {
       this.handlesDataSource.entities.add({
         id: `handle-${item.id}-${idx}`,
