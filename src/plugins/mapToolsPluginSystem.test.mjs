@@ -95,9 +95,12 @@ test('DrawingPlugin initializes with drawing modes and renders DOM matching Map 
   assert.match(container.innerHTML, /working-drawing-tools-capsule/);
   assert.doesNotMatch(container.innerHTML, /class="mode-text"/);
   assert.match(container.innerHTML, /class="sr-only">Polyline<\/span>/);
+  assert.match(container.innerHTML, /title="Draft Polyline \/ Line \/ Path \(Vector Path\)"/);
   assert.match(container.innerHTML, /title="Draft Vector Arrow \(Directional Vector\)"/);
   assert.match(container.innerHTML, /class="sr-only">POI Marker<\/span>/);
+  assert.match(container.innerHTML, /title="Drop Point of Interest \(Tactical Pushpin\)"/);
   assert.match(container.innerHTML, /class="sr-only">Ground Observer<\/span>/);
+  assert.match(container.innerHTML, /title="Ground Observer & Waypoints Route"/);
 
   // Test dynamic action labels for all 4 drawing modes
   assert.equal(getModeActionLabel(DRAWING_MODES.POLYLINE), 'DRAW LINE / PATH');
