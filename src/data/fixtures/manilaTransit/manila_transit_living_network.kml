@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document>
+    <name>The Living Network: Manila Transit Telemetry &amp; Simulation</name>
+    <description>Space-Time Telemetry Digital Twin of Metro Manila Transit (LRT-1, LRT-2, MRT-3) based on the 2026-09-11 epoch with synchronized 30s-dwell / 90s-transit movement rhythms.</description>
+
+    <!-- Style Definitions -->
+    <Style id="stationPinYellow">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/rail.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="stationPinPurple">
+      <IconStyle>
+        <color>ffaa00aa</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="stationPinCyan">
+      <IconStyle>
+        <color>ffaaff00</color>
+        <scale>1.1</scale>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/subway.png</href></Icon>
+      </IconStyle>
+    </Style>
+    <Style id="lrt1Corridor">
+      <LineStyle><color>ff00ffff</color><width>4</width></LineStyle>
+    </Style>
+    <Style id="lrt2Corridor">
+      <LineStyle><color>ffaa00aa</color><width>5</width></LineStyle>
+    </Style>
+    <Style id="mrt3Corridor">
+      <LineStyle><color>ffaaff00</color><width>5</width></LineStyle>
+    </Style>
+
+    <!-- STATIC SPATIAL LAYER: 46 PLACEMARKS -->
+    <Folder>
+      <name>Static Geography [Space]</name>
+      <description>Static station placemarks establishing the primary network nodes.</description>
+      <Folder>
+        <name>Light Rail Transit Line 1 (Yellow Corridor) (20 Stations)</name>
+        <Placemark id="L1-01">
+          <name>Fernando Poe Jr.</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>121.0189,14.6575,24</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-02">
+          <name>Balintawak</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>121.0041,14.6571,22</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-03">
+          <name>Monumento</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9836,14.6543,15</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-04">
+          <name>5th Avenue</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9839,14.6444,14</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-05">
+          <name>R. Papa</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9825,14.636,12</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-06">
+          <name>Abad Santos</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9814,14.6305,10</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-07">
+          <name>Blumentritt</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.983,14.6226,9</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-08">
+          <name>Tayuman</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9829,14.6167,8</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-09">
+          <name>Bambang</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9823,14.608,8</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-10">
+          <name>Doroteo Jose</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran&#10;Interchange: LRT-2 Recto</description>
+          <Point>
+            <coordinates>120.9818,14.6053,9</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-11">
+          <name>Carriedo</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9815,14.5998,7</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-12">
+          <name>Central Terminal</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9817,14.5928,8</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-13">
+          <name>United Nations</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.984,14.5826,7</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-14">
+          <name>Pedro Gil</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.988,14.5765,8</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-15">
+          <name>Quirino</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9917,14.5703,9</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-16">
+          <name>Vito Cruz</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9946,14.5634,9</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-17">
+          <name>Gil Puyat</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9972,14.5541,10</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-18">
+          <name>Libertad</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9988,14.5478,9</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-19">
+          <name>EDSA</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran&#10;Interchange: MRT-3 Taft Avenue</description>
+          <Point>
+            <coordinates>121.0006,14.5388,11</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L1-20">
+          <name>Baclaran</name>
+          <styleUrl>#stationPinYellow</styleUrl>
+          <description>Line: LRT-1&#10;Terminals: Fernando Poe Jr. ➔ Baclaran</description>
+          <Point>
+            <coordinates>120.9984,14.5342,8</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>LRT-1 Physical Alignment</name>
+          <styleUrl>#lrt1Corridor</styleUrl>
+          <LineString><coordinates>121.0189,14.6575,24 121.0041,14.6571,22 120.9836,14.6543,15 120.9839,14.6444,14 120.9825,14.636,12 120.9814,14.6305,10 120.983,14.6226,9 120.9829,14.6167,8 120.9823,14.608,8 120.9818,14.6053,9 120.9815,14.5998,7 120.9817,14.5928,8 120.984,14.5826,7 120.988,14.5765,8 120.9917,14.5703,9 120.9946,14.5634,9 120.9972,14.5541,10 120.9988,14.5478,9 121.0006,14.5388,11 120.9984,14.5342,8</coordinates></LineString>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>Light Rail Transit Line 2 (Purple Corridor) (13 Stations)</name>
+        <Placemark id="L2-01">
+          <name>Recto</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo&#10;Interchange: LRT-1 Doroteo Jose</description>
+          <Point>
+            <coordinates>120.9835,14.6035,12</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-02">
+          <name>Legarda</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>120.9926,14.6008,14</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-03">
+          <name>Pureza</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0049,14.6016,16</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-04">
+          <name>V. Mapa</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0175,14.6041,18</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-05">
+          <name>J. Ruiz</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0263,14.6056,25</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-06">
+          <name>Gilmore</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0345,14.6135,32</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-07">
+          <name>Betty Go-Belmonte</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0427,14.6185,38</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-08">
+          <name>Araneta-Cubao [L2]</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo&#10;Interchange: MRT-3 Araneta-Cubao</description>
+          <Point>
+            <coordinates>121.0526,14.6225,42</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-09">
+          <name>Anonas</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0645,14.6281,48</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-10">
+          <name>Katipunan</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0725,14.631,54</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-11">
+          <name>Santolan</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.0858,14.622,35</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-12">
+          <name>Marikina-Pasig</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.1012,14.6235,32</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="L2-13">
+          <name>Antipolo</name>
+          <styleUrl>#stationPinPurple</styleUrl>
+          <description>Line: LRT-2&#10;Terminals: Recto ➔ Antipolo</description>
+          <Point>
+            <coordinates>121.1214,14.625,72</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>LRT-2 Physical Alignment</name>
+          <styleUrl>#lrt2Corridor</styleUrl>
+          <LineString><coordinates>120.9835,14.6035,12 120.9926,14.6008,14 121.0049,14.6016,16 121.0175,14.6041,18 121.0263,14.6056,25 121.0345,14.6135,32 121.0427,14.6185,38 121.0526,14.6225,42 121.0645,14.6281,48 121.0725,14.631,54 121.0858,14.622,35 121.1012,14.6235,32 121.1214,14.625,72</coordinates></LineString>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>Metro Rail Transit Line 3 (Cyan Corridor) (13 Stations)</name>
+        <Placemark id="M3-01">
+          <name>North Avenue</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0326,14.6521,35</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-02">
+          <name>Quezon Avenue</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0384,14.6428,38</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-03">
+          <name>GMA-Kamuning</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0432,14.6346,40</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-04">
+          <name>Araneta-Cubao</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue&#10;Interchange: LRT-2 Cubao</description>
+          <Point>
+            <coordinates>121.0526,14.6195,42</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-05">
+          <name>Santolan-Annapolis</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0562,14.6078,44</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-06">
+          <name>Ortigas</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0583,14.5878,36</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-07">
+          <name>Shaw Boulevard</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0536,14.5813,30</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-08">
+          <name>Boni</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0468,14.5739,24</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-09">
+          <name>Guadalupe</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0407,14.5672,16</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-10">
+          <name>Buendia</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0337,14.5543,22</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-11">
+          <name>Ayala</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.028,14.5492,26</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-12">
+          <name>Magallanes</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue</description>
+          <Point>
+            <coordinates>121.0198,14.542,18</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark id="M3-13">
+          <name>Taft Avenue</name>
+          <styleUrl>#stationPinCyan</styleUrl>
+          <description>Line: MRT-3&#10;Terminals: North Avenue ➔ Taft Avenue&#10;Interchange: LRT-1 EDSA</description>
+          <Point>
+            <coordinates>121.0006,14.5377,12</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>MRT-3 Physical Alignment</name>
+          <styleUrl>#mrt3Corridor</styleUrl>
+          <LineString><coordinates>121.0326,14.6521,35 121.0384,14.6428,38 121.0432,14.6346,40 121.0526,14.6195,42 121.0562,14.6078,44 121.0583,14.5878,36 121.0536,14.5813,30 121.0468,14.5739,24 121.0407,14.5672,16 121.0337,14.5543,22 121.028,14.5492,26 121.0198,14.542,18 121.0006,14.5377,12</coordinates></LineString>
+        </Placemark>
+      </Folder>
+    </Folder>
+
+    <!-- DYNAMIC TELEMETRY LAYER: [Space + Time] -->
+    <Folder>
+      <name>Dynamic Telemetry [Space + Time]</name>
+      <description>Synchronized 24.5-minute space-time simulation tracks starting 2026-09-11T00:00:00Z.</description>
+
+      <!-- Lead Train 001 - LRT-2 -->
+      <Placemark id="train-001-lrt2">
+        <name>TRAIN 001 - LRT-2 (Recto ➔ Antipolo)</name>
+        <styleUrl>#lrt2Corridor</styleUrl>
+        <gx:Track>
+          <when>2026-09-11T00:00:00.000Z</when>
+          <when>2026-09-11T00:00:10.000Z</when>
+          <when>2026-09-11T00:00:20.000Z</when>
+          <when>2026-09-11T00:00:30.000Z</when>
+          <when>2026-09-11T00:00:40.000Z</when>
+          <when>2026-09-11T00:00:50.000Z</when>
+          <when>2026-09-11T00:01:00.000Z</when>
+          <when>2026-09-11T00:01:10.000Z</when>
+          <when>2026-09-11T00:01:20.000Z</when>
+          <when>2026-09-11T00:01:30.000Z</when>
+          <when>2026-09-11T00:01:40.000Z</when>
+          <when>2026-09-11T00:01:50.000Z</when>
+          <when>2026-09-11T00:02:00.000Z</when>
+          <when>2026-09-11T00:02:10.000Z</when>
+          <when>2026-09-11T00:02:20.000Z</when>
+          <when>2026-09-11T00:02:30.000Z</when>
+          <when>2026-09-11T00:02:40.000Z</when>
+          <when>2026-09-11T00:02:50.000Z</when>
+          <when>2026-09-11T00:03:00.000Z</when>
+          <when>2026-09-11T00:03:10.000Z</when>
+          <when>2026-09-11T00:03:20.000Z</when>
+          <when>2026-09-11T00:03:30.000Z</when>
+          <when>2026-09-11T00:03:40.000Z</when>
+          <when>2026-09-11T00:03:50.000Z</when>
+          <when>2026-09-11T00:04:00.000Z</when>
+          <when>2026-09-11T00:04:10.000Z</when>
+          <when>2026-09-11T00:04:20.000Z</when>
+          <when>2026-09-11T00:04:30.000Z</when>
+          <when>2026-09-11T00:04:40.000Z</when>
+          <when>2026-09-11T00:04:50.000Z</when>
+          <when>2026-09-11T00:05:00.000Z</when>
+          <when>2026-09-11T00:05:10.000Z</when>
+          <when>2026-09-11T00:05:20.000Z</when>
+          <when>2026-09-11T00:05:30.000Z</when>
+          <when>2026-09-11T00:05:40.000Z</when>
+          <when>2026-09-11T00:05:50.000Z</when>
+          <when>2026-09-11T00:06:00.000Z</when>
+          <when>2026-09-11T00:06:10.000Z</when>
+          <when>2026-09-11T00:06:20.000Z</when>
+          <when>2026-09-11T00:06:30.000Z</when>
+          <when>2026-09-11T00:06:40.000Z</when>
+          <when>2026-09-11T00:06:50.000Z</when>
+          <when>2026-09-11T00:07:00.000Z</when>
+          <when>2026-09-11T00:07:10.000Z</when>
+          <when>2026-09-11T00:07:20.000Z</when>
+          <when>2026-09-11T00:07:30.000Z</when>
+          <when>2026-09-11T00:07:40.000Z</when>
+          <when>2026-09-11T00:07:50.000Z</when>
+          <when>2026-09-11T00:08:00.000Z</when>
+          <when>2026-09-11T00:08:10.000Z</when>
+          <when>2026-09-11T00:08:20.000Z</when>
+          <when>2026-09-11T00:08:30.000Z</when>
+          <when>2026-09-11T00:08:40.000Z</when>
+          <when>2026-09-11T00:08:50.000Z</when>
+          <when>2026-09-11T00:09:00.000Z</when>
+          <when>2026-09-11T00:09:10.000Z</when>
+          <when>2026-09-11T00:09:20.000Z</when>
+          <when>2026-09-11T00:09:30.000Z</when>
+          <when>2026-09-11T00:09:40.000Z</when>
+          <when>2026-09-11T00:09:50.000Z</when>
+          <when>2026-09-11T00:10:00.000Z</when>
+          <when>2026-09-11T00:10:10.000Z</when>
+          <when>2026-09-11T00:10:20.000Z</when>
+          <when>2026-09-11T00:10:30.000Z</when>
+          <when>2026-09-11T00:10:40.000Z</when>
+          <when>2026-09-11T00:10:50.000Z</when>
+          <when>2026-09-11T00:11:00.000Z</when>
+          <when>2026-09-11T00:11:10.000Z</when>
+          <when>2026-09-11T00:11:20.000Z</when>
+          <when>2026-09-11T00:11:30.000Z</when>
+          <when>2026-09-11T00:11:40.000Z</when>
+          <when>2026-09-11T00:11:50.000Z</when>
+          <when>2026-09-11T00:12:00.000Z</when>
+          <when>2026-09-11T00:12:10.000Z</when>
+          <when>2026-09-11T00:12:20.000Z</when>
+          <when>2026-09-11T00:12:30.000Z</when>
+          <when>2026-09-11T00:12:40.000Z</when>
+          <when>2026-09-11T00:12:50.000Z</when>
+          <when>2026-09-11T00:13:00.000Z</when>
+          <when>2026-09-11T00:13:10.000Z</when>
+          <when>2026-09-11T00:13:20.000Z</when>
+          <when>2026-09-11T00:13:30.000Z</when>
+          <when>2026-09-11T00:13:40.000Z</when>
+          <when>2026-09-11T00:13:50.000Z</when>
+          <when>2026-09-11T00:14:00.000Z</when>
+          <when>2026-09-11T00:14:10.000Z</when>
+          <when>2026-09-11T00:14:20.000Z</when>
+          <when>2026-09-11T00:14:30.000Z</when>
+          <when>2026-09-11T00:14:40.000Z</when>
+          <when>2026-09-11T00:14:50.000Z</when>
+          <when>2026-09-11T00:15:00.000Z</when>
+          <when>2026-09-11T00:15:10.000Z</when>
+          <when>2026-09-11T00:15:20.000Z</when>
+          <when>2026-09-11T00:15:30.000Z</when>
+          <when>2026-09-11T00:15:40.000Z</when>
+          <when>2026-09-11T00:15:50.000Z</when>
+          <when>2026-09-11T00:16:00.000Z</when>
+          <when>2026-09-11T00:16:10.000Z</when>
+          <when>2026-09-11T00:16:20.000Z</when>
+          <when>2026-09-11T00:16:30.000Z</when>
+          <when>2026-09-11T00:16:40.000Z</when>
+          <when>2026-09-11T00:16:50.000Z</when>
+          <when>2026-09-11T00:17:00.000Z</when>
+          <when>2026-09-11T00:17:10.000Z</when>
+          <when>2026-09-11T00:17:20.000Z</when>
+          <when>2026-09-11T00:17:30.000Z</when>
+          <when>2026-09-11T00:17:40.000Z</when>
+          <when>2026-09-11T00:17:50.000Z</when>
+          <when>2026-09-11T00:18:00.000Z</when>
+          <when>2026-09-11T00:18:10.000Z</when>
+          <when>2026-09-11T00:18:20.000Z</when>
+          <when>2026-09-11T00:18:30.000Z</when>
+          <when>2026-09-11T00:18:40.000Z</when>
+          <when>2026-09-11T00:18:50.000Z</when>
+          <when>2026-09-11T00:19:00.000Z</when>
+          <when>2026-09-11T00:19:10.000Z</when>
+          <when>2026-09-11T00:19:20.000Z</when>
+          <when>2026-09-11T00:19:30.000Z</when>
+          <when>2026-09-11T00:19:40.000Z</when>
+          <when>2026-09-11T00:19:50.000Z</when>
+          <when>2026-09-11T00:20:00.000Z</when>
+          <when>2026-09-11T00:20:10.000Z</when>
+          <when>2026-09-11T00:20:20.000Z</when>
+          <when>2026-09-11T00:20:30.000Z</when>
+          <when>2026-09-11T00:20:40.000Z</when>
+          <when>2026-09-11T00:20:50.000Z</when>
+          <when>2026-09-11T00:21:00.000Z</when>
+          <when>2026-09-11T00:21:10.000Z</when>
+          <when>2026-09-11T00:21:20.000Z</when>
+          <when>2026-09-11T00:21:30.000Z</when>
+          <when>2026-09-11T00:21:40.000Z</when>
+          <when>2026-09-11T00:21:50.000Z</when>
+          <when>2026-09-11T00:22:00.000Z</when>
+          <when>2026-09-11T00:22:10.000Z</when>
+          <when>2026-09-11T00:22:20.000Z</when>
+          <when>2026-09-11T00:22:30.000Z</when>
+          <when>2026-09-11T00:22:40.000Z</when>
+          <when>2026-09-11T00:22:50.000Z</when>
+          <when>2026-09-11T00:23:00.000Z</when>
+          <when>2026-09-11T00:23:10.000Z</when>
+          <when>2026-09-11T00:23:20.000Z</when>
+          <when>2026-09-11T00:23:30.000Z</when>
+          <when>2026-09-11T00:23:40.000Z</when>
+          <when>2026-09-11T00:23:50.000Z</when>
+          <when>2026-09-11T00:24:00.000Z</when>
+          <when>2026-09-11T00:24:10.000Z</when>
+          <when>2026-09-11T00:24:20.000Z</when>
+          <when>2026-09-11T00:24:30.000Z</when>
+          <gx:coord>120.9835 14.6035 12</gx:coord>
+          <gx:coord>120.9835 14.6035 12</gx:coord>
+          <gx:coord>120.9835 14.6035 12</gx:coord>
+          <gx:coord>120.9835 14.6035 12</gx:coord>
+          <gx:coord>120.983774 14.603419 12</gx:coord>
+          <gx:coord>120.984564 14.603184 12</gx:coord>
+          <gx:coord>120.985775 14.602825 13</gx:coord>
+          <gx:coord>120.98726 14.602384 13</gx:coord>
+          <gx:coord>120.98884 14.601916 13</gx:coord>
+          <gx:coord>120.990325 14.601475 14</gx:coord>
+          <gx:coord>120.991536 14.601116 14</gx:coord>
+          <gx:coord>120.992326 14.600881 14</gx:coord>
+          <gx:coord>120.9926 14.6008 14</gx:coord>
+          <gx:coord>120.9926 14.6008 14</gx:coord>
+          <gx:coord>120.9926 14.6008 14</gx:coord>
+          <gx:coord>120.9926 14.6008 14</gx:coord>
+          <gx:coord>120.992971 14.600824 14</gx:coord>
+          <gx:coord>120.994039 14.600894 14</gx:coord>
+          <gx:coord>120.995675 14.601 15</gx:coord>
+          <gx:coord>120.997682 14.601131 15</gx:coord>
+          <gx:coord>120.999818 14.601269 15</gx:coord>
+          <gx:coord>121.001825 14.6014 16</gx:coord>
+          <gx:coord>121.003461 14.601506 16</gx:coord>
+          <gx:coord>121.004529 14.601576 16</gx:coord>
+          <gx:coord>121.0049 14.6016 16</gx:coord>
+          <gx:coord>121.0049 14.6016 16</gx:coord>
+          <gx:coord>121.0049 14.6016 16</gx:coord>
+          <gx:coord>121.0049 14.6016 16</gx:coord>
+          <gx:coord>121.00528 14.601675 16</gx:coord>
+          <gx:coord>121.006374 14.601892 16</gx:coord>
+          <gx:coord>121.00805 14.602225 17</gx:coord>
+          <gx:coord>121.010106 14.602633 17</gx:coord>
+          <gx:coord>121.012294 14.603067 17</gx:coord>
+          <gx:coord>121.01435 14.603475 18</gx:coord>
+          <gx:coord>121.016026 14.603808 18</gx:coord>
+          <gx:coord>121.01712 14.604025 18</gx:coord>
+          <gx:coord>121.0175 14.6041 18</gx:coord>
+          <gx:coord>121.0175 14.6041 18</gx:coord>
+          <gx:coord>121.0175 14.6041 18</gx:coord>
+          <gx:coord>121.0175 14.6041 18</gx:coord>
+          <gx:coord>121.017765 14.604145 18</gx:coord>
+          <gx:coord>121.018529 14.604275 19</gx:coord>
+          <gx:coord>121.0197 14.604475 20</gx:coord>
+          <gx:coord>121.021136 14.60472 21</gx:coord>
+          <gx:coord>121.022664 14.60498 22</gx:coord>
+          <gx:coord>121.0241 14.605225 23</gx:coord>
+          <gx:coord>121.025271 14.605425 24</gx:coord>
+          <gx:coord>121.026035 14.605555 25</gx:coord>
+          <gx:coord>121.0263 14.6056 25</gx:coord>
+          <gx:coord>121.0263 14.6056 25</gx:coord>
+          <gx:coord>121.0263 14.6056 25</gx:coord>
+          <gx:coord>121.0263 14.6056 25</gx:coord>
+          <gx:coord>121.026547 14.605838 25</gx:coord>
+          <gx:coord>121.027259 14.606524 26</gx:coord>
+          <gx:coord>121.02835 14.607575 27</gx:coord>
+          <gx:coord>121.029688 14.608864 28</gx:coord>
+          <gx:coord>121.031112 14.610236 29</gx:coord>
+          <gx:coord>121.03245 14.611525 30</gx:coord>
+          <gx:coord>121.033541 14.612576 31</gx:coord>
+          <gx:coord>121.034253 14.613262 32</gx:coord>
+          <gx:coord>121.0345 14.6135 32</gx:coord>
+          <gx:coord>121.0345 14.6135 32</gx:coord>
+          <gx:coord>121.0345 14.6135 32</gx:coord>
+          <gx:coord>121.0345 14.6135 32</gx:coord>
+          <gx:coord>121.034747 14.613651 32</gx:coord>
+          <gx:coord>121.035459 14.614085 33</gx:coord>
+          <gx:coord>121.03655 14.61475 34</gx:coord>
+          <gx:coord>121.037888 14.615566 34</gx:coord>
+          <gx:coord>121.039312 14.616434 36</gx:coord>
+          <gx:coord>121.04065 14.61725 37</gx:coord>
+          <gx:coord>121.041741 14.617915 37</gx:coord>
+          <gx:coord>121.042453 14.618349 38</gx:coord>
+          <gx:coord>121.0427 14.6185 38</gx:coord>
+          <gx:coord>121.0427 14.6185 38</gx:coord>
+          <gx:coord>121.0427 14.6185 38</gx:coord>
+          <gx:coord>121.0427 14.6185 38</gx:coord>
+          <gx:coord>121.042999 14.618621 38</gx:coord>
+          <gx:coord>121.043858 14.618968 38</gx:coord>
+          <gx:coord>121.045175 14.6195 39</gx:coord>
+          <gx:coord>121.04679 14.620153 40</gx:coord>
+          <gx:coord>121.04851 14.620847 40</gx:coord>
+          <gx:coord>121.050125 14.6215 41</gx:coord>
+          <gx:coord>121.051442 14.622032 42</gx:coord>
+          <gx:coord>121.052301 14.622379 42</gx:coord>
+          <gx:coord>121.0526 14.6225 42</gx:coord>
+          <gx:coord>121.0526 14.6225 42</gx:coord>
+          <gx:coord>121.0526 14.6225 42</gx:coord>
+          <gx:coord>121.0526 14.6225 42</gx:coord>
+          <gx:coord>121.052959 14.622669 42</gx:coord>
+          <gx:coord>121.053992 14.623155 43</gx:coord>
+          <gx:coord>121.055575 14.6239 44</gx:coord>
+          <gx:coord>121.057517 14.624814 44</gx:coord>
+          <gx:coord>121.059583 14.625786 46</gx:coord>
+          <gx:coord>121.061525 14.6267 47</gx:coord>
+          <gx:coord>121.063108 14.627445 47</gx:coord>
+          <gx:coord>121.064141 14.627931 48</gx:coord>
+          <gx:coord>121.0645 14.6281 48</gx:coord>
+          <gx:coord>121.0645 14.6281 48</gx:coord>
+          <gx:coord>121.0645 14.6281 48</gx:coord>
+          <gx:coord>121.0645 14.6281 48</gx:coord>
+          <gx:coord>121.064741 14.628187 48</gx:coord>
+          <gx:coord>121.065436 14.628439 49</gx:coord>
+          <gx:coord>121.0665 14.628825 50</gx:coord>
+          <gx:coord>121.067805 14.629298 50</gx:coord>
+          <gx:coord>121.069195 14.629802 52</gx:coord>
+          <gx:coord>121.0705 14.630275 53</gx:coord>
+          <gx:coord>121.071564 14.630661 53</gx:coord>
+          <gx:coord>121.072259 14.630913 54</gx:coord>
+          <gx:coord>121.0725 14.631 54</gx:coord>
+          <gx:coord>121.0725 14.631 54</gx:coord>
+          <gx:coord>121.0725 14.631 54</gx:coord>
+          <gx:coord>121.0725 14.631 54</gx:coord>
+          <gx:coord>121.072901 14.630729 53</gx:coord>
+          <gx:coord>121.074056 14.629947 52</gx:coord>
+          <gx:coord>121.075825 14.62875 49</gx:coord>
+          <gx:coord>121.077995 14.627281 46</gx:coord>
+          <gx:coord>121.080305 14.625719 43</gx:coord>
+          <gx:coord>121.082475 14.62425 40</gx:coord>
+          <gx:coord>121.084244 14.623053 37</gx:coord>
+          <gx:coord>121.085399 14.622271 36</gx:coord>
+          <gx:coord>121.0858 14.622 35</gx:coord>
+          <gx:coord>121.0858 14.622 35</gx:coord>
+          <gx:coord>121.0858 14.622 35</gx:coord>
+          <gx:coord>121.0858 14.622 35</gx:coord>
+          <gx:coord>121.086264 14.622045 35</gx:coord>
+          <gx:coord>121.087601 14.622175 35</gx:coord>
+          <gx:coord>121.08965 14.622375 34</gx:coord>
+          <gx:coord>121.092163 14.62262 34</gx:coord>
+          <gx:coord>121.094837 14.62288 33</gx:coord>
+          <gx:coord>121.09735 14.623125 33</gx:coord>
+          <gx:coord>121.099399 14.623325 32</gx:coord>
+          <gx:coord>121.100736 14.623455 32</gx:coord>
+          <gx:coord>121.1012 14.6235 32</gx:coord>
+          <gx:coord>121.1012 14.6235 32</gx:coord>
+          <gx:coord>121.1012 14.6235 32</gx:coord>
+          <gx:coord>121.1012 14.6235 32</gx:coord>
+          <gx:coord>121.101809 14.623545 33</gx:coord>
+          <gx:coord>121.103563 14.623675 37</gx:coord>
+          <gx:coord>121.10625 14.623875 42</gx:coord>
+          <gx:coord>121.109546 14.62412 49</gx:coord>
+          <gx:coord>121.113054 14.62438 55</gx:coord>
+          <gx:coord>121.11635 14.624625 62</gx:coord>
+          <gx:coord>121.119037 14.624825 67</gx:coord>
+          <gx:coord>121.120791 14.624955 71</gx:coord>
+          <gx:coord>121.1214 14.625 72</gx:coord>
+          <gx:coord>121.1214 14.625 72</gx:coord>
+          <gx:coord>121.1214 14.625 72</gx:coord>
+          <gx:coord>121.1214 14.625 72</gx:coord>
+        </gx:Track>
+      </Placemark>
+
+      <!-- Lead Train 002 - MRT-3 -->
+      <Placemark id="train-002-mrt3">
+        <name>TRAIN 002 - MRT-3 (North Ave ➔ Taft Ave)</name>
+        <styleUrl>#mrt3Corridor</styleUrl>
+        <gx:Track>
+          <when>2026-09-11T00:00:00.000Z</when>
+          <when>2026-09-11T00:00:10.000Z</when>
+          <when>2026-09-11T00:00:20.000Z</when>
+          <when>2026-09-11T00:00:30.000Z</when>
+          <when>2026-09-11T00:00:40.000Z</when>
+          <when>2026-09-11T00:00:50.000Z</when>
+          <when>2026-09-11T00:01:00.000Z</when>
+          <when>2026-09-11T00:01:10.000Z</when>
+          <when>2026-09-11T00:01:20.000Z</when>
+          <when>2026-09-11T00:01:30.000Z</when>
+          <when>2026-09-11T00:01:40.000Z</when>
+          <when>2026-09-11T00:01:50.000Z</when>
+          <when>2026-09-11T00:02:00.000Z</when>
+          <when>2026-09-11T00:02:10.000Z</when>
+          <when>2026-09-11T00:02:20.000Z</when>
+          <when>2026-09-11T00:02:30.000Z</when>
+          <when>2026-09-11T00:02:40.000Z</when>
+          <when>2026-09-11T00:02:50.000Z</when>
+          <when>2026-09-11T00:03:00.000Z</when>
+          <when>2026-09-11T00:03:10.000Z</when>
+          <when>2026-09-11T00:03:20.000Z</when>
+          <when>2026-09-11T00:03:30.000Z</when>
+          <when>2026-09-11T00:03:40.000Z</when>
+          <when>2026-09-11T00:03:50.000Z</when>
+          <when>2026-09-11T00:04:00.000Z</when>
+          <when>2026-09-11T00:04:10.000Z</when>
+          <when>2026-09-11T00:04:20.000Z</when>
+          <when>2026-09-11T00:04:30.000Z</when>
+          <when>2026-09-11T00:04:40.000Z</when>
+          <when>2026-09-11T00:04:50.000Z</when>
+          <when>2026-09-11T00:05:00.000Z</when>
+          <when>2026-09-11T00:05:10.000Z</when>
+          <when>2026-09-11T00:05:20.000Z</when>
+          <when>2026-09-11T00:05:30.000Z</when>
+          <when>2026-09-11T00:05:40.000Z</when>
+          <when>2026-09-11T00:05:50.000Z</when>
+          <when>2026-09-11T00:06:00.000Z</when>
+          <when>2026-09-11T00:06:10.000Z</when>
+          <when>2026-09-11T00:06:20.000Z</when>
+          <when>2026-09-11T00:06:30.000Z</when>
+          <when>2026-09-11T00:06:40.000Z</when>
+          <when>2026-09-11T00:06:50.000Z</when>
+          <when>2026-09-11T00:07:00.000Z</when>
+          <when>2026-09-11T00:07:10.000Z</when>
+          <when>2026-09-11T00:07:20.000Z</when>
+          <when>2026-09-11T00:07:30.000Z</when>
+          <when>2026-09-11T00:07:40.000Z</when>
+          <when>2026-09-11T00:07:50.000Z</when>
+          <when>2026-09-11T00:08:00.000Z</when>
+          <when>2026-09-11T00:08:10.000Z</when>
+          <when>2026-09-11T00:08:20.000Z</when>
+          <when>2026-09-11T00:08:30.000Z</when>
+          <when>2026-09-11T00:08:40.000Z</when>
+          <when>2026-09-11T00:08:50.000Z</when>
+          <when>2026-09-11T00:09:00.000Z</when>
+          <when>2026-09-11T00:09:10.000Z</when>
+          <when>2026-09-11T00:09:20.000Z</when>
+          <when>2026-09-11T00:09:30.000Z</when>
+          <when>2026-09-11T00:09:40.000Z</when>
+          <when>2026-09-11T00:09:50.000Z</when>
+          <when>2026-09-11T00:10:00.000Z</when>
+          <when>2026-09-11T00:10:10.000Z</when>
+          <when>2026-09-11T00:10:20.000Z</when>
+          <when>2026-09-11T00:10:30.000Z</when>
+          <when>2026-09-11T00:10:40.000Z</when>
+          <when>2026-09-11T00:10:50.000Z</when>
+          <when>2026-09-11T00:11:00.000Z</when>
+          <when>2026-09-11T00:11:10.000Z</when>
+          <when>2026-09-11T00:11:20.000Z</when>
+          <when>2026-09-11T00:11:30.000Z</when>
+          <when>2026-09-11T00:11:40.000Z</when>
+          <when>2026-09-11T00:11:50.000Z</when>
+          <when>2026-09-11T00:12:00.000Z</when>
+          <when>2026-09-11T00:12:10.000Z</when>
+          <when>2026-09-11T00:12:20.000Z</when>
+          <when>2026-09-11T00:12:30.000Z</when>
+          <when>2026-09-11T00:12:40.000Z</when>
+          <when>2026-09-11T00:12:50.000Z</when>
+          <when>2026-09-11T00:13:00.000Z</when>
+          <when>2026-09-11T00:13:10.000Z</when>
+          <when>2026-09-11T00:13:20.000Z</when>
+          <when>2026-09-11T00:13:30.000Z</when>
+          <when>2026-09-11T00:13:40.000Z</when>
+          <when>2026-09-11T00:13:50.000Z</when>
+          <when>2026-09-11T00:14:00.000Z</when>
+          <when>2026-09-11T00:14:10.000Z</when>
+          <when>2026-09-11T00:14:20.000Z</when>
+          <when>2026-09-11T00:14:30.000Z</when>
+          <when>2026-09-11T00:14:40.000Z</when>
+          <when>2026-09-11T00:14:50.000Z</when>
+          <when>2026-09-11T00:15:00.000Z</when>
+          <when>2026-09-11T00:15:10.000Z</when>
+          <when>2026-09-11T00:15:20.000Z</when>
+          <when>2026-09-11T00:15:30.000Z</when>
+          <when>2026-09-11T00:15:40.000Z</when>
+          <when>2026-09-11T00:15:50.000Z</when>
+          <when>2026-09-11T00:16:00.000Z</when>
+          <when>2026-09-11T00:16:10.000Z</when>
+          <when>2026-09-11T00:16:20.000Z</when>
+          <when>2026-09-11T00:16:30.000Z</when>
+          <when>2026-09-11T00:16:40.000Z</when>
+          <when>2026-09-11T00:16:50.000Z</when>
+          <when>2026-09-11T00:17:00.000Z</when>
+          <when>2026-09-11T00:17:10.000Z</when>
+          <when>2026-09-11T00:17:20.000Z</when>
+          <when>2026-09-11T00:17:30.000Z</when>
+          <when>2026-09-11T00:17:40.000Z</when>
+          <when>2026-09-11T00:17:50.000Z</when>
+          <when>2026-09-11T00:18:00.000Z</when>
+          <when>2026-09-11T00:18:10.000Z</when>
+          <when>2026-09-11T00:18:20.000Z</when>
+          <when>2026-09-11T00:18:30.000Z</when>
+          <when>2026-09-11T00:18:40.000Z</when>
+          <when>2026-09-11T00:18:50.000Z</when>
+          <when>2026-09-11T00:19:00.000Z</when>
+          <when>2026-09-11T00:19:10.000Z</when>
+          <when>2026-09-11T00:19:20.000Z</when>
+          <when>2026-09-11T00:19:30.000Z</when>
+          <when>2026-09-11T00:19:40.000Z</when>
+          <when>2026-09-11T00:19:50.000Z</when>
+          <when>2026-09-11T00:20:00.000Z</when>
+          <when>2026-09-11T00:20:10.000Z</when>
+          <when>2026-09-11T00:20:20.000Z</when>
+          <when>2026-09-11T00:20:30.000Z</when>
+          <when>2026-09-11T00:20:40.000Z</when>
+          <when>2026-09-11T00:20:50.000Z</when>
+          <when>2026-09-11T00:21:00.000Z</when>
+          <when>2026-09-11T00:21:10.000Z</when>
+          <when>2026-09-11T00:21:20.000Z</when>
+          <when>2026-09-11T00:21:30.000Z</when>
+          <when>2026-09-11T00:21:40.000Z</when>
+          <when>2026-09-11T00:21:50.000Z</when>
+          <when>2026-09-11T00:22:00.000Z</when>
+          <when>2026-09-11T00:22:10.000Z</when>
+          <when>2026-09-11T00:22:20.000Z</when>
+          <when>2026-09-11T00:22:30.000Z</when>
+          <when>2026-09-11T00:22:40.000Z</when>
+          <when>2026-09-11T00:22:50.000Z</when>
+          <when>2026-09-11T00:23:00.000Z</when>
+          <when>2026-09-11T00:23:10.000Z</when>
+          <when>2026-09-11T00:23:20.000Z</when>
+          <when>2026-09-11T00:23:30.000Z</when>
+          <when>2026-09-11T00:23:40.000Z</when>
+          <when>2026-09-11T00:23:50.000Z</when>
+          <when>2026-09-11T00:24:00.000Z</when>
+          <when>2026-09-11T00:24:10.000Z</when>
+          <when>2026-09-11T00:24:20.000Z</when>
+          <when>2026-09-11T00:24:30.000Z</when>
+          <gx:coord>121.0326 14.6521 35</gx:coord>
+          <gx:coord>121.0326 14.6521 35</gx:coord>
+          <gx:coord>121.0326 14.6521 35</gx:coord>
+          <gx:coord>121.0326 14.6521 35</gx:coord>
+          <gx:coord>121.032775 14.65182 35</gx:coord>
+          <gx:coord>121.033278 14.651012 35</gx:coord>
+          <gx:coord>121.03405 14.649775 36</gx:coord>
+          <gx:coord>121.034996 14.648257 36</gx:coord>
+          <gx:coord>121.036004 14.646643 37</gx:coord>
+          <gx:coord>121.03695 14.645125 37</gx:coord>
+          <gx:coord>121.037722 14.643888 38</gx:coord>
+          <gx:coord>121.038225 14.64308 38</gx:coord>
+          <gx:coord>121.0384 14.6428 38</gx:coord>
+          <gx:coord>121.0384 14.6428 38</gx:coord>
+          <gx:coord>121.0384 14.6428 38</gx:coord>
+          <gx:coord>121.0384 14.6428 38</gx:coord>
+          <gx:coord>121.038545 14.642553 38</gx:coord>
+          <gx:coord>121.038961 14.641841 38</gx:coord>
+          <gx:coord>121.0396 14.64075 39</gx:coord>
+          <gx:coord>121.040383 14.639412 39</gx:coord>
+          <gx:coord>121.041217 14.637988 39</gx:coord>
+          <gx:coord>121.042 14.63665 40</gx:coord>
+          <gx:coord>121.042639 14.635559 40</gx:coord>
+          <gx:coord>121.043055 14.634847 40</gx:coord>
+          <gx:coord>121.0432 14.6346 40</gx:coord>
+          <gx:coord>121.0432 14.6346 40</gx:coord>
+          <gx:coord>121.0432 14.6346 40</gx:coord>
+          <gx:coord>121.0432 14.6346 40</gx:coord>
+          <gx:coord>121.043483 14.634145 40</gx:coord>
+          <gx:coord>121.0443 14.632834 40</gx:coord>
+          <gx:coord>121.04555 14.630825 41</gx:coord>
+          <gx:coord>121.047084 14.628361 41</gx:coord>
+          <gx:coord>121.048716 14.625739 41</gx:coord>
+          <gx:coord>121.05025 14.623275 42</gx:coord>
+          <gx:coord>121.0515 14.621266 42</gx:coord>
+          <gx:coord>121.052317 14.619955 42</gx:coord>
+          <gx:coord>121.0526 14.6195 42</gx:coord>
+          <gx:coord>121.0526 14.6195 42</gx:coord>
+          <gx:coord>121.0526 14.6195 42</gx:coord>
+          <gx:coord>121.0526 14.6195 42</gx:coord>
+          <gx:coord>121.052709 14.619147 42</gx:coord>
+          <gx:coord>121.053021 14.618131 42</gx:coord>
+          <gx:coord>121.0535 14.616575 43</gx:coord>
+          <gx:coord>121.054087 14.614666 43</gx:coord>
+          <gx:coord>121.054713 14.612634 43</gx:coord>
+          <gx:coord>121.0553 14.610725 44</gx:coord>
+          <gx:coord>121.055779 14.609169 44</gx:coord>
+          <gx:coord>121.056091 14.608153 44</gx:coord>
+          <gx:coord>121.0562 14.6078 44</gx:coord>
+          <gx:coord>121.0562 14.6078 44</gx:coord>
+          <gx:coord>121.0562 14.6078 44</gx:coord>
+          <gx:coord>121.0562 14.6078 44</gx:coord>
+          <gx:coord>121.056263 14.607197 44</gx:coord>
+          <gx:coord>121.056446 14.60546 43</gx:coord>
+          <gx:coord>121.056725 14.6028 42</gx:coord>
+          <gx:coord>121.057068 14.599536 41</gx:coord>
+          <gx:coord>121.057432 14.596064 39</gx:coord>
+          <gx:coord>121.057775 14.5928 38</gx:coord>
+          <gx:coord>121.058054 14.59014 37</gx:coord>
+          <gx:coord>121.058237 14.588403 36</gx:coord>
+          <gx:coord>121.0583 14.5878 36</gx:coord>
+          <gx:coord>121.0583 14.5878 36</gx:coord>
+          <gx:coord>121.0583 14.5878 36</gx:coord>
+          <gx:coord>121.0583 14.5878 36</gx:coord>
+          <gx:coord>121.058158 14.587604 36</gx:coord>
+          <gx:coord>121.05775 14.58704 35</gx:coord>
+          <gx:coord>121.057125 14.586175 35</gx:coord>
+          <gx:coord>121.056358 14.585114 34</gx:coord>
+          <gx:coord>121.055542 14.583986 32</gx:coord>
+          <gx:coord>121.054775 14.582925 32</gx:coord>
+          <gx:coord>121.05415 14.58206 31</gx:coord>
+          <gx:coord>121.053742 14.581496 30</gx:coord>
+          <gx:coord>121.0536 14.5813 30</gx:coord>
+          <gx:coord>121.0536 14.5813 30</gx:coord>
+          <gx:coord>121.0536 14.5813 30</gx:coord>
+          <gx:coord>121.0536 14.5813 30</gx:coord>
+          <gx:coord>121.053395 14.581077 30</gx:coord>
+          <gx:coord>121.052805 14.580434 29</gx:coord>
+          <gx:coord>121.0519 14.57945 29</gx:coord>
+          <gx:coord>121.05079 14.578242 28</gx:coord>
+          <gx:coord>121.04961 14.576958 26</gx:coord>
+          <gx:coord>121.0485 14.57575 26</gx:coord>
+          <gx:coord>121.047595 14.574766 25</gx:coord>
+          <gx:coord>121.047005 14.574123 24</gx:coord>
+          <gx:coord>121.0468 14.5739 24</gx:coord>
+          <gx:coord>121.0468 14.5739 24</gx:coord>
+          <gx:coord>121.0468 14.5739 24</gx:coord>
+          <gx:coord>121.0468 14.5739 24</gx:coord>
+          <gx:coord>121.046616 14.573698 24</gx:coord>
+          <gx:coord>121.046086 14.573116 23</gx:coord>
+          <gx:coord>121.045275 14.572225 22</gx:coord>
+          <gx:coord>121.04428 14.571132 21</gx:coord>
+          <gx:coord>121.04322 14.569968 19</gx:coord>
+          <gx:coord>121.042225 14.568875 18</gx:coord>
+          <gx:coord>121.041414 14.567984 17</gx:coord>
+          <gx:coord>121.040884 14.567402 16</gx:coord>
+          <gx:coord>121.0407 14.5672 16</gx:coord>
+          <gx:coord>121.0407 14.5672 16</gx:coord>
+          <gx:coord>121.0407 14.5672 16</gx:coord>
+          <gx:coord>121.0407 14.5672 16</gx:coord>
+          <gx:coord>121.040489 14.566811 16</gx:coord>
+          <gx:coord>121.039881 14.565691 17</gx:coord>
+          <gx:coord>121.03895 14.563975 18</gx:coord>
+          <gx:coord>121.037808 14.56187 18</gx:coord>
+          <gx:coord>121.036592 14.55963 20</gx:coord>
+          <gx:coord>121.03545 14.557525 21</gx:coord>
+          <gx:coord>121.034519 14.555809 21</gx:coord>
+          <gx:coord>121.033911 14.554689 22</gx:coord>
+          <gx:coord>121.0337 14.5543 22</gx:coord>
+          <gx:coord>121.0337 14.5543 22</gx:coord>
+          <gx:coord>121.0337 14.5543 22</gx:coord>
+          <gx:coord>121.0337 14.5543 22</gx:coord>
+          <gx:coord>121.033528 14.554146 22</gx:coord>
+          <gx:coord>121.033033 14.553703 22</gx:coord>
+          <gx:coord>121.032275 14.553025 23</gx:coord>
+          <gx:coord>121.031345 14.552193 24</gx:coord>
+          <gx:coord>121.030355 14.551307 24</gx:coord>
+          <gx:coord>121.029425 14.550475 25</gx:coord>
+          <gx:coord>121.028667 14.549797 26</gx:coord>
+          <gx:coord>121.028172 14.549354 26</gx:coord>
+          <gx:coord>121.028 14.5492 26</gx:coord>
+          <gx:coord>121.028 14.5492 26</gx:coord>
+          <gx:coord>121.028 14.5492 26</gx:coord>
+          <gx:coord>121.028 14.5492 26</gx:coord>
+          <gx:coord>121.027753 14.548983 26</gx:coord>
+          <gx:coord>121.027041 14.548358 25</gx:coord>
+          <gx:coord>121.02595 14.5474 24</gx:coord>
+          <gx:coord>121.024612 14.546225 23</gx:coord>
+          <gx:coord>121.023188 14.544975 21</gx:coord>
+          <gx:coord>121.02185 14.5438 20</gx:coord>
+          <gx:coord>121.020759 14.542842 19</gx:coord>
+          <gx:coord>121.020047 14.542217 18</gx:coord>
+          <gx:coord>121.0198 14.542 18</gx:coord>
+          <gx:coord>121.0198 14.542 18</gx:coord>
+          <gx:coord>121.0198 14.542 18</gx:coord>
+          <gx:coord>121.0198 14.542 18</gx:coord>
+          <gx:coord>121.019221 14.54187 18</gx:coord>
+          <gx:coord>121.017554 14.541497 17</gx:coord>
+          <gx:coord>121.015 14.540925 17</gx:coord>
+          <gx:coord>121.011867 14.540223 16</gx:coord>
+          <gx:coord>121.008533 14.539477 14</gx:coord>
+          <gx:coord>121.0054 14.538775 14</gx:coord>
+          <gx:coord>121.002846 14.538203 13</gx:coord>
+          <gx:coord>121.001179 14.53783 12</gx:coord>
+          <gx:coord>121.0006 14.5377 12</gx:coord>
+          <gx:coord>121.0006 14.5377 12</gx:coord>
+          <gx:coord>121.0006 14.5377 12</gx:coord>
+          <gx:coord>121.0006 14.5377 12</gx:coord>
+        </gx:Track>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

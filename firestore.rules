@@ -1,0 +1,83 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 1. Global Safety Net: Default-deny all undefined paths
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper Primitives
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(authorUid) {
+      return isSignedIn() && request.auth.uid == authorUid;
+    }
+
+    // Entity validation for Map Project
+    function isValidMapProject(data) {
+      return data.id is string && data.id.size() <= 128 &&
+        data.name is string && data.name.size() > 0 && data.name.size() <= 128 &&
+        (!('shortCode' in data) || (data.shortCode is string && data.shortCode.size() <= 64)) &&
+        (!('description' in data) || (data.description is string && data.description.size() <= 2048)) &&
+        (!('group' in data) || (data.group is string && data.group.size() <= 64)) &&
+        (!('visibility' in data) || (data.visibility in ['private', 'public', 'group'])) &&
+        (!('mapStyle' in data) || (data.mapStyle is string && data.mapStyle.size() <= 64)) &&
+        data.author is string && data.author.size() <= 128 &&
+        (!('authorUid' in data) || (data.authorUid is string && data.authorUid.size() <= 128)) &&
+        (!('itemsCount' in data) || (data.itemsCount is number)) &&
+        data.createdAt is string && data.createdAt.size() <= 64 &&
+        (!('updatedAt' in data) || (data.updatedAt is string && data.updatedAt.size() <= 64));
+    }
+
+    // Entity validation for Map Spatial Item
+    function isValidMapItem(data) {
+      return data.id is string && data.id.size() <= 128 &&
+        data.mapId is string && data.mapId.size() <= 128 &&
+        data.name is string && data.name.size() > 0 && data.name.size() <= 128 &&
+        data.type in ['marker', 'polyline', 'polygon'] &&
+        (!('description' in data) || (data.description is string && data.description.size() <= 4096)) &&
+        (!('icon' in data) || (data.icon is string && data.icon.size() <= 64)) &&
+        (!('color' in data) || (data.color is string && data.color.size() <= 32)) &&
+        (!('fillColor' in data) || (data.fillColor is string && data.fillColor.size() <= 32)) &&
+        (!('fillOpacity' in data) || (data.fillOpacity is number)) &&
+        (!('imageUrl' in data) || (data.imageUrl is string && data.imageUrl.size() <= 65536)) &&
+        (!('author' in data) || (data.author is string && data.author.size() <= 128)) &&
+        (!('authorUid' in data) || (data.authorUid is string && data.authorUid.size() <= 128)) &&
+        (!('coordinates' in data) || (data.coordinates is string && data.coordinates.size() <= 32768)) &&
+        data.createdAt is string && data.createdAt.size() <= 64 &&
+        (!('updatedAt' in data) || (data.updatedAt is string && data.updatedAt.size() <= 64));
+    }
+
+    // Maps Collection Rules
+    match /maps/{mapId} {
+      allow get: if isValidId(mapId);
+      allow list: if true;
+      allow create: if isValidId(mapId) && isValidMapProject(incoming()) && incoming().id == mapId;
+      allow update: if isValidId(mapId) && isValidMapProject(incoming()) && incoming().id == mapId;
+      allow delete: if isValidId(mapId);
+
+      // Subcollection for Map Spatial Items
+      match /items/{itemId} {
+        allow get: if isValidId(mapId) && isValidId(itemId);
+        allow list: if isValidId(mapId);
+        allow create: if isValidId(mapId) && isValidId(itemId) && isValidMapItem(incoming()) && incoming().id == itemId && incoming().mapId == mapId;
+        allow update: if isValidId(mapId) && isValidId(itemId) && isValidMapItem(incoming()) && incoming().id == itemId && incoming().mapId == mapId;
+        allow delete: if isValidId(mapId) && isValidId(itemId);
+      }
+    }
+  }
+}

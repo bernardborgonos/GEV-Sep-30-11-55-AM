@@ -1,0 +1,6 @@
+{
+  "name": "God's Eye View",
+  "description": "A real-time intelligence console for planet Earth — photorealistic 3D globe, live aircraft, ships, satellites, earthquakes, CCTV, UNESCO indicators, dynamic URL intelligence layers, and voice control.",
+  "requestFramePermissions": ["microphone", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

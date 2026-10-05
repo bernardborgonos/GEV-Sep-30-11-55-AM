@@ -1,0 +1,3258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GodsEyeView Manila Transit Telemetry Engine" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Manila Transit Telemetry &amp; Space-Time Simulation</name>
+    <desc>Synchronized telemetry for LRT-1, LRT-2, and MRT-3 transit corridors with 24.5-minute space-time profile.</desc>
+    <time>2026-09-11T00:00:00Z</time>
+  </metadata>
+  <wpt lat="14.6575" lon="121.0189">
+    <ele>24</ele>
+    <name>Fernando Poe Jr.</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6571" lon="121.0041">
+    <ele>22</ele>
+    <name>Balintawak</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6543" lon="120.9836">
+    <ele>15</ele>
+    <name>Monumento</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6444" lon="120.9839">
+    <ele>14</ele>
+    <name>5th Avenue</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.636" lon="120.9825">
+    <ele>12</ele>
+    <name>R. Papa</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6305" lon="120.9814">
+    <ele>10</ele>
+    <name>Abad Santos</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6226" lon="120.983">
+    <ele>9</ele>
+    <name>Blumentritt</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6167" lon="120.9829">
+    <ele>8</ele>
+    <name>Tayuman</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.608" lon="120.9823">
+    <ele>8</ele>
+    <name>Bambang</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6053" lon="120.9818">
+    <ele>9</ele>
+    <name>Doroteo Jose</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5998" lon="120.9815">
+    <ele>7</ele>
+    <name>Carriedo</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5928" lon="120.9817">
+    <ele>8</ele>
+    <name>Central Terminal</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5826" lon="120.984">
+    <ele>7</ele>
+    <name>United Nations</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5765" lon="120.988">
+    <ele>8</ele>
+    <name>Pedro Gil</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5703" lon="120.9917">
+    <ele>9</ele>
+    <name>Quirino</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5634" lon="120.9946">
+    <ele>9</ele>
+    <name>Vito Cruz</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5541" lon="120.9972">
+    <ele>10</ele>
+    <name>Gil Puyat</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5478" lon="120.9988">
+    <ele>9</ele>
+    <name>Libertad</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5388" lon="121.0006">
+    <ele>11</ele>
+    <name>EDSA</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5342" lon="120.9984">
+    <ele>8</ele>
+    <name>Baclaran</name>
+    <desc>LRT-1 Station (Light Rail Transit Line 1 (Yellow Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6035" lon="120.9835">
+    <ele>12</ele>
+    <name>Recto</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6008" lon="120.9926">
+    <ele>14</ele>
+    <name>Legarda</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6016" lon="121.0049">
+    <ele>16</ele>
+    <name>Pureza</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6041" lon="121.0175">
+    <ele>18</ele>
+    <name>V. Mapa</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6056" lon="121.0263">
+    <ele>25</ele>
+    <name>J. Ruiz</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6135" lon="121.0345">
+    <ele>32</ele>
+    <name>Gilmore</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6185" lon="121.0427">
+    <ele>38</ele>
+    <name>Betty Go-Belmonte</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6225" lon="121.0526">
+    <ele>42</ele>
+    <name>Araneta-Cubao [L2]</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6281" lon="121.0645">
+    <ele>48</ele>
+    <name>Anonas</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.631" lon="121.0725">
+    <ele>54</ele>
+    <name>Katipunan</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.622" lon="121.0858">
+    <ele>35</ele>
+    <name>Santolan</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6235" lon="121.1012">
+    <ele>32</ele>
+    <name>Marikina-Pasig</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.625" lon="121.1214">
+    <ele>72</ele>
+    <name>Antipolo</name>
+    <desc>LRT-2 Station (Light Rail Transit Line 2 (Purple Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6521" lon="121.0326">
+    <ele>35</ele>
+    <name>North Avenue</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6428" lon="121.0384">
+    <ele>38</ele>
+    <name>Quezon Avenue</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6346" lon="121.0432">
+    <ele>40</ele>
+    <name>GMA-Kamuning</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6195" lon="121.0526">
+    <ele>42</ele>
+    <name>Araneta-Cubao</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.6078" lon="121.0562">
+    <ele>44</ele>
+    <name>Santolan-Annapolis</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5878" lon="121.0583">
+    <ele>36</ele>
+    <name>Ortigas</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5813" lon="121.0536">
+    <ele>30</ele>
+    <name>Shaw Boulevard</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5739" lon="121.0468">
+    <ele>24</ele>
+    <name>Boni</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5672" lon="121.0407">
+    <ele>16</ele>
+    <name>Guadalupe</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5543" lon="121.0337">
+    <ele>22</ele>
+    <name>Buendia</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5492" lon="121.028">
+    <ele>26</ele>
+    <name>Ayala</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.542" lon="121.0198">
+    <ele>18</ele>
+    <name>Magallanes</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <wpt lat="14.5377" lon="121.0006">
+    <ele>12</ele>
+    <name>Taft Avenue</name>
+    <desc>MRT-3 Station (Metro Rail Transit Line 3 (Cyan Corridor))</desc>
+    <type>Transit Station</type>
+  </wpt>
+  <trk>
+    <name>TRAIN 001 - LRT-2 (Recto ➔ Antipolo)</name>
+    <desc>Eastward 24.5-minute simulated transit with 30s-dwell / 90s-transit rhythm.</desc>
+    <type>Rail Transit</type>
+    <trkseg>
+      <trkpt lat="14.6035" lon="120.9835">
+        <ele>12</ele>
+        <time>2026-09-11T00:00:00.000Z</time>
+        <speed>0.00</speed>
+        <course>107</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Recto</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6035" lon="120.9835">
+        <ele>12</ele>
+        <time>2026-09-11T00:00:10.000Z</time>
+        <speed>0.00</speed>
+        <course>107</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Recto</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6035" lon="120.9835">
+        <ele>12</ele>
+        <time>2026-09-11T00:00:20.000Z</time>
+        <speed>0.00</speed>
+        <course>107</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Recto</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6035" lon="120.9835">
+        <ele>12</ele>
+        <time>2026-09-11T00:00:30.000Z</time>
+        <speed>0.00</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.603419" lon="120.983774">
+        <ele>12</ele>
+        <time>2026-09-11T00:00:40.000Z</time>
+        <speed>4.72</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.603184" lon="120.984564">
+        <ele>12</ele>
+        <time>2026-09-11T00:00:50.000Z</time>
+        <speed>8.89</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.602825" lon="120.985775">
+        <ele>13</ele>
+        <time>2026-09-11T00:01:00.000Z</time>
+        <speed>11.94</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.602384" lon="120.98726">
+        <ele>13</ele>
+        <time>2026-09-11T00:01:10.000Z</time>
+        <speed>13.61</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601916" lon="120.98884">
+        <ele>13</ele>
+        <time>2026-09-11T00:01:20.000Z</time>
+        <speed>13.61</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601475" lon="120.990325">
+        <ele>14</ele>
+        <time>2026-09-11T00:01:30.000Z</time>
+        <speed>11.94</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601116" lon="120.991536">
+        <ele>14</ele>
+        <time>2026-09-11T00:01:40.000Z</time>
+        <speed>8.89</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.600881" lon="120.992326">
+        <ele>14</ele>
+        <time>2026-09-11T00:01:50.000Z</time>
+        <speed>4.72</speed>
+        <course>107</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Recto ➔ Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6008" lon="120.9926">
+        <ele>14</ele>
+        <time>2026-09-11T00:02:00.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6008" lon="120.9926">
+        <ele>14</ele>
+        <time>2026-09-11T00:02:10.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6008" lon="120.9926">
+        <ele>14</ele>
+        <time>2026-09-11T00:02:20.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Legarda</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6008" lon="120.9926">
+        <ele>14</ele>
+        <time>2026-09-11T00:02:30.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.600824" lon="120.992971">
+        <ele>14</ele>
+        <time>2026-09-11T00:02:40.000Z</time>
+        <speed>4.72</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.600894" lon="120.994039">
+        <ele>14</ele>
+        <time>2026-09-11T00:02:50.000Z</time>
+        <speed>8.89</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601" lon="120.995675">
+        <ele>15</ele>
+        <time>2026-09-11T00:03:00.000Z</time>
+        <speed>11.94</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601131" lon="120.997682">
+        <ele>15</ele>
+        <time>2026-09-11T00:03:10.000Z</time>
+        <speed>13.61</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601269" lon="120.999818">
+        <ele>15</ele>
+        <time>2026-09-11T00:03:20.000Z</time>
+        <speed>13.61</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6014" lon="121.001825">
+        <ele>16</ele>
+        <time>2026-09-11T00:03:30.000Z</time>
+        <speed>11.94</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601506" lon="121.003461">
+        <ele>16</ele>
+        <time>2026-09-11T00:03:40.000Z</time>
+        <speed>8.89</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601576" lon="121.004529">
+        <ele>16</ele>
+        <time>2026-09-11T00:03:50.000Z</time>
+        <speed>4.72</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Legarda ➔ Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6016" lon="121.0049">
+        <ele>16</ele>
+        <time>2026-09-11T00:04:00.000Z</time>
+        <speed>0.00</speed>
+        <course>78</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6016" lon="121.0049">
+        <ele>16</ele>
+        <time>2026-09-11T00:04:10.000Z</time>
+        <speed>0.00</speed>
+        <course>78</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6016" lon="121.0049">
+        <ele>16</ele>
+        <time>2026-09-11T00:04:20.000Z</time>
+        <speed>0.00</speed>
+        <course>78</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Pureza</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6016" lon="121.0049">
+        <ele>16</ele>
+        <time>2026-09-11T00:04:30.000Z</time>
+        <speed>0.00</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601675" lon="121.00528">
+        <ele>16</ele>
+        <time>2026-09-11T00:04:40.000Z</time>
+        <speed>4.72</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.601892" lon="121.006374">
+        <ele>16</ele>
+        <time>2026-09-11T00:04:50.000Z</time>
+        <speed>8.89</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.602225" lon="121.00805">
+        <ele>17</ele>
+        <time>2026-09-11T00:05:00.000Z</time>
+        <speed>11.94</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.602633" lon="121.010106">
+        <ele>17</ele>
+        <time>2026-09-11T00:05:10.000Z</time>
+        <speed>13.61</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.603067" lon="121.012294">
+        <ele>17</ele>
+        <time>2026-09-11T00:05:20.000Z</time>
+        <speed>13.61</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.603475" lon="121.01435">
+        <ele>18</ele>
+        <time>2026-09-11T00:05:30.000Z</time>
+        <speed>11.94</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.603808" lon="121.016026">
+        <ele>18</ele>
+        <time>2026-09-11T00:05:40.000Z</time>
+        <speed>8.89</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.604025" lon="121.01712">
+        <ele>18</ele>
+        <time>2026-09-11T00:05:50.000Z</time>
+        <speed>4.72</speed>
+        <course>78</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Pureza ➔ V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6041" lon="121.0175">
+        <ele>18</ele>
+        <time>2026-09-11T00:06:00.000Z</time>
+        <speed>0.00</speed>
+        <course>80</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6041" lon="121.0175">
+        <ele>18</ele>
+        <time>2026-09-11T00:06:10.000Z</time>
+        <speed>0.00</speed>
+        <course>80</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6041" lon="121.0175">
+        <ele>18</ele>
+        <time>2026-09-11T00:06:20.000Z</time>
+        <speed>0.00</speed>
+        <course>80</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>V. Mapa</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6041" lon="121.0175">
+        <ele>18</ele>
+        <time>2026-09-11T00:06:30.000Z</time>
+        <speed>0.00</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.604145" lon="121.017765">
+        <ele>18</ele>
+        <time>2026-09-11T00:06:40.000Z</time>
+        <speed>4.72</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.604275" lon="121.018529">
+        <ele>19</ele>
+        <time>2026-09-11T00:06:50.000Z</time>
+        <speed>8.89</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.604475" lon="121.0197">
+        <ele>20</ele>
+        <time>2026-09-11T00:07:00.000Z</time>
+        <speed>11.94</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.60472" lon="121.021136">
+        <ele>21</ele>
+        <time>2026-09-11T00:07:10.000Z</time>
+        <speed>13.61</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.60498" lon="121.022664">
+        <ele>22</ele>
+        <time>2026-09-11T00:07:20.000Z</time>
+        <speed>13.61</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.605225" lon="121.0241">
+        <ele>23</ele>
+        <time>2026-09-11T00:07:30.000Z</time>
+        <speed>11.94</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.605425" lon="121.025271">
+        <ele>24</ele>
+        <time>2026-09-11T00:07:40.000Z</time>
+        <speed>8.89</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.605555" lon="121.026035">
+        <ele>25</ele>
+        <time>2026-09-11T00:07:50.000Z</time>
+        <speed>4.72</speed>
+        <course>80</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>V. Mapa ➔ J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6056" lon="121.0263">
+        <ele>25</ele>
+        <time>2026-09-11T00:08:00.000Z</time>
+        <speed>0.00</speed>
+        <course>45</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6056" lon="121.0263">
+        <ele>25</ele>
+        <time>2026-09-11T00:08:10.000Z</time>
+        <speed>0.00</speed>
+        <course>45</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6056" lon="121.0263">
+        <ele>25</ele>
+        <time>2026-09-11T00:08:20.000Z</time>
+        <speed>0.00</speed>
+        <course>45</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>J. Ruiz</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6056" lon="121.0263">
+        <ele>25</ele>
+        <time>2026-09-11T00:08:30.000Z</time>
+        <speed>0.00</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.605838" lon="121.026547">
+        <ele>25</ele>
+        <time>2026-09-11T00:08:40.000Z</time>
+        <speed>4.72</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.606524" lon="121.027259">
+        <ele>26</ele>
+        <time>2026-09-11T00:08:50.000Z</time>
+        <speed>8.89</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.607575" lon="121.02835">
+        <ele>27</ele>
+        <time>2026-09-11T00:09:00.000Z</time>
+        <speed>11.94</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.608864" lon="121.029688">
+        <ele>28</ele>
+        <time>2026-09-11T00:09:10.000Z</time>
+        <speed>13.61</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.610236" lon="121.031112">
+        <ele>29</ele>
+        <time>2026-09-11T00:09:20.000Z</time>
+        <speed>13.61</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.611525" lon="121.03245">
+        <ele>30</ele>
+        <time>2026-09-11T00:09:30.000Z</time>
+        <speed>11.94</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.612576" lon="121.033541">
+        <ele>31</ele>
+        <time>2026-09-11T00:09:40.000Z</time>
+        <speed>8.89</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.613262" lon="121.034253">
+        <ele>32</ele>
+        <time>2026-09-11T00:09:50.000Z</time>
+        <speed>4.72</speed>
+        <course>45</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>J. Ruiz ➔ Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6135" lon="121.0345">
+        <ele>32</ele>
+        <time>2026-09-11T00:10:00.000Z</time>
+        <speed>0.00</speed>
+        <course>58</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6135" lon="121.0345">
+        <ele>32</ele>
+        <time>2026-09-11T00:10:10.000Z</time>
+        <speed>0.00</speed>
+        <course>58</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6135" lon="121.0345">
+        <ele>32</ele>
+        <time>2026-09-11T00:10:20.000Z</time>
+        <speed>0.00</speed>
+        <course>58</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Gilmore</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6135" lon="121.0345">
+        <ele>32</ele>
+        <time>2026-09-11T00:10:30.000Z</time>
+        <speed>0.00</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.613651" lon="121.034747">
+        <ele>32</ele>
+        <time>2026-09-11T00:10:40.000Z</time>
+        <speed>4.72</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.614085" lon="121.035459">
+        <ele>33</ele>
+        <time>2026-09-11T00:10:50.000Z</time>
+        <speed>8.89</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.61475" lon="121.03655">
+        <ele>34</ele>
+        <time>2026-09-11T00:11:00.000Z</time>
+        <speed>11.94</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.615566" lon="121.037888">
+        <ele>34</ele>
+        <time>2026-09-11T00:11:10.000Z</time>
+        <speed>13.61</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.616434" lon="121.039312">
+        <ele>36</ele>
+        <time>2026-09-11T00:11:20.000Z</time>
+        <speed>13.61</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.61725" lon="121.04065">
+        <ele>37</ele>
+        <time>2026-09-11T00:11:30.000Z</time>
+        <speed>11.94</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.617915" lon="121.041741">
+        <ele>37</ele>
+        <time>2026-09-11T00:11:40.000Z</time>
+        <speed>8.89</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.618349" lon="121.042453">
+        <ele>38</ele>
+        <time>2026-09-11T00:11:50.000Z</time>
+        <speed>4.72</speed>
+        <course>58</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Gilmore ➔ Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6185" lon="121.0427">
+        <ele>38</ele>
+        <time>2026-09-11T00:12:00.000Z</time>
+        <speed>0.00</speed>
+        <course>67</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6185" lon="121.0427">
+        <ele>38</ele>
+        <time>2026-09-11T00:12:10.000Z</time>
+        <speed>0.00</speed>
+        <course>67</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6185" lon="121.0427">
+        <ele>38</ele>
+        <time>2026-09-11T00:12:20.000Z</time>
+        <speed>0.00</speed>
+        <course>67</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Betty Go-Belmonte</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6185" lon="121.0427">
+        <ele>38</ele>
+        <time>2026-09-11T00:12:30.000Z</time>
+        <speed>0.00</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.618621" lon="121.042999">
+        <ele>38</ele>
+        <time>2026-09-11T00:12:40.000Z</time>
+        <speed>4.72</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.618968" lon="121.043858">
+        <ele>38</ele>
+        <time>2026-09-11T00:12:50.000Z</time>
+        <speed>8.89</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6195" lon="121.045175">
+        <ele>39</ele>
+        <time>2026-09-11T00:13:00.000Z</time>
+        <speed>11.94</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.620153" lon="121.04679">
+        <ele>40</ele>
+        <time>2026-09-11T00:13:10.000Z</time>
+        <speed>13.61</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.620847" lon="121.04851">
+        <ele>40</ele>
+        <time>2026-09-11T00:13:20.000Z</time>
+        <speed>13.61</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6215" lon="121.050125">
+        <ele>41</ele>
+        <time>2026-09-11T00:13:30.000Z</time>
+        <speed>11.94</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622032" lon="121.051442">
+        <ele>42</ele>
+        <time>2026-09-11T00:13:40.000Z</time>
+        <speed>8.89</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622379" lon="121.052301">
+        <ele>42</ele>
+        <time>2026-09-11T00:13:50.000Z</time>
+        <speed>4.72</speed>
+        <course>67</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Betty Go-Belmonte ➔ Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6225" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:14:00.000Z</time>
+        <speed>0.00</speed>
+        <course>64</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6225" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:14:10.000Z</time>
+        <speed>0.00</speed>
+        <course>64</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6225" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:14:20.000Z</time>
+        <speed>0.00</speed>
+        <course>64</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Araneta-Cubao [L2]</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6225" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:14:30.000Z</time>
+        <speed>0.00</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622669" lon="121.052959">
+        <ele>42</ele>
+        <time>2026-09-11T00:14:40.000Z</time>
+        <speed>4.72</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623155" lon="121.053992">
+        <ele>43</ele>
+        <time>2026-09-11T00:14:50.000Z</time>
+        <speed>8.89</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6239" lon="121.055575">
+        <ele>44</ele>
+        <time>2026-09-11T00:15:00.000Z</time>
+        <speed>11.94</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.624814" lon="121.057517">
+        <ele>44</ele>
+        <time>2026-09-11T00:15:10.000Z</time>
+        <speed>13.61</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625786" lon="121.059583">
+        <ele>46</ele>
+        <time>2026-09-11T00:15:20.000Z</time>
+        <speed>13.61</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6267" lon="121.061525">
+        <ele>47</ele>
+        <time>2026-09-11T00:15:30.000Z</time>
+        <speed>11.94</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.627445" lon="121.063108">
+        <ele>47</ele>
+        <time>2026-09-11T00:15:40.000Z</time>
+        <speed>8.89</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.627931" lon="121.064141">
+        <ele>48</ele>
+        <time>2026-09-11T00:15:50.000Z</time>
+        <speed>4.72</speed>
+        <course>64</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao [L2] ➔ Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6281" lon="121.0645">
+        <ele>48</ele>
+        <time>2026-09-11T00:16:00.000Z</time>
+        <speed>0.00</speed>
+        <course>69</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6281" lon="121.0645">
+        <ele>48</ele>
+        <time>2026-09-11T00:16:10.000Z</time>
+        <speed>0.00</speed>
+        <course>69</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6281" lon="121.0645">
+        <ele>48</ele>
+        <time>2026-09-11T00:16:20.000Z</time>
+        <speed>0.00</speed>
+        <course>69</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Anonas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6281" lon="121.0645">
+        <ele>48</ele>
+        <time>2026-09-11T00:16:30.000Z</time>
+        <speed>0.00</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.628187" lon="121.064741">
+        <ele>48</ele>
+        <time>2026-09-11T00:16:40.000Z</time>
+        <speed>4.72</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.628439" lon="121.065436">
+        <ele>49</ele>
+        <time>2026-09-11T00:16:50.000Z</time>
+        <speed>8.89</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.628825" lon="121.0665">
+        <ele>50</ele>
+        <time>2026-09-11T00:17:00.000Z</time>
+        <speed>11.94</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.629298" lon="121.067805">
+        <ele>50</ele>
+        <time>2026-09-11T00:17:10.000Z</time>
+        <speed>13.61</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.629802" lon="121.069195">
+        <ele>52</ele>
+        <time>2026-09-11T00:17:20.000Z</time>
+        <speed>13.61</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.630275" lon="121.0705">
+        <ele>53</ele>
+        <time>2026-09-11T00:17:30.000Z</time>
+        <speed>11.94</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.630661" lon="121.071564">
+        <ele>53</ele>
+        <time>2026-09-11T00:17:40.000Z</time>
+        <speed>8.89</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.630913" lon="121.072259">
+        <ele>54</ele>
+        <time>2026-09-11T00:17:50.000Z</time>
+        <speed>4.72</speed>
+        <course>69</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Anonas ➔ Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.631" lon="121.0725">
+        <ele>54</ele>
+        <time>2026-09-11T00:18:00.000Z</time>
+        <speed>0.00</speed>
+        <course>125</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.631" lon="121.0725">
+        <ele>54</ele>
+        <time>2026-09-11T00:18:10.000Z</time>
+        <speed>0.00</speed>
+        <course>125</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.631" lon="121.0725">
+        <ele>54</ele>
+        <time>2026-09-11T00:18:20.000Z</time>
+        <speed>0.00</speed>
+        <course>125</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Katipunan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.631" lon="121.0725">
+        <ele>54</ele>
+        <time>2026-09-11T00:18:30.000Z</time>
+        <speed>0.00</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.630729" lon="121.072901">
+        <ele>53</ele>
+        <time>2026-09-11T00:18:40.000Z</time>
+        <speed>4.72</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.629947" lon="121.074056">
+        <ele>52</ele>
+        <time>2026-09-11T00:18:50.000Z</time>
+        <speed>8.89</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.62875" lon="121.075825">
+        <ele>49</ele>
+        <time>2026-09-11T00:19:00.000Z</time>
+        <speed>11.94</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.627281" lon="121.077995">
+        <ele>46</ele>
+        <time>2026-09-11T00:19:10.000Z</time>
+        <speed>13.61</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625719" lon="121.080305">
+        <ele>43</ele>
+        <time>2026-09-11T00:19:20.000Z</time>
+        <speed>13.61</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.62425" lon="121.082475">
+        <ele>40</ele>
+        <time>2026-09-11T00:19:30.000Z</time>
+        <speed>11.94</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623053" lon="121.084244">
+        <ele>37</ele>
+        <time>2026-09-11T00:19:40.000Z</time>
+        <speed>8.89</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622271" lon="121.085399">
+        <ele>36</ele>
+        <time>2026-09-11T00:19:50.000Z</time>
+        <speed>4.72</speed>
+        <course>125</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Katipunan ➔ Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622" lon="121.0858">
+        <ele>35</ele>
+        <time>2026-09-11T00:20:00.000Z</time>
+        <speed>0.00</speed>
+        <course>84</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622" lon="121.0858">
+        <ele>35</ele>
+        <time>2026-09-11T00:20:10.000Z</time>
+        <speed>0.00</speed>
+        <course>84</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622" lon="121.0858">
+        <ele>35</ele>
+        <time>2026-09-11T00:20:20.000Z</time>
+        <speed>0.00</speed>
+        <course>84</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Santolan</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622" lon="121.0858">
+        <ele>35</ele>
+        <time>2026-09-11T00:20:30.000Z</time>
+        <speed>0.00</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622045" lon="121.086264">
+        <ele>35</ele>
+        <time>2026-09-11T00:20:40.000Z</time>
+        <speed>4.72</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622175" lon="121.087601">
+        <ele>35</ele>
+        <time>2026-09-11T00:20:50.000Z</time>
+        <speed>8.89</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.622375" lon="121.08965">
+        <ele>34</ele>
+        <time>2026-09-11T00:21:00.000Z</time>
+        <speed>11.94</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.62262" lon="121.092163">
+        <ele>34</ele>
+        <time>2026-09-11T00:21:10.000Z</time>
+        <speed>13.61</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.62288" lon="121.094837">
+        <ele>33</ele>
+        <time>2026-09-11T00:21:20.000Z</time>
+        <speed>13.61</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623125" lon="121.09735">
+        <ele>33</ele>
+        <time>2026-09-11T00:21:30.000Z</time>
+        <speed>11.94</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623325" lon="121.099399">
+        <ele>32</ele>
+        <time>2026-09-11T00:21:40.000Z</time>
+        <speed>8.89</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623455" lon="121.100736">
+        <ele>32</ele>
+        <time>2026-09-11T00:21:50.000Z</time>
+        <speed>4.72</speed>
+        <course>84</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan ➔ Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6235" lon="121.1012">
+        <ele>32</ele>
+        <time>2026-09-11T00:22:00.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6235" lon="121.1012">
+        <ele>32</ele>
+        <time>2026-09-11T00:22:10.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6235" lon="121.1012">
+        <ele>32</ele>
+        <time>2026-09-11T00:22:20.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6235" lon="121.1012">
+        <ele>32</ele>
+        <time>2026-09-11T00:22:30.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623545" lon="121.101809">
+        <ele>33</ele>
+        <time>2026-09-11T00:22:40.000Z</time>
+        <speed>4.72</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623675" lon="121.103563">
+        <ele>37</ele>
+        <time>2026-09-11T00:22:50.000Z</time>
+        <speed>8.89</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623875" lon="121.10625">
+        <ele>42</ele>
+        <time>2026-09-11T00:23:00.000Z</time>
+        <speed>11.94</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.62412" lon="121.109546">
+        <ele>49</ele>
+        <time>2026-09-11T00:23:10.000Z</time>
+        <speed>13.61</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.62438" lon="121.113054">
+        <ele>55</ele>
+        <time>2026-09-11T00:23:20.000Z</time>
+        <speed>13.61</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.624625" lon="121.11635">
+        <ele>62</ele>
+        <time>2026-09-11T00:23:30.000Z</time>
+        <speed>11.94</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.624825" lon="121.119037">
+        <ele>67</ele>
+        <time>2026-09-11T00:23:40.000Z</time>
+        <speed>8.89</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.624955" lon="121.120791">
+        <ele>71</ele>
+        <time>2026-09-11T00:23:50.000Z</time>
+        <speed>4.72</speed>
+        <course>86</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Marikina-Pasig ➔ Antipolo</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625" lon="121.1214">
+        <ele>72</ele>
+        <time>2026-09-11T00:24:00.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625" lon="121.1214">
+        <ele>72</ele>
+        <time>2026-09-11T00:24:10.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625" lon="121.1214">
+        <ele>72</ele>
+        <time>2026-09-11T00:24:20.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625" lon="121.1214">
+        <ele>72</ele>
+        <time>2026-09-11T00:24:30.000Z</time>
+        <speed>0.00</speed>
+        <course>86</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Marikina-Pasig</currentStation>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <name>TRAIN 002 - MRT-3 (North Avenue ➔ Taft Avenue)</name>
+    <desc>Southward EDSA corridor 24.5-minute simulated descent with 30s-dwell / 90s-transit rhythm.</desc>
+    <type>Rail Transit</type>
+    <trkseg>
+      <trkpt lat="14.6521" lon="121.0326">
+        <ele>35</ele>
+        <time>2026-09-11T00:00:00.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>North Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6521" lon="121.0326">
+        <ele>35</ele>
+        <time>2026-09-11T00:00:10.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>North Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6521" lon="121.0326">
+        <ele>35</ele>
+        <time>2026-09-11T00:00:20.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>North Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6521" lon="121.0326">
+        <ele>35</ele>
+        <time>2026-09-11T00:00:30.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.65182" lon="121.032775">
+        <ele>35</ele>
+        <time>2026-09-11T00:00:40.000Z</time>
+        <speed>4.72</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.651012" lon="121.033278">
+        <ele>35</ele>
+        <time>2026-09-11T00:00:50.000Z</time>
+        <speed>8.89</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.649775" lon="121.03405">
+        <ele>36</ele>
+        <time>2026-09-11T00:01:00.000Z</time>
+        <speed>11.94</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.648257" lon="121.034996">
+        <ele>36</ele>
+        <time>2026-09-11T00:01:10.000Z</time>
+        <speed>13.61</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.646643" lon="121.036004">
+        <ele>37</ele>
+        <time>2026-09-11T00:01:20.000Z</time>
+        <speed>13.61</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.645125" lon="121.03695">
+        <ele>37</ele>
+        <time>2026-09-11T00:01:30.000Z</time>
+        <speed>11.94</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.643888" lon="121.037722">
+        <ele>38</ele>
+        <time>2026-09-11T00:01:40.000Z</time>
+        <speed>8.89</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.64308" lon="121.038225">
+        <ele>38</ele>
+        <time>2026-09-11T00:01:50.000Z</time>
+        <speed>4.72</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>North Avenue ➔ Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6428" lon="121.0384">
+        <ele>38</ele>
+        <time>2026-09-11T00:02:00.000Z</time>
+        <speed>0.00</speed>
+        <course>150</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6428" lon="121.0384">
+        <ele>38</ele>
+        <time>2026-09-11T00:02:10.000Z</time>
+        <speed>0.00</speed>
+        <course>150</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6428" lon="121.0384">
+        <ele>38</ele>
+        <time>2026-09-11T00:02:20.000Z</time>
+        <speed>0.00</speed>
+        <course>150</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Quezon Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6428" lon="121.0384">
+        <ele>38</ele>
+        <time>2026-09-11T00:02:30.000Z</time>
+        <speed>0.00</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.642553" lon="121.038545">
+        <ele>38</ele>
+        <time>2026-09-11T00:02:40.000Z</time>
+        <speed>4.72</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.641841" lon="121.038961">
+        <ele>38</ele>
+        <time>2026-09-11T00:02:50.000Z</time>
+        <speed>8.89</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.64075" lon="121.0396">
+        <ele>39</ele>
+        <time>2026-09-11T00:03:00.000Z</time>
+        <speed>11.94</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.639412" lon="121.040383">
+        <ele>39</ele>
+        <time>2026-09-11T00:03:10.000Z</time>
+        <speed>13.61</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.637988" lon="121.041217">
+        <ele>39</ele>
+        <time>2026-09-11T00:03:20.000Z</time>
+        <speed>13.61</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.63665" lon="121.042">
+        <ele>40</ele>
+        <time>2026-09-11T00:03:30.000Z</time>
+        <speed>11.94</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.635559" lon="121.042639">
+        <ele>40</ele>
+        <time>2026-09-11T00:03:40.000Z</time>
+        <speed>8.89</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.634847" lon="121.043055">
+        <ele>40</ele>
+        <time>2026-09-11T00:03:50.000Z</time>
+        <speed>4.72</speed>
+        <course>150</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Quezon Avenue ➔ GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6346" lon="121.0432">
+        <ele>40</ele>
+        <time>2026-09-11T00:04:00.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6346" lon="121.0432">
+        <ele>40</ele>
+        <time>2026-09-11T00:04:10.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6346" lon="121.0432">
+        <ele>40</ele>
+        <time>2026-09-11T00:04:20.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>GMA-Kamuning</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6346" lon="121.0432">
+        <ele>40</ele>
+        <time>2026-09-11T00:04:30.000Z</time>
+        <speed>0.00</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.634145" lon="121.043483">
+        <ele>40</ele>
+        <time>2026-09-11T00:04:40.000Z</time>
+        <speed>4.72</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.632834" lon="121.0443">
+        <ele>40</ele>
+        <time>2026-09-11T00:04:50.000Z</time>
+        <speed>8.89</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.630825" lon="121.04555">
+        <ele>41</ele>
+        <time>2026-09-11T00:05:00.000Z</time>
+        <speed>11.94</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.628361" lon="121.047084">
+        <ele>41</ele>
+        <time>2026-09-11T00:05:10.000Z</time>
+        <speed>13.61</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.625739" lon="121.048716">
+        <ele>41</ele>
+        <time>2026-09-11T00:05:20.000Z</time>
+        <speed>13.61</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.623275" lon="121.05025">
+        <ele>42</ele>
+        <time>2026-09-11T00:05:30.000Z</time>
+        <speed>11.94</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.621266" lon="121.0515">
+        <ele>42</ele>
+        <time>2026-09-11T00:05:40.000Z</time>
+        <speed>8.89</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.619955" lon="121.052317">
+        <ele>42</ele>
+        <time>2026-09-11T00:05:50.000Z</time>
+        <speed>4.72</speed>
+        <course>149</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>GMA-Kamuning ➔ Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6195" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:06:00.000Z</time>
+        <speed>0.00</speed>
+        <course>163</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6195" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:06:10.000Z</time>
+        <speed>0.00</speed>
+        <course>163</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6195" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:06:20.000Z</time>
+        <speed>0.00</speed>
+        <course>163</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Araneta-Cubao</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6195" lon="121.0526">
+        <ele>42</ele>
+        <time>2026-09-11T00:06:30.000Z</time>
+        <speed>0.00</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.619147" lon="121.052709">
+        <ele>42</ele>
+        <time>2026-09-11T00:06:40.000Z</time>
+        <speed>4.72</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.618131" lon="121.053021">
+        <ele>42</ele>
+        <time>2026-09-11T00:06:50.000Z</time>
+        <speed>8.89</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.616575" lon="121.0535">
+        <ele>43</ele>
+        <time>2026-09-11T00:07:00.000Z</time>
+        <speed>11.94</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.614666" lon="121.054087">
+        <ele>43</ele>
+        <time>2026-09-11T00:07:10.000Z</time>
+        <speed>13.61</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.612634" lon="121.054713">
+        <ele>43</ele>
+        <time>2026-09-11T00:07:20.000Z</time>
+        <speed>13.61</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.610725" lon="121.0553">
+        <ele>44</ele>
+        <time>2026-09-11T00:07:30.000Z</time>
+        <speed>11.94</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.609169" lon="121.055779">
+        <ele>44</ele>
+        <time>2026-09-11T00:07:40.000Z</time>
+        <speed>8.89</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.608153" lon="121.056091">
+        <ele>44</ele>
+        <time>2026-09-11T00:07:50.000Z</time>
+        <speed>4.72</speed>
+        <course>163</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Araneta-Cubao ➔ Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6078" lon="121.0562">
+        <ele>44</ele>
+        <time>2026-09-11T00:08:00.000Z</time>
+        <speed>0.00</speed>
+        <course>174</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6078" lon="121.0562">
+        <ele>44</ele>
+        <time>2026-09-11T00:08:10.000Z</time>
+        <speed>0.00</speed>
+        <course>174</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6078" lon="121.0562">
+        <ele>44</ele>
+        <time>2026-09-11T00:08:20.000Z</time>
+        <speed>0.00</speed>
+        <course>174</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Santolan-Annapolis</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6078" lon="121.0562">
+        <ele>44</ele>
+        <time>2026-09-11T00:08:30.000Z</time>
+        <speed>0.00</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.607197" lon="121.056263">
+        <ele>44</ele>
+        <time>2026-09-11T00:08:40.000Z</time>
+        <speed>4.72</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.60546" lon="121.056446">
+        <ele>43</ele>
+        <time>2026-09-11T00:08:50.000Z</time>
+        <speed>8.89</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.6028" lon="121.056725">
+        <ele>42</ele>
+        <time>2026-09-11T00:09:00.000Z</time>
+        <speed>11.94</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.599536" lon="121.057068">
+        <ele>41</ele>
+        <time>2026-09-11T00:09:10.000Z</time>
+        <speed>13.61</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.596064" lon="121.057432">
+        <ele>39</ele>
+        <time>2026-09-11T00:09:20.000Z</time>
+        <speed>13.61</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5928" lon="121.057775">
+        <ele>38</ele>
+        <time>2026-09-11T00:09:30.000Z</time>
+        <speed>11.94</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.59014" lon="121.058054">
+        <ele>37</ele>
+        <time>2026-09-11T00:09:40.000Z</time>
+        <speed>8.89</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.588403" lon="121.058237">
+        <ele>36</ele>
+        <time>2026-09-11T00:09:50.000Z</time>
+        <speed>4.72</speed>
+        <course>174</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Santolan-Annapolis ➔ Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5878" lon="121.0583">
+        <ele>36</ele>
+        <time>2026-09-11T00:10:00.000Z</time>
+        <speed>0.00</speed>
+        <course>215</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5878" lon="121.0583">
+        <ele>36</ele>
+        <time>2026-09-11T00:10:10.000Z</time>
+        <speed>0.00</speed>
+        <course>215</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5878" lon="121.0583">
+        <ele>36</ele>
+        <time>2026-09-11T00:10:20.000Z</time>
+        <speed>0.00</speed>
+        <course>215</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Ortigas</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5878" lon="121.0583">
+        <ele>36</ele>
+        <time>2026-09-11T00:10:30.000Z</time>
+        <speed>0.00</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.587604" lon="121.058158">
+        <ele>36</ele>
+        <time>2026-09-11T00:10:40.000Z</time>
+        <speed>4.72</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.58704" lon="121.05775">
+        <ele>35</ele>
+        <time>2026-09-11T00:10:50.000Z</time>
+        <speed>8.89</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.586175" lon="121.057125">
+        <ele>35</ele>
+        <time>2026-09-11T00:11:00.000Z</time>
+        <speed>11.94</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.585114" lon="121.056358">
+        <ele>34</ele>
+        <time>2026-09-11T00:11:10.000Z</time>
+        <speed>13.61</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.583986" lon="121.055542">
+        <ele>32</ele>
+        <time>2026-09-11T00:11:20.000Z</time>
+        <speed>13.61</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.582925" lon="121.054775">
+        <ele>32</ele>
+        <time>2026-09-11T00:11:30.000Z</time>
+        <speed>11.94</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.58206" lon="121.05415">
+        <ele>31</ele>
+        <time>2026-09-11T00:11:40.000Z</time>
+        <speed>8.89</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.581496" lon="121.053742">
+        <ele>30</ele>
+        <time>2026-09-11T00:11:50.000Z</time>
+        <speed>4.72</speed>
+        <course>215</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ortigas ➔ Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5813" lon="121.0536">
+        <ele>30</ele>
+        <time>2026-09-11T00:12:00.000Z</time>
+        <speed>0.00</speed>
+        <course>222</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5813" lon="121.0536">
+        <ele>30</ele>
+        <time>2026-09-11T00:12:10.000Z</time>
+        <speed>0.00</speed>
+        <course>222</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5813" lon="121.0536">
+        <ele>30</ele>
+        <time>2026-09-11T00:12:20.000Z</time>
+        <speed>0.00</speed>
+        <course>222</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Shaw Boulevard</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5813" lon="121.0536">
+        <ele>30</ele>
+        <time>2026-09-11T00:12:30.000Z</time>
+        <speed>0.00</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.581077" lon="121.053395">
+        <ele>30</ele>
+        <time>2026-09-11T00:12:40.000Z</time>
+        <speed>4.72</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.580434" lon="121.052805">
+        <ele>29</ele>
+        <time>2026-09-11T00:12:50.000Z</time>
+        <speed>8.89</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.57945" lon="121.0519">
+        <ele>29</ele>
+        <time>2026-09-11T00:13:00.000Z</time>
+        <speed>11.94</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.578242" lon="121.05079">
+        <ele>28</ele>
+        <time>2026-09-11T00:13:10.000Z</time>
+        <speed>13.61</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.576958" lon="121.04961">
+        <ele>26</ele>
+        <time>2026-09-11T00:13:20.000Z</time>
+        <speed>13.61</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.57575" lon="121.0485">
+        <ele>26</ele>
+        <time>2026-09-11T00:13:30.000Z</time>
+        <speed>11.94</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.574766" lon="121.047595">
+        <ele>25</ele>
+        <time>2026-09-11T00:13:40.000Z</time>
+        <speed>8.89</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.574123" lon="121.047005">
+        <ele>24</ele>
+        <time>2026-09-11T00:13:50.000Z</time>
+        <speed>4.72</speed>
+        <course>222</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Shaw Boulevard ➔ Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5739" lon="121.0468">
+        <ele>24</ele>
+        <time>2026-09-11T00:14:00.000Z</time>
+        <speed>0.00</speed>
+        <course>221</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5739" lon="121.0468">
+        <ele>24</ele>
+        <time>2026-09-11T00:14:10.000Z</time>
+        <speed>0.00</speed>
+        <course>221</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5739" lon="121.0468">
+        <ele>24</ele>
+        <time>2026-09-11T00:14:20.000Z</time>
+        <speed>0.00</speed>
+        <course>221</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Boni</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5739" lon="121.0468">
+        <ele>24</ele>
+        <time>2026-09-11T00:14:30.000Z</time>
+        <speed>0.00</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.573698" lon="121.046616">
+        <ele>24</ele>
+        <time>2026-09-11T00:14:40.000Z</time>
+        <speed>4.72</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.573116" lon="121.046086">
+        <ele>23</ele>
+        <time>2026-09-11T00:14:50.000Z</time>
+        <speed>8.89</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.572225" lon="121.045275">
+        <ele>22</ele>
+        <time>2026-09-11T00:15:00.000Z</time>
+        <speed>11.94</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.571132" lon="121.04428">
+        <ele>21</ele>
+        <time>2026-09-11T00:15:10.000Z</time>
+        <speed>13.61</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.569968" lon="121.04322">
+        <ele>19</ele>
+        <time>2026-09-11T00:15:20.000Z</time>
+        <speed>13.61</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.568875" lon="121.042225">
+        <ele>18</ele>
+        <time>2026-09-11T00:15:30.000Z</time>
+        <speed>11.94</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.567984" lon="121.041414">
+        <ele>17</ele>
+        <time>2026-09-11T00:15:40.000Z</time>
+        <speed>8.89</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.567402" lon="121.040884">
+        <ele>16</ele>
+        <time>2026-09-11T00:15:50.000Z</time>
+        <speed>4.72</speed>
+        <course>221</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Boni ➔ Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5672" lon="121.0407">
+        <ele>16</ele>
+        <time>2026-09-11T00:16:00.000Z</time>
+        <speed>0.00</speed>
+        <course>208</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5672" lon="121.0407">
+        <ele>16</ele>
+        <time>2026-09-11T00:16:10.000Z</time>
+        <speed>0.00</speed>
+        <course>208</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5672" lon="121.0407">
+        <ele>16</ele>
+        <time>2026-09-11T00:16:20.000Z</time>
+        <speed>0.00</speed>
+        <course>208</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Guadalupe</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5672" lon="121.0407">
+        <ele>16</ele>
+        <time>2026-09-11T00:16:30.000Z</time>
+        <speed>0.00</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.566811" lon="121.040489">
+        <ele>16</ele>
+        <time>2026-09-11T00:16:40.000Z</time>
+        <speed>4.72</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.565691" lon="121.039881">
+        <ele>17</ele>
+        <time>2026-09-11T00:16:50.000Z</time>
+        <speed>8.89</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.563975" lon="121.03895">
+        <ele>18</ele>
+        <time>2026-09-11T00:17:00.000Z</time>
+        <speed>11.94</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.56187" lon="121.037808">
+        <ele>18</ele>
+        <time>2026-09-11T00:17:10.000Z</time>
+        <speed>13.61</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.55963" lon="121.036592">
+        <ele>20</ele>
+        <time>2026-09-11T00:17:20.000Z</time>
+        <speed>13.61</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.557525" lon="121.03545">
+        <ele>21</ele>
+        <time>2026-09-11T00:17:30.000Z</time>
+        <speed>11.94</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.555809" lon="121.034519">
+        <ele>21</ele>
+        <time>2026-09-11T00:17:40.000Z</time>
+        <speed>8.89</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.554689" lon="121.033911">
+        <ele>22</ele>
+        <time>2026-09-11T00:17:50.000Z</time>
+        <speed>4.72</speed>
+        <course>208</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Guadalupe ➔ Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5543" lon="121.0337">
+        <ele>22</ele>
+        <time>2026-09-11T00:18:00.000Z</time>
+        <speed>0.00</speed>
+        <course>227</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5543" lon="121.0337">
+        <ele>22</ele>
+        <time>2026-09-11T00:18:10.000Z</time>
+        <speed>0.00</speed>
+        <course>227</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5543" lon="121.0337">
+        <ele>22</ele>
+        <time>2026-09-11T00:18:20.000Z</time>
+        <speed>0.00</speed>
+        <course>227</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Buendia</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5543" lon="121.0337">
+        <ele>22</ele>
+        <time>2026-09-11T00:18:30.000Z</time>
+        <speed>0.00</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.554146" lon="121.033528">
+        <ele>22</ele>
+        <time>2026-09-11T00:18:40.000Z</time>
+        <speed>4.72</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.553703" lon="121.033033">
+        <ele>22</ele>
+        <time>2026-09-11T00:18:50.000Z</time>
+        <speed>8.89</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.553025" lon="121.032275">
+        <ele>23</ele>
+        <time>2026-09-11T00:19:00.000Z</time>
+        <speed>11.94</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.552193" lon="121.031345">
+        <ele>24</ele>
+        <time>2026-09-11T00:19:10.000Z</time>
+        <speed>13.61</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.551307" lon="121.030355">
+        <ele>24</ele>
+        <time>2026-09-11T00:19:20.000Z</time>
+        <speed>13.61</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.550475" lon="121.029425">
+        <ele>25</ele>
+        <time>2026-09-11T00:19:30.000Z</time>
+        <speed>11.94</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.549797" lon="121.028667">
+        <ele>26</ele>
+        <time>2026-09-11T00:19:40.000Z</time>
+        <speed>8.89</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.549354" lon="121.028172">
+        <ele>26</ele>
+        <time>2026-09-11T00:19:50.000Z</time>
+        <speed>4.72</speed>
+        <course>227</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Buendia ➔ Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5492" lon="121.028">
+        <ele>26</ele>
+        <time>2026-09-11T00:20:00.000Z</time>
+        <speed>0.00</speed>
+        <course>228</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5492" lon="121.028">
+        <ele>26</ele>
+        <time>2026-09-11T00:20:10.000Z</time>
+        <speed>0.00</speed>
+        <course>228</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5492" lon="121.028">
+        <ele>26</ele>
+        <time>2026-09-11T00:20:20.000Z</time>
+        <speed>0.00</speed>
+        <course>228</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Ayala</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5492" lon="121.028">
+        <ele>26</ele>
+        <time>2026-09-11T00:20:30.000Z</time>
+        <speed>0.00</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.548983" lon="121.027753">
+        <ele>26</ele>
+        <time>2026-09-11T00:20:40.000Z</time>
+        <speed>4.72</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.548358" lon="121.027041">
+        <ele>25</ele>
+        <time>2026-09-11T00:20:50.000Z</time>
+        <speed>8.89</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5474" lon="121.02595">
+        <ele>24</ele>
+        <time>2026-09-11T00:21:00.000Z</time>
+        <speed>11.94</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.546225" lon="121.024612">
+        <ele>23</ele>
+        <time>2026-09-11T00:21:10.000Z</time>
+        <speed>13.61</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.544975" lon="121.023188">
+        <ele>21</ele>
+        <time>2026-09-11T00:21:20.000Z</time>
+        <speed>13.61</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5438" lon="121.02185">
+        <ele>20</ele>
+        <time>2026-09-11T00:21:30.000Z</time>
+        <speed>11.94</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.542842" lon="121.020759">
+        <ele>19</ele>
+        <time>2026-09-11T00:21:40.000Z</time>
+        <speed>8.89</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.542217" lon="121.020047">
+        <ele>18</ele>
+        <time>2026-09-11T00:21:50.000Z</time>
+        <speed>4.72</speed>
+        <course>228</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Ayala ➔ Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.542" lon="121.0198">
+        <ele>18</ele>
+        <time>2026-09-11T00:22:00.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.542" lon="121.0198">
+        <ele>18</ele>
+        <time>2026-09-11T00:22:10.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.542" lon="121.0198">
+        <ele>18</ele>
+        <time>2026-09-11T00:22:20.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.542" lon="121.0198">
+        <ele>18</ele>
+        <time>2026-09-11T00:22:30.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.54187" lon="121.019221">
+        <ele>18</ele>
+        <time>2026-09-11T00:22:40.000Z</time>
+        <speed>4.72</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.541497" lon="121.017554">
+        <ele>17</ele>
+        <time>2026-09-11T00:22:50.000Z</time>
+        <speed>8.89</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.540925" lon="121.015">
+        <ele>17</ele>
+        <time>2026-09-11T00:23:00.000Z</time>
+        <speed>11.94</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.540223" lon="121.011867">
+        <ele>16</ele>
+        <time>2026-09-11T00:23:10.000Z</time>
+        <speed>13.61</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.539477" lon="121.008533">
+        <ele>14</ele>
+        <time>2026-09-11T00:23:20.000Z</time>
+        <speed>13.61</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.538775" lon="121.0054">
+        <ele>14</ele>
+        <time>2026-09-11T00:23:30.000Z</time>
+        <speed>11.94</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.538203" lon="121.002846">
+        <ele>13</ele>
+        <time>2026-09-11T00:23:40.000Z</time>
+        <speed>8.89</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.53783" lon="121.001179">
+        <ele>12</ele>
+        <time>2026-09-11T00:23:50.000Z</time>
+        <speed>4.72</speed>
+        <course>257</course>
+        <extensions>
+          <status>TRANSIT</status>
+          <currentStation>Magallanes ➔ Taft Avenue</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5377" lon="121.0006">
+        <ele>12</ele>
+        <time>2026-09-11T00:24:00.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5377" lon="121.0006">
+        <ele>12</ele>
+        <time>2026-09-11T00:24:10.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5377" lon="121.0006">
+        <ele>12</ele>
+        <time>2026-09-11T00:24:20.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+      <trkpt lat="14.5377" lon="121.0006">
+        <ele>12</ele>
+        <time>2026-09-11T00:24:30.000Z</time>
+        <speed>0.00</speed>
+        <course>257</course>
+        <extensions>
+          <status>TERMINAL_DWELL</status>
+          <currentStation>Magallanes</currentStation>
+        </extensions>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

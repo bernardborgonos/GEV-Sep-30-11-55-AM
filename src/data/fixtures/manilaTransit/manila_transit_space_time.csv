@@ -1,0 +1,343 @@
+timestamp,elapsed_sec,vehicle_id,line,status,current_location,next_station,latitude,longitude,elevation_m,speed_kph,heading_deg,dwell_remaining_sec,category
+2026-09-11T00:00:00Z,0,STATION-L1-01,LRT-1,STATION_NODE,"Fernando Poe Jr.","Fernando Poe Jr. ➔ Baclaran",14.6575,121.0189,24,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-02,LRT-1,STATION_NODE,"Balintawak","Fernando Poe Jr. ➔ Baclaran",14.6571,121.0041,22,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-03,LRT-1,STATION_NODE,"Monumento","Fernando Poe Jr. ➔ Baclaran",14.6543,120.9836,15,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-04,LRT-1,STATION_NODE,"5th Avenue","Fernando Poe Jr. ➔ Baclaran",14.6444,120.9839,14,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-05,LRT-1,STATION_NODE,"R. Papa","Fernando Poe Jr. ➔ Baclaran",14.636,120.9825,12,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-06,LRT-1,STATION_NODE,"Abad Santos","Fernando Poe Jr. ➔ Baclaran",14.6305,120.9814,10,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-07,LRT-1,STATION_NODE,"Blumentritt","Fernando Poe Jr. ➔ Baclaran",14.6226,120.983,9,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-08,LRT-1,STATION_NODE,"Tayuman","Fernando Poe Jr. ➔ Baclaran",14.6167,120.9829,8,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-09,LRT-1,STATION_NODE,"Bambang","Fernando Poe Jr. ➔ Baclaran",14.608,120.9823,8,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-10,LRT-1,STATION_NODE,"Doroteo Jose","Fernando Poe Jr. ➔ Baclaran",14.6053,120.9818,9,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-11,LRT-1,STATION_NODE,"Carriedo","Fernando Poe Jr. ➔ Baclaran",14.5998,120.9815,7,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-12,LRT-1,STATION_NODE,"Central Terminal","Fernando Poe Jr. ➔ Baclaran",14.5928,120.9817,8,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-13,LRT-1,STATION_NODE,"United Nations","Fernando Poe Jr. ➔ Baclaran",14.5826,120.984,7,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-14,LRT-1,STATION_NODE,"Pedro Gil","Fernando Poe Jr. ➔ Baclaran",14.5765,120.988,8,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-15,LRT-1,STATION_NODE,"Quirino","Fernando Poe Jr. ➔ Baclaran",14.5703,120.9917,9,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-16,LRT-1,STATION_NODE,"Vito Cruz","Fernando Poe Jr. ➔ Baclaran",14.5634,120.9946,9,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-17,LRT-1,STATION_NODE,"Gil Puyat","Fernando Poe Jr. ➔ Baclaran",14.5541,120.9972,10,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-18,LRT-1,STATION_NODE,"Libertad","Fernando Poe Jr. ➔ Baclaran",14.5478,120.9988,9,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-19,LRT-1,STATION_NODE,"EDSA","Fernando Poe Jr. ➔ Baclaran",14.5388,121.0006,11,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L1-20,LRT-1,STATION_NODE,"Baclaran","Fernando Poe Jr. ➔ Baclaran",14.5342,120.9984,8,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-01,LRT-2,STATION_NODE,"Recto","Recto ➔ Antipolo",14.6035,120.9835,12,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-02,LRT-2,STATION_NODE,"Legarda","Recto ➔ Antipolo",14.6008,120.9926,14,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-03,LRT-2,STATION_NODE,"Pureza","Recto ➔ Antipolo",14.6016,121.0049,16,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-04,LRT-2,STATION_NODE,"V. Mapa","Recto ➔ Antipolo",14.6041,121.0175,18,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-05,LRT-2,STATION_NODE,"J. Ruiz","Recto ➔ Antipolo",14.6056,121.0263,25,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-06,LRT-2,STATION_NODE,"Gilmore","Recto ➔ Antipolo",14.6135,121.0345,32,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-07,LRT-2,STATION_NODE,"Betty Go-Belmonte","Recto ➔ Antipolo",14.6185,121.0427,38,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-08,LRT-2,STATION_NODE,"Araneta-Cubao [L2]","Recto ➔ Antipolo",14.6225,121.0526,42,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-09,LRT-2,STATION_NODE,"Anonas","Recto ➔ Antipolo",14.6281,121.0645,48,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-10,LRT-2,STATION_NODE,"Katipunan","Recto ➔ Antipolo",14.631,121.0725,54,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-11,LRT-2,STATION_NODE,"Santolan","Recto ➔ Antipolo",14.622,121.0858,35,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-12,LRT-2,STATION_NODE,"Marikina-Pasig","Recto ➔ Antipolo",14.6235,121.1012,32,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-L2-13,LRT-2,STATION_NODE,"Antipolo","Recto ➔ Antipolo",14.625,121.1214,72,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-01,MRT-3,STATION_NODE,"North Avenue","North Avenue ➔ Taft Avenue",14.6521,121.0326,35,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-02,MRT-3,STATION_NODE,"Quezon Avenue","North Avenue ➔ Taft Avenue",14.6428,121.0384,38,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-03,MRT-3,STATION_NODE,"GMA-Kamuning","North Avenue ➔ Taft Avenue",14.6346,121.0432,40,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-04,MRT-3,STATION_NODE,"Araneta-Cubao","North Avenue ➔ Taft Avenue",14.6195,121.0526,42,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-05,MRT-3,STATION_NODE,"Santolan-Annapolis","North Avenue ➔ Taft Avenue",14.6078,121.0562,44,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-06,MRT-3,STATION_NODE,"Ortigas","North Avenue ➔ Taft Avenue",14.5878,121.0583,36,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-07,MRT-3,STATION_NODE,"Shaw Boulevard","North Avenue ➔ Taft Avenue",14.5813,121.0536,30,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-08,MRT-3,STATION_NODE,"Boni","North Avenue ➔ Taft Avenue",14.5739,121.0468,24,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-09,MRT-3,STATION_NODE,"Guadalupe","North Avenue ➔ Taft Avenue",14.5672,121.0407,16,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-10,MRT-3,STATION_NODE,"Buendia","North Avenue ➔ Taft Avenue",14.5543,121.0337,22,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-11,MRT-3,STATION_NODE,"Ayala","North Avenue ➔ Taft Avenue",14.5492,121.028,26,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-12,MRT-3,STATION_NODE,"Magallanes","North Avenue ➔ Taft Avenue",14.542,121.0198,18,0,0,0,rail_station
+2026-09-11T00:00:00Z,0,STATION-M3-13,MRT-3,STATION_NODE,"Taft Avenue","North Avenue ➔ Taft Avenue",14.5377,121.0006,12,0,0,0,rail_station
+2026-09-11T00:00:00.000Z,0,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Recto","Legarda",14.6035,120.9835,12,0,107,30,transit_telemetry
+2026-09-11T00:00:10.000Z,10,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Recto","Legarda",14.6035,120.9835,12,0,107,20,transit_telemetry
+2026-09-11T00:00:20.000Z,20,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Recto","Legarda",14.6035,120.9835,12,0,107,10,transit_telemetry
+2026-09-11T00:00:30.000Z,30,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.6035,120.9835,12,0,107,0,transit_telemetry
+2026-09-11T00:00:40.000Z,40,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.603419,120.983774,12,17,107,0,transit_telemetry
+2026-09-11T00:00:50.000Z,50,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.603184,120.984564,12,32,107,0,transit_telemetry
+2026-09-11T00:01:00.000Z,60,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.602825,120.985775,13,43,107,0,transit_telemetry
+2026-09-11T00:01:10.000Z,70,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.602384,120.98726,13,49,107,0,transit_telemetry
+2026-09-11T00:01:20.000Z,80,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.601916,120.98884,13,49,107,0,transit_telemetry
+2026-09-11T00:01:30.000Z,90,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.601475,120.990325,14,43,107,0,transit_telemetry
+2026-09-11T00:01:40.000Z,100,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.601116,120.991536,14,32,107,0,transit_telemetry
+2026-09-11T00:01:50.000Z,110,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Recto ➔ Legarda","Legarda",14.600881,120.992326,14,17,107,0,transit_telemetry
+2026-09-11T00:02:00.000Z,120,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Legarda","Pureza",14.6008,120.9926,14,0,86,30,transit_telemetry
+2026-09-11T00:02:10.000Z,130,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Legarda","Pureza",14.6008,120.9926,14,0,86,20,transit_telemetry
+2026-09-11T00:02:20.000Z,140,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Legarda","Pureza",14.6008,120.9926,14,0,86,10,transit_telemetry
+2026-09-11T00:02:30.000Z,150,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.6008,120.9926,14,0,86,0,transit_telemetry
+2026-09-11T00:02:40.000Z,160,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.600824,120.992971,14,17,86,0,transit_telemetry
+2026-09-11T00:02:50.000Z,170,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.600894,120.994039,14,32,86,0,transit_telemetry
+2026-09-11T00:03:00.000Z,180,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.601,120.995675,15,43,86,0,transit_telemetry
+2026-09-11T00:03:10.000Z,190,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.601131,120.997682,15,49,86,0,transit_telemetry
+2026-09-11T00:03:20.000Z,200,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.601269,120.999818,15,49,86,0,transit_telemetry
+2026-09-11T00:03:30.000Z,210,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.6014,121.001825,16,43,86,0,transit_telemetry
+2026-09-11T00:03:40.000Z,220,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.601506,121.003461,16,32,86,0,transit_telemetry
+2026-09-11T00:03:50.000Z,230,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Legarda ➔ Pureza","Pureza",14.601576,121.004529,16,17,86,0,transit_telemetry
+2026-09-11T00:04:00.000Z,240,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Pureza","V. Mapa",14.6016,121.0049,16,0,78,30,transit_telemetry
+2026-09-11T00:04:10.000Z,250,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Pureza","V. Mapa",14.6016,121.0049,16,0,78,20,transit_telemetry
+2026-09-11T00:04:20.000Z,260,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Pureza","V. Mapa",14.6016,121.0049,16,0,78,10,transit_telemetry
+2026-09-11T00:04:30.000Z,270,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.6016,121.0049,16,0,78,0,transit_telemetry
+2026-09-11T00:04:40.000Z,280,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.601675,121.00528,16,17,78,0,transit_telemetry
+2026-09-11T00:04:50.000Z,290,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.601892,121.006374,16,32,78,0,transit_telemetry
+2026-09-11T00:05:00.000Z,300,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.602225,121.00805,17,43,78,0,transit_telemetry
+2026-09-11T00:05:10.000Z,310,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.602633,121.010106,17,49,78,0,transit_telemetry
+2026-09-11T00:05:20.000Z,320,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.603067,121.012294,17,49,78,0,transit_telemetry
+2026-09-11T00:05:30.000Z,330,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.603475,121.01435,18,43,78,0,transit_telemetry
+2026-09-11T00:05:40.000Z,340,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.603808,121.016026,18,32,78,0,transit_telemetry
+2026-09-11T00:05:50.000Z,350,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Pureza ➔ V. Mapa","V. Mapa",14.604025,121.01712,18,17,78,0,transit_telemetry
+2026-09-11T00:06:00.000Z,360,"TRAIN 001 - LRT-2",LRT-2,DWELL,"V. Mapa","J. Ruiz",14.6041,121.0175,18,0,80,30,transit_telemetry
+2026-09-11T00:06:10.000Z,370,"TRAIN 001 - LRT-2",LRT-2,DWELL,"V. Mapa","J. Ruiz",14.6041,121.0175,18,0,80,20,transit_telemetry
+2026-09-11T00:06:20.000Z,380,"TRAIN 001 - LRT-2",LRT-2,DWELL,"V. Mapa","J. Ruiz",14.6041,121.0175,18,0,80,10,transit_telemetry
+2026-09-11T00:06:30.000Z,390,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.6041,121.0175,18,0,80,0,transit_telemetry
+2026-09-11T00:06:40.000Z,400,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.604145,121.017765,18,17,80,0,transit_telemetry
+2026-09-11T00:06:50.000Z,410,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.604275,121.018529,19,32,80,0,transit_telemetry
+2026-09-11T00:07:00.000Z,420,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.604475,121.0197,20,43,80,0,transit_telemetry
+2026-09-11T00:07:10.000Z,430,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.60472,121.021136,21,49,80,0,transit_telemetry
+2026-09-11T00:07:20.000Z,440,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.60498,121.022664,22,49,80,0,transit_telemetry
+2026-09-11T00:07:30.000Z,450,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.605225,121.0241,23,43,80,0,transit_telemetry
+2026-09-11T00:07:40.000Z,460,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.605425,121.025271,24,32,80,0,transit_telemetry
+2026-09-11T00:07:50.000Z,470,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"V. Mapa ➔ J. Ruiz","J. Ruiz",14.605555,121.026035,25,17,80,0,transit_telemetry
+2026-09-11T00:08:00.000Z,480,"TRAIN 001 - LRT-2",LRT-2,DWELL,"J. Ruiz","Gilmore",14.6056,121.0263,25,0,45,30,transit_telemetry
+2026-09-11T00:08:10.000Z,490,"TRAIN 001 - LRT-2",LRT-2,DWELL,"J. Ruiz","Gilmore",14.6056,121.0263,25,0,45,20,transit_telemetry
+2026-09-11T00:08:20.000Z,500,"TRAIN 001 - LRT-2",LRT-2,DWELL,"J. Ruiz","Gilmore",14.6056,121.0263,25,0,45,10,transit_telemetry
+2026-09-11T00:08:30.000Z,510,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.6056,121.0263,25,0,45,0,transit_telemetry
+2026-09-11T00:08:40.000Z,520,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.605838,121.026547,25,17,45,0,transit_telemetry
+2026-09-11T00:08:50.000Z,530,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.606524,121.027259,26,32,45,0,transit_telemetry
+2026-09-11T00:09:00.000Z,540,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.607575,121.02835,27,43,45,0,transit_telemetry
+2026-09-11T00:09:10.000Z,550,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.608864,121.029688,28,49,45,0,transit_telemetry
+2026-09-11T00:09:20.000Z,560,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.610236,121.031112,29,49,45,0,transit_telemetry
+2026-09-11T00:09:30.000Z,570,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.611525,121.03245,30,43,45,0,transit_telemetry
+2026-09-11T00:09:40.000Z,580,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.612576,121.033541,31,32,45,0,transit_telemetry
+2026-09-11T00:09:50.000Z,590,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"J. Ruiz ➔ Gilmore","Gilmore",14.613262,121.034253,32,17,45,0,transit_telemetry
+2026-09-11T00:10:00.000Z,600,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Gilmore","Betty Go-Belmonte",14.6135,121.0345,32,0,58,30,transit_telemetry
+2026-09-11T00:10:10.000Z,610,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Gilmore","Betty Go-Belmonte",14.6135,121.0345,32,0,58,20,transit_telemetry
+2026-09-11T00:10:20.000Z,620,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Gilmore","Betty Go-Belmonte",14.6135,121.0345,32,0,58,10,transit_telemetry
+2026-09-11T00:10:30.000Z,630,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.6135,121.0345,32,0,58,0,transit_telemetry
+2026-09-11T00:10:40.000Z,640,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.613651,121.034747,32,17,58,0,transit_telemetry
+2026-09-11T00:10:50.000Z,650,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.614085,121.035459,33,32,58,0,transit_telemetry
+2026-09-11T00:11:00.000Z,660,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.61475,121.03655,34,43,58,0,transit_telemetry
+2026-09-11T00:11:10.000Z,670,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.615566,121.037888,34,49,58,0,transit_telemetry
+2026-09-11T00:11:20.000Z,680,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.616434,121.039312,36,49,58,0,transit_telemetry
+2026-09-11T00:11:30.000Z,690,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.61725,121.04065,37,43,58,0,transit_telemetry
+2026-09-11T00:11:40.000Z,700,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.617915,121.041741,37,32,58,0,transit_telemetry
+2026-09-11T00:11:50.000Z,710,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Gilmore ➔ Betty Go-Belmonte","Betty Go-Belmonte",14.618349,121.042453,38,17,58,0,transit_telemetry
+2026-09-11T00:12:00.000Z,720,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Betty Go-Belmonte","Araneta-Cubao [L2]",14.6185,121.0427,38,0,67,30,transit_telemetry
+2026-09-11T00:12:10.000Z,730,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Betty Go-Belmonte","Araneta-Cubao [L2]",14.6185,121.0427,38,0,67,20,transit_telemetry
+2026-09-11T00:12:20.000Z,740,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Betty Go-Belmonte","Araneta-Cubao [L2]",14.6185,121.0427,38,0,67,10,transit_telemetry
+2026-09-11T00:12:30.000Z,750,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.6185,121.0427,38,0,67,0,transit_telemetry
+2026-09-11T00:12:40.000Z,760,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.618621,121.042999,38,17,67,0,transit_telemetry
+2026-09-11T00:12:50.000Z,770,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.618968,121.043858,38,32,67,0,transit_telemetry
+2026-09-11T00:13:00.000Z,780,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.6195,121.045175,39,43,67,0,transit_telemetry
+2026-09-11T00:13:10.000Z,790,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.620153,121.04679,40,49,67,0,transit_telemetry
+2026-09-11T00:13:20.000Z,800,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.620847,121.04851,40,49,67,0,transit_telemetry
+2026-09-11T00:13:30.000Z,810,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.6215,121.050125,41,43,67,0,transit_telemetry
+2026-09-11T00:13:40.000Z,820,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.622032,121.051442,42,32,67,0,transit_telemetry
+2026-09-11T00:13:50.000Z,830,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Betty Go-Belmonte ➔ Araneta-Cubao [L2]","Araneta-Cubao [L2]",14.622379,121.052301,42,17,67,0,transit_telemetry
+2026-09-11T00:14:00.000Z,840,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Araneta-Cubao [L2]","Anonas",14.6225,121.0526,42,0,64,30,transit_telemetry
+2026-09-11T00:14:10.000Z,850,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Araneta-Cubao [L2]","Anonas",14.6225,121.0526,42,0,64,20,transit_telemetry
+2026-09-11T00:14:20.000Z,860,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Araneta-Cubao [L2]","Anonas",14.6225,121.0526,42,0,64,10,transit_telemetry
+2026-09-11T00:14:30.000Z,870,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.6225,121.0526,42,0,64,0,transit_telemetry
+2026-09-11T00:14:40.000Z,880,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.622669,121.052959,42,17,64,0,transit_telemetry
+2026-09-11T00:14:50.000Z,890,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.623155,121.053992,43,32,64,0,transit_telemetry
+2026-09-11T00:15:00.000Z,900,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.6239,121.055575,44,43,64,0,transit_telemetry
+2026-09-11T00:15:10.000Z,910,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.624814,121.057517,44,49,64,0,transit_telemetry
+2026-09-11T00:15:20.000Z,920,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.625786,121.059583,46,49,64,0,transit_telemetry
+2026-09-11T00:15:30.000Z,930,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.6267,121.061525,47,43,64,0,transit_telemetry
+2026-09-11T00:15:40.000Z,940,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.627445,121.063108,47,32,64,0,transit_telemetry
+2026-09-11T00:15:50.000Z,950,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Araneta-Cubao [L2] ➔ Anonas","Anonas",14.627931,121.064141,48,17,64,0,transit_telemetry
+2026-09-11T00:16:00.000Z,960,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Anonas","Katipunan",14.6281,121.0645,48,0,69,30,transit_telemetry
+2026-09-11T00:16:10.000Z,970,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Anonas","Katipunan",14.6281,121.0645,48,0,69,20,transit_telemetry
+2026-09-11T00:16:20.000Z,980,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Anonas","Katipunan",14.6281,121.0645,48,0,69,10,transit_telemetry
+2026-09-11T00:16:30.000Z,990,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.6281,121.0645,48,0,69,0,transit_telemetry
+2026-09-11T00:16:40.000Z,1000,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.628187,121.064741,48,17,69,0,transit_telemetry
+2026-09-11T00:16:50.000Z,1010,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.628439,121.065436,49,32,69,0,transit_telemetry
+2026-09-11T00:17:00.000Z,1020,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.628825,121.0665,50,43,69,0,transit_telemetry
+2026-09-11T00:17:10.000Z,1030,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.629298,121.067805,50,49,69,0,transit_telemetry
+2026-09-11T00:17:20.000Z,1040,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.629802,121.069195,52,49,69,0,transit_telemetry
+2026-09-11T00:17:30.000Z,1050,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.630275,121.0705,53,43,69,0,transit_telemetry
+2026-09-11T00:17:40.000Z,1060,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.630661,121.071564,53,32,69,0,transit_telemetry
+2026-09-11T00:17:50.000Z,1070,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Anonas ➔ Katipunan","Katipunan",14.630913,121.072259,54,17,69,0,transit_telemetry
+2026-09-11T00:18:00.000Z,1080,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Katipunan","Santolan",14.631,121.0725,54,0,125,30,transit_telemetry
+2026-09-11T00:18:10.000Z,1090,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Katipunan","Santolan",14.631,121.0725,54,0,125,20,transit_telemetry
+2026-09-11T00:18:20.000Z,1100,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Katipunan","Santolan",14.631,121.0725,54,0,125,10,transit_telemetry
+2026-09-11T00:18:30.000Z,1110,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.631,121.0725,54,0,125,0,transit_telemetry
+2026-09-11T00:18:40.000Z,1120,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.630729,121.072901,53,17,125,0,transit_telemetry
+2026-09-11T00:18:50.000Z,1130,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.629947,121.074056,52,32,125,0,transit_telemetry
+2026-09-11T00:19:00.000Z,1140,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.62875,121.075825,49,43,125,0,transit_telemetry
+2026-09-11T00:19:10.000Z,1150,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.627281,121.077995,46,49,125,0,transit_telemetry
+2026-09-11T00:19:20.000Z,1160,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.625719,121.080305,43,49,125,0,transit_telemetry
+2026-09-11T00:19:30.000Z,1170,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.62425,121.082475,40,43,125,0,transit_telemetry
+2026-09-11T00:19:40.000Z,1180,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.623053,121.084244,37,32,125,0,transit_telemetry
+2026-09-11T00:19:50.000Z,1190,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Katipunan ➔ Santolan","Santolan",14.622271,121.085399,36,17,125,0,transit_telemetry
+2026-09-11T00:20:00.000Z,1200,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Santolan","Marikina-Pasig",14.622,121.0858,35,0,84,30,transit_telemetry
+2026-09-11T00:20:10.000Z,1210,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Santolan","Marikina-Pasig",14.622,121.0858,35,0,84,20,transit_telemetry
+2026-09-11T00:20:20.000Z,1220,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Santolan","Marikina-Pasig",14.622,121.0858,35,0,84,10,transit_telemetry
+2026-09-11T00:20:30.000Z,1230,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.622,121.0858,35,0,84,0,transit_telemetry
+2026-09-11T00:20:40.000Z,1240,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.622045,121.086264,35,17,84,0,transit_telemetry
+2026-09-11T00:20:50.000Z,1250,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.622175,121.087601,35,32,84,0,transit_telemetry
+2026-09-11T00:21:00.000Z,1260,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.622375,121.08965,34,43,84,0,transit_telemetry
+2026-09-11T00:21:10.000Z,1270,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.62262,121.092163,34,49,84,0,transit_telemetry
+2026-09-11T00:21:20.000Z,1280,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.62288,121.094837,33,49,84,0,transit_telemetry
+2026-09-11T00:21:30.000Z,1290,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.623125,121.09735,33,43,84,0,transit_telemetry
+2026-09-11T00:21:40.000Z,1300,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.623325,121.099399,32,32,84,0,transit_telemetry
+2026-09-11T00:21:50.000Z,1310,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Santolan ➔ Marikina-Pasig","Marikina-Pasig",14.623455,121.100736,32,17,84,0,transit_telemetry
+2026-09-11T00:22:00.000Z,1320,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Marikina-Pasig","Antipolo",14.6235,121.1012,32,0,86,30,transit_telemetry
+2026-09-11T00:22:10.000Z,1330,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Marikina-Pasig","Antipolo",14.6235,121.1012,32,0,86,20,transit_telemetry
+2026-09-11T00:22:20.000Z,1340,"TRAIN 001 - LRT-2",LRT-2,DWELL,"Marikina-Pasig","Antipolo",14.6235,121.1012,32,0,86,10,transit_telemetry
+2026-09-11T00:22:30.000Z,1350,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.6235,121.1012,32,0,86,0,transit_telemetry
+2026-09-11T00:22:40.000Z,1360,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.623545,121.101809,33,17,86,0,transit_telemetry
+2026-09-11T00:22:50.000Z,1370,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.623675,121.103563,37,32,86,0,transit_telemetry
+2026-09-11T00:23:00.000Z,1380,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.623875,121.10625,42,43,86,0,transit_telemetry
+2026-09-11T00:23:10.000Z,1390,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.62412,121.109546,49,49,86,0,transit_telemetry
+2026-09-11T00:23:20.000Z,1400,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.62438,121.113054,55,49,86,0,transit_telemetry
+2026-09-11T00:23:30.000Z,1410,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.624625,121.11635,62,43,86,0,transit_telemetry
+2026-09-11T00:23:40.000Z,1420,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.624825,121.119037,67,32,86,0,transit_telemetry
+2026-09-11T00:23:50.000Z,1430,"TRAIN 001 - LRT-2",LRT-2,TRANSIT,"Marikina-Pasig ➔ Antipolo","Antipolo",14.624955,121.120791,71,17,86,0,transit_telemetry
+2026-09-11T00:24:00.000Z,1440,"TRAIN 001 - LRT-2",LRT-2,TERMINAL_DWELL,"Marikina-Pasig","Antipolo",14.625,121.1214,72,0,86,30,transit_telemetry
+2026-09-11T00:24:10.000Z,1450,"TRAIN 001 - LRT-2",LRT-2,TERMINAL_DWELL,"Marikina-Pasig","Antipolo",14.625,121.1214,72,0,86,20,transit_telemetry
+2026-09-11T00:24:20.000Z,1460,"TRAIN 001 - LRT-2",LRT-2,TERMINAL_DWELL,"Marikina-Pasig","Antipolo",14.625,121.1214,72,0,86,10,transit_telemetry
+2026-09-11T00:24:30.000Z,1470,"TRAIN 001 - LRT-2",LRT-2,TERMINAL_DWELL,"Marikina-Pasig","Antipolo",14.625,121.1214,72,0,86,0,transit_telemetry
+2026-09-11T00:00:00.000Z,0,"TRAIN 002 - MRT-3",MRT-3,DWELL,"North Avenue","Quezon Avenue",14.6521,121.0326,35,0,149,30,transit_telemetry
+2026-09-11T00:00:10.000Z,10,"TRAIN 002 - MRT-3",MRT-3,DWELL,"North Avenue","Quezon Avenue",14.6521,121.0326,35,0,149,20,transit_telemetry
+2026-09-11T00:00:20.000Z,20,"TRAIN 002 - MRT-3",MRT-3,DWELL,"North Avenue","Quezon Avenue",14.6521,121.0326,35,0,149,10,transit_telemetry
+2026-09-11T00:00:30.000Z,30,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.6521,121.0326,35,0,149,0,transit_telemetry
+2026-09-11T00:00:40.000Z,40,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.65182,121.032775,35,17,149,0,transit_telemetry
+2026-09-11T00:00:50.000Z,50,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.651012,121.033278,35,32,149,0,transit_telemetry
+2026-09-11T00:01:00.000Z,60,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.649775,121.03405,36,43,149,0,transit_telemetry
+2026-09-11T00:01:10.000Z,70,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.648257,121.034996,36,49,149,0,transit_telemetry
+2026-09-11T00:01:20.000Z,80,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.646643,121.036004,37,49,149,0,transit_telemetry
+2026-09-11T00:01:30.000Z,90,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.645125,121.03695,37,43,149,0,transit_telemetry
+2026-09-11T00:01:40.000Z,100,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.643888,121.037722,38,32,149,0,transit_telemetry
+2026-09-11T00:01:50.000Z,110,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"North Avenue ➔ Quezon Avenue","Quezon Avenue",14.64308,121.038225,38,17,149,0,transit_telemetry
+2026-09-11T00:02:00.000Z,120,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Quezon Avenue","GMA-Kamuning",14.6428,121.0384,38,0,150,30,transit_telemetry
+2026-09-11T00:02:10.000Z,130,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Quezon Avenue","GMA-Kamuning",14.6428,121.0384,38,0,150,20,transit_telemetry
+2026-09-11T00:02:20.000Z,140,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Quezon Avenue","GMA-Kamuning",14.6428,121.0384,38,0,150,10,transit_telemetry
+2026-09-11T00:02:30.000Z,150,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.6428,121.0384,38,0,150,0,transit_telemetry
+2026-09-11T00:02:40.000Z,160,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.642553,121.038545,38,17,150,0,transit_telemetry
+2026-09-11T00:02:50.000Z,170,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.641841,121.038961,38,32,150,0,transit_telemetry
+2026-09-11T00:03:00.000Z,180,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.64075,121.0396,39,43,150,0,transit_telemetry
+2026-09-11T00:03:10.000Z,190,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.639412,121.040383,39,49,150,0,transit_telemetry
+2026-09-11T00:03:20.000Z,200,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.637988,121.041217,39,49,150,0,transit_telemetry
+2026-09-11T00:03:30.000Z,210,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.63665,121.042,40,43,150,0,transit_telemetry
+2026-09-11T00:03:40.000Z,220,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.635559,121.042639,40,32,150,0,transit_telemetry
+2026-09-11T00:03:50.000Z,230,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Quezon Avenue ➔ GMA-Kamuning","GMA-Kamuning",14.634847,121.043055,40,17,150,0,transit_telemetry
+2026-09-11T00:04:00.000Z,240,"TRAIN 002 - MRT-3",MRT-3,DWELL,"GMA-Kamuning","Araneta-Cubao",14.6346,121.0432,40,0,149,30,transit_telemetry
+2026-09-11T00:04:10.000Z,250,"TRAIN 002 - MRT-3",MRT-3,DWELL,"GMA-Kamuning","Araneta-Cubao",14.6346,121.0432,40,0,149,20,transit_telemetry
+2026-09-11T00:04:20.000Z,260,"TRAIN 002 - MRT-3",MRT-3,DWELL,"GMA-Kamuning","Araneta-Cubao",14.6346,121.0432,40,0,149,10,transit_telemetry
+2026-09-11T00:04:30.000Z,270,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.6346,121.0432,40,0,149,0,transit_telemetry
+2026-09-11T00:04:40.000Z,280,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.634145,121.043483,40,17,149,0,transit_telemetry
+2026-09-11T00:04:50.000Z,290,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.632834,121.0443,40,32,149,0,transit_telemetry
+2026-09-11T00:05:00.000Z,300,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.630825,121.04555,41,43,149,0,transit_telemetry
+2026-09-11T00:05:10.000Z,310,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.628361,121.047084,41,49,149,0,transit_telemetry
+2026-09-11T00:05:20.000Z,320,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.625739,121.048716,41,49,149,0,transit_telemetry
+2026-09-11T00:05:30.000Z,330,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.623275,121.05025,42,43,149,0,transit_telemetry
+2026-09-11T00:05:40.000Z,340,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.621266,121.0515,42,32,149,0,transit_telemetry
+2026-09-11T00:05:50.000Z,350,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"GMA-Kamuning ➔ Araneta-Cubao","Araneta-Cubao",14.619955,121.052317,42,17,149,0,transit_telemetry
+2026-09-11T00:06:00.000Z,360,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Araneta-Cubao","Santolan-Annapolis",14.6195,121.0526,42,0,163,30,transit_telemetry
+2026-09-11T00:06:10.000Z,370,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Araneta-Cubao","Santolan-Annapolis",14.6195,121.0526,42,0,163,20,transit_telemetry
+2026-09-11T00:06:20.000Z,380,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Araneta-Cubao","Santolan-Annapolis",14.6195,121.0526,42,0,163,10,transit_telemetry
+2026-09-11T00:06:30.000Z,390,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.6195,121.0526,42,0,163,0,transit_telemetry
+2026-09-11T00:06:40.000Z,400,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.619147,121.052709,42,17,163,0,transit_telemetry
+2026-09-11T00:06:50.000Z,410,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.618131,121.053021,42,32,163,0,transit_telemetry
+2026-09-11T00:07:00.000Z,420,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.616575,121.0535,43,43,163,0,transit_telemetry
+2026-09-11T00:07:10.000Z,430,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.614666,121.054087,43,49,163,0,transit_telemetry
+2026-09-11T00:07:20.000Z,440,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.612634,121.054713,43,49,163,0,transit_telemetry
+2026-09-11T00:07:30.000Z,450,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.610725,121.0553,44,43,163,0,transit_telemetry
+2026-09-11T00:07:40.000Z,460,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.609169,121.055779,44,32,163,0,transit_telemetry
+2026-09-11T00:07:50.000Z,470,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Araneta-Cubao ➔ Santolan-Annapolis","Santolan-Annapolis",14.608153,121.056091,44,17,163,0,transit_telemetry
+2026-09-11T00:08:00.000Z,480,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Santolan-Annapolis","Ortigas",14.6078,121.0562,44,0,174,30,transit_telemetry
+2026-09-11T00:08:10.000Z,490,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Santolan-Annapolis","Ortigas",14.6078,121.0562,44,0,174,20,transit_telemetry
+2026-09-11T00:08:20.000Z,500,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Santolan-Annapolis","Ortigas",14.6078,121.0562,44,0,174,10,transit_telemetry
+2026-09-11T00:08:30.000Z,510,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.6078,121.0562,44,0,174,0,transit_telemetry
+2026-09-11T00:08:40.000Z,520,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.607197,121.056263,44,17,174,0,transit_telemetry
+2026-09-11T00:08:50.000Z,530,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.60546,121.056446,43,32,174,0,transit_telemetry
+2026-09-11T00:09:00.000Z,540,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.6028,121.056725,42,43,174,0,transit_telemetry
+2026-09-11T00:09:10.000Z,550,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.599536,121.057068,41,49,174,0,transit_telemetry
+2026-09-11T00:09:20.000Z,560,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.596064,121.057432,39,49,174,0,transit_telemetry
+2026-09-11T00:09:30.000Z,570,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.5928,121.057775,38,43,174,0,transit_telemetry
+2026-09-11T00:09:40.000Z,580,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.59014,121.058054,37,32,174,0,transit_telemetry
+2026-09-11T00:09:50.000Z,590,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Santolan-Annapolis ➔ Ortigas","Ortigas",14.588403,121.058237,36,17,174,0,transit_telemetry
+2026-09-11T00:10:00.000Z,600,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Ortigas","Shaw Boulevard",14.5878,121.0583,36,0,215,30,transit_telemetry
+2026-09-11T00:10:10.000Z,610,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Ortigas","Shaw Boulevard",14.5878,121.0583,36,0,215,20,transit_telemetry
+2026-09-11T00:10:20.000Z,620,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Ortigas","Shaw Boulevard",14.5878,121.0583,36,0,215,10,transit_telemetry
+2026-09-11T00:10:30.000Z,630,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.5878,121.0583,36,0,215,0,transit_telemetry
+2026-09-11T00:10:40.000Z,640,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.587604,121.058158,36,17,215,0,transit_telemetry
+2026-09-11T00:10:50.000Z,650,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.58704,121.05775,35,32,215,0,transit_telemetry
+2026-09-11T00:11:00.000Z,660,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.586175,121.057125,35,43,215,0,transit_telemetry
+2026-09-11T00:11:10.000Z,670,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.585114,121.056358,34,49,215,0,transit_telemetry
+2026-09-11T00:11:20.000Z,680,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.583986,121.055542,32,49,215,0,transit_telemetry
+2026-09-11T00:11:30.000Z,690,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.582925,121.054775,32,43,215,0,transit_telemetry
+2026-09-11T00:11:40.000Z,700,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.58206,121.05415,31,32,215,0,transit_telemetry
+2026-09-11T00:11:50.000Z,710,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ortigas ➔ Shaw Boulevard","Shaw Boulevard",14.581496,121.053742,30,17,215,0,transit_telemetry
+2026-09-11T00:12:00.000Z,720,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Shaw Boulevard","Boni",14.5813,121.0536,30,0,222,30,transit_telemetry
+2026-09-11T00:12:10.000Z,730,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Shaw Boulevard","Boni",14.5813,121.0536,30,0,222,20,transit_telemetry
+2026-09-11T00:12:20.000Z,740,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Shaw Boulevard","Boni",14.5813,121.0536,30,0,222,10,transit_telemetry
+2026-09-11T00:12:30.000Z,750,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.5813,121.0536,30,0,222,0,transit_telemetry
+2026-09-11T00:12:40.000Z,760,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.581077,121.053395,30,17,222,0,transit_telemetry
+2026-09-11T00:12:50.000Z,770,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.580434,121.052805,29,32,222,0,transit_telemetry
+2026-09-11T00:13:00.000Z,780,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.57945,121.0519,29,43,222,0,transit_telemetry
+2026-09-11T00:13:10.000Z,790,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.578242,121.05079,28,49,222,0,transit_telemetry
+2026-09-11T00:13:20.000Z,800,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.576958,121.04961,26,49,222,0,transit_telemetry
+2026-09-11T00:13:30.000Z,810,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.57575,121.0485,26,43,222,0,transit_telemetry
+2026-09-11T00:13:40.000Z,820,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.574766,121.047595,25,32,222,0,transit_telemetry
+2026-09-11T00:13:50.000Z,830,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Shaw Boulevard ➔ Boni","Boni",14.574123,121.047005,24,17,222,0,transit_telemetry
+2026-09-11T00:14:00.000Z,840,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Boni","Guadalupe",14.5739,121.0468,24,0,221,30,transit_telemetry
+2026-09-11T00:14:10.000Z,850,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Boni","Guadalupe",14.5739,121.0468,24,0,221,20,transit_telemetry
+2026-09-11T00:14:20.000Z,860,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Boni","Guadalupe",14.5739,121.0468,24,0,221,10,transit_telemetry
+2026-09-11T00:14:30.000Z,870,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.5739,121.0468,24,0,221,0,transit_telemetry
+2026-09-11T00:14:40.000Z,880,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.573698,121.046616,24,17,221,0,transit_telemetry
+2026-09-11T00:14:50.000Z,890,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.573116,121.046086,23,32,221,0,transit_telemetry
+2026-09-11T00:15:00.000Z,900,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.572225,121.045275,22,43,221,0,transit_telemetry
+2026-09-11T00:15:10.000Z,910,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.571132,121.04428,21,49,221,0,transit_telemetry
+2026-09-11T00:15:20.000Z,920,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.569968,121.04322,19,49,221,0,transit_telemetry
+2026-09-11T00:15:30.000Z,930,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.568875,121.042225,18,43,221,0,transit_telemetry
+2026-09-11T00:15:40.000Z,940,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.567984,121.041414,17,32,221,0,transit_telemetry
+2026-09-11T00:15:50.000Z,950,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Boni ➔ Guadalupe","Guadalupe",14.567402,121.040884,16,17,221,0,transit_telemetry
+2026-09-11T00:16:00.000Z,960,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Guadalupe","Buendia",14.5672,121.0407,16,0,208,30,transit_telemetry
+2026-09-11T00:16:10.000Z,970,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Guadalupe","Buendia",14.5672,121.0407,16,0,208,20,transit_telemetry
+2026-09-11T00:16:20.000Z,980,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Guadalupe","Buendia",14.5672,121.0407,16,0,208,10,transit_telemetry
+2026-09-11T00:16:30.000Z,990,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.5672,121.0407,16,0,208,0,transit_telemetry
+2026-09-11T00:16:40.000Z,1000,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.566811,121.040489,16,17,208,0,transit_telemetry
+2026-09-11T00:16:50.000Z,1010,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.565691,121.039881,17,32,208,0,transit_telemetry
+2026-09-11T00:17:00.000Z,1020,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.563975,121.03895,18,43,208,0,transit_telemetry
+2026-09-11T00:17:10.000Z,1030,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.56187,121.037808,18,49,208,0,transit_telemetry
+2026-09-11T00:17:20.000Z,1040,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.55963,121.036592,20,49,208,0,transit_telemetry
+2026-09-11T00:17:30.000Z,1050,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.557525,121.03545,21,43,208,0,transit_telemetry
+2026-09-11T00:17:40.000Z,1060,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.555809,121.034519,21,32,208,0,transit_telemetry
+2026-09-11T00:17:50.000Z,1070,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Guadalupe ➔ Buendia","Buendia",14.554689,121.033911,22,17,208,0,transit_telemetry
+2026-09-11T00:18:00.000Z,1080,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Buendia","Ayala",14.5543,121.0337,22,0,227,30,transit_telemetry
+2026-09-11T00:18:10.000Z,1090,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Buendia","Ayala",14.5543,121.0337,22,0,227,20,transit_telemetry
+2026-09-11T00:18:20.000Z,1100,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Buendia","Ayala",14.5543,121.0337,22,0,227,10,transit_telemetry
+2026-09-11T00:18:30.000Z,1110,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.5543,121.0337,22,0,227,0,transit_telemetry
+2026-09-11T00:18:40.000Z,1120,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.554146,121.033528,22,17,227,0,transit_telemetry
+2026-09-11T00:18:50.000Z,1130,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.553703,121.033033,22,32,227,0,transit_telemetry
+2026-09-11T00:19:00.000Z,1140,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.553025,121.032275,23,43,227,0,transit_telemetry
+2026-09-11T00:19:10.000Z,1150,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.552193,121.031345,24,49,227,0,transit_telemetry
+2026-09-11T00:19:20.000Z,1160,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.551307,121.030355,24,49,227,0,transit_telemetry
+2026-09-11T00:19:30.000Z,1170,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.550475,121.029425,25,43,227,0,transit_telemetry
+2026-09-11T00:19:40.000Z,1180,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.549797,121.028667,26,32,227,0,transit_telemetry
+2026-09-11T00:19:50.000Z,1190,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Buendia ➔ Ayala","Ayala",14.549354,121.028172,26,17,227,0,transit_telemetry
+2026-09-11T00:20:00.000Z,1200,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Ayala","Magallanes",14.5492,121.028,26,0,228,30,transit_telemetry
+2026-09-11T00:20:10.000Z,1210,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Ayala","Magallanes",14.5492,121.028,26,0,228,20,transit_telemetry
+2026-09-11T00:20:20.000Z,1220,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Ayala","Magallanes",14.5492,121.028,26,0,228,10,transit_telemetry
+2026-09-11T00:20:30.000Z,1230,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.5492,121.028,26,0,228,0,transit_telemetry
+2026-09-11T00:20:40.000Z,1240,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.548983,121.027753,26,17,228,0,transit_telemetry
+2026-09-11T00:20:50.000Z,1250,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.548358,121.027041,25,32,228,0,transit_telemetry
+2026-09-11T00:21:00.000Z,1260,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.5474,121.02595,24,43,228,0,transit_telemetry
+2026-09-11T00:21:10.000Z,1270,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.546225,121.024612,23,49,228,0,transit_telemetry
+2026-09-11T00:21:20.000Z,1280,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.544975,121.023188,21,49,228,0,transit_telemetry
+2026-09-11T00:21:30.000Z,1290,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.5438,121.02185,20,43,228,0,transit_telemetry
+2026-09-11T00:21:40.000Z,1300,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.542842,121.020759,19,32,228,0,transit_telemetry
+2026-09-11T00:21:50.000Z,1310,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Ayala ➔ Magallanes","Magallanes",14.542217,121.020047,18,17,228,0,transit_telemetry
+2026-09-11T00:22:00.000Z,1320,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Magallanes","Taft Avenue",14.542,121.0198,18,0,257,30,transit_telemetry
+2026-09-11T00:22:10.000Z,1330,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Magallanes","Taft Avenue",14.542,121.0198,18,0,257,20,transit_telemetry
+2026-09-11T00:22:20.000Z,1340,"TRAIN 002 - MRT-3",MRT-3,DWELL,"Magallanes","Taft Avenue",14.542,121.0198,18,0,257,10,transit_telemetry
+2026-09-11T00:22:30.000Z,1350,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.542,121.0198,18,0,257,0,transit_telemetry
+2026-09-11T00:22:40.000Z,1360,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.54187,121.019221,18,17,257,0,transit_telemetry
+2026-09-11T00:22:50.000Z,1370,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.541497,121.017554,17,32,257,0,transit_telemetry
+2026-09-11T00:23:00.000Z,1380,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.540925,121.015,17,43,257,0,transit_telemetry
+2026-09-11T00:23:10.000Z,1390,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.540223,121.011867,16,49,257,0,transit_telemetry
+2026-09-11T00:23:20.000Z,1400,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.539477,121.008533,14,49,257,0,transit_telemetry
+2026-09-11T00:23:30.000Z,1410,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.538775,121.0054,14,43,257,0,transit_telemetry
+2026-09-11T00:23:40.000Z,1420,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.538203,121.002846,13,32,257,0,transit_telemetry
+2026-09-11T00:23:50.000Z,1430,"TRAIN 002 - MRT-3",MRT-3,TRANSIT,"Magallanes ➔ Taft Avenue","Taft Avenue",14.53783,121.001179,12,17,257,0,transit_telemetry
+2026-09-11T00:24:00.000Z,1440,"TRAIN 002 - MRT-3",MRT-3,TERMINAL_DWELL,"Magallanes","Taft Avenue",14.5377,121.0006,12,0,257,30,transit_telemetry
+2026-09-11T00:24:10.000Z,1450,"TRAIN 002 - MRT-3",MRT-3,TERMINAL_DWELL,"Magallanes","Taft Avenue",14.5377,121.0006,12,0,257,20,transit_telemetry
+2026-09-11T00:24:20.000Z,1460,"TRAIN 002 - MRT-3",MRT-3,TERMINAL_DWELL,"Magallanes","Taft Avenue",14.5377,121.0006,12,0,257,10,transit_telemetry
+2026-09-11T00:24:30.000Z,1470,"TRAIN 002 - MRT-3",MRT-3,TERMINAL_DWELL,"Magallanes","Taft Avenue",14.5377,121.0006,12,0,257,0,transit_telemetry
