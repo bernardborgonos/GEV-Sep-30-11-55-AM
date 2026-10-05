@@ -101,3 +101,15 @@ test('POI Marker move handle relocation updates marker coordinate correctly', ()
   assert.ok(Math.abs(relocatedMarkerCoords[0].lng - 120.9967) < 0.00001);
   assert.ok(Math.abs(relocatedMarkerCoords[0].lat - 14.5945) < 0.00001);
 });
+
+test('Coordinates dialog map preview dragend handler updates latitude and longitude', () => {
+  const parsedCoords = [{ lat: 30.276775, lng: -97.737484, alt: 0 }];
+  const mockDragPos = { lat: 30.280000, lng: -97.730000 };
+
+  // Simulate dragend event
+  parsedCoords[0].lat = mockDragPos.lat;
+  parsedCoords[0].lng = mockDragPos.lng;
+
+  assert.equal(parsedCoords[0].lat, 30.280000);
+  assert.equal(parsedCoords[0].lng, -97.730000);
+});

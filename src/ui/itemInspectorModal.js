@@ -1897,7 +1897,10 @@ export function openItemInspectorModal({ item, mapId, onSave, onDelete, onFlyTo,
       } else {
         icon = createVertexDivIcon(idx + 1, isPrimary);
       }
-      const m = L.marker([lat, lng], { icon });
+      const m = L.marker([lat, lng], {
+        icon,
+        draggable: true,
+      });
       if (itemData.type === 'marker') {
         const hoverMode = itemData.hoverBehavior || 'bubble';
         if (hoverMode !== 'none') {
@@ -1912,9 +1915,24 @@ export function openItemInspectorModal({ item, mapId, onSave, onDelete, onFlyTo,
           }
         }
       } else {
-        m.bindTooltip(`Node #${idx + 1}<br>${lat.toFixed(5)}°, ${lng.toFixed(5)}°`, { direction: 'top' });
+        m.bindTooltip(`Node #${idx + 1}<br>${lat.toFixed(5)}°, ${lng.toFixed(5)}° (Drag to relocate)`, { direction: 'top' });
       }
       m.addTo(markerGroup);
+
+      m.on('dragend', (evt) => {
+        const newPos = evt.target.getLatLng();
+        if (parsedCoords[idx]) {
+          parsedCoords[idx].lat = newPos.lat;
+          parsedCoords[idx].lng = newPos.lng;
+        }
+        if (idx === 0) {
+          updateCoordsUI(newPos.lat, newPos.lng);
+        } else {
+          liveMetrics = extractGeodeticMetrics(parsedCoords, itemData.measurementType || itemData.type);
+          renderGeodeticTelemetry();
+          if (inspectorLeafletMap) updateMapGeometry();
+        }
+      });
 
       m.on('click', () => {
         leafletMap.panTo([lat, lng]);
