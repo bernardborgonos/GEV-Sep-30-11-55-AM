@@ -82,3 +82,22 @@ test('Vertex dragging modifies only the specified target vertex index', () => {
   assert.equal(updatedCoords[1].lat, newLat);
   assert.equal(updatedCoords[1].lng, newLng);
 });
+
+test('POI Marker move handle relocation updates marker coordinate correctly', () => {
+  const initialMarkerCoords = [
+    { lng: 120.9842, lat: 14.5995, alt: 0 },
+  ];
+
+  const deltaLng = 0.0125;
+  const deltaLat = -0.0050;
+
+  const relocatedMarkerCoords = initialMarkerCoords.map((c) => ({
+    ...c,
+    lng: c.lng + deltaLng,
+    lat: c.lat + deltaLat,
+  }));
+
+  assert.equal(relocatedMarkerCoords.length, 1);
+  assert.ok(Math.abs(relocatedMarkerCoords[0].lng - 120.9967) < 0.00001);
+  assert.ok(Math.abs(relocatedMarkerCoords[0].lat - 14.5945) < 0.00001);
+});

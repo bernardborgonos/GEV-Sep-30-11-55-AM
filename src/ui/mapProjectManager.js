@@ -560,10 +560,13 @@ export class MapProjectManager {
           } catch (_e) {}
         }
 
-        // Live update polyline or polygon entity on main 3D CustomDataSource
+        // Live update marker, polyline, or polygon entity on main 3D CustomDataSource
         const mainEntity = this.dataSource.entities.getById(this.dragState.itemId);
         if (mainEntity) {
           const newPositions = newCoords.map((c) => Cesium.Cartesian3.fromDegrees(c.lng, c.lat, c.alt || 0));
+          if (mainEntity.position) {
+            mainEntity.position = newPositions[0];
+          }
           if (mainEntity.polyline) {
             mainEntity.polyline.positions = newPositions;
           }
@@ -743,11 +746,11 @@ export class MapProjectManager {
 
   /**
    * Renders interactive vertex control handles along the perimeter or route of a shape,
-   * plus a central amber '✥ MOVE' handle for whole-shape translation.
+   * plus a central amber '✥ MOVE' handle for whole-shape / POI marker translation.
    */
   renderVertexHandles(item) {
     this.clearVertexHandles();
-    if (!item || (item.type !== 'polyline' && item.type !== 'polygon')) return;
+    if (!item || !item.type) return;
 
     let coords = [];
     try {
@@ -758,9 +761,9 @@ export class MapProjectManager {
 
     if (!Array.isArray(coords) || coords.length === 0) return;
 
-    // 1. Render Centroid '✥ MOVE' Handle for Whole-Polygon / Whole-Polyline Translation
+    // 1. Render Centroid / Move Handle '✥ MOVE'
     try {
-      const centroid = calculateCentroid(coords);
+      const centroid = item.type === 'marker' ? [coords[0].lng, coords[0].lat] : calculateCentroid(coords);
       const cLon = centroid[0];
       const cLat = centroid[1];
       const cAlt = (coords[0]?.alt || 0) + 2;
@@ -796,27 +799,29 @@ export class MapProjectManager {
       });
     } catch (_e) {}
 
-    // 2. Render Individual Corner Vertex Handles
-    coords.forEach((pt, idx) => {
-      this.handlesDataSource.entities.add({
-        id: `handle-${item.id}-${idx}`,
-        position: Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1),
-        point: {
-          pixelSize: 12,
-          color: Cesium.Color.WHITE,
-          outlineColor: Cesium.Color.fromCssColorString(item.color || '#0284c7'),
-          outlineWidth: 3,
-          heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-          disableDepthTestDistance: Number.POSITIVE_INFINITY,
-        },
-        properties: {
-          isVertexHandle: true,
-          handleType: 'VERTEX',
-          vertexIndex: idx,
-          itemId: item.id,
-        },
+    // 2. Render Individual Corner Vertex Handles (for polylines & polygons)
+    if (item.type === 'polyline' || item.type === 'polygon') {
+      coords.forEach((pt, idx) => {
+        this.handlesDataSource.entities.add({
+          id: `handle-${item.id}-${idx}`,
+          position: Cesium.Cartesian3.fromDegrees(pt.lng, pt.lat, (pt.alt || 0) + 1),
+          point: {
+            pixelSize: 12,
+            color: Cesium.Color.WHITE,
+            outlineColor: Cesium.Color.fromCssColorString(item.color || '#0284c7'),
+            outlineWidth: 3,
+            heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+            disableDepthTestDistance: Number.POSITIVE_INFINITY,
+          },
+          properties: {
+            isVertexHandle: true,
+            handleType: 'VERTEX',
+            vertexIndex: idx,
+            itemId: item.id,
+          },
+        });
       });
-    });
+    }
   }
 
   /**
