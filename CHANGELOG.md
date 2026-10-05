@@ -16,6 +16,10 @@ of current runtime behavior, see [`docs/CURRENT-STATE.md`](docs/CURRENT-STATE.md
   provider keys are exported: expanding the empty external-keys provenance
   array under `set -u` was fatal there. Launches with exported keys are
   unchanged.
+- Map Project polygon/polyline edit handles now include a centroid `MOVE` handle
+  and a unified drag lifecycle: robust pick fallback (`pickPosition` → globe
+  pick → ellipsoid), camera-control state restore, live geometry updates, and a
+  single save commit on release for both centroid translate and vertex edits.
 
 ### Security
 
