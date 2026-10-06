@@ -1998,20 +1998,20 @@ export class TacticalWorkbenchUi {
 
         case 'delete': {
           const feat = this.engine.getFeature(id);
-          const featName = feat ? feat.name : id;
-          if (feat && feat.locked) {
-            this.showToast(`🔒 Cannot delete locked feature "${featName}". Unlock first.`);
+          if (!feat) return;
+          if (feat.locked) {
+            this.showToast(`🔒 Cannot delete locked feature "${feat.name}". Unlock first.`);
             return;
           }
           openConfirmModal({
             title: 'Delete Tactical Feature',
-            message: `Delete tactical feature "${featName}"?`,
+            message: `Delete tactical feature "${feat.name}"?`,
             details: 'This feature will be permanently removed from the active sector.',
             confirmText: 'Delete',
             confirmColor: 'rose',
             onConfirm: () => {
-              this.engine.deleteFeature(id, { force: true });
-              this.showToast(`🗑️ Deleted "${featName}"`);
+              this.engine.deleteFeature(id);
+              this.showToast(`🗑️ Deleted "${feat.name}"`);
               this.renderRoster();
               this.updateCounters();
             },

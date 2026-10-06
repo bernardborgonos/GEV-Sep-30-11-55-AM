@@ -282,41 +282,6 @@ export function openRangeRingWorkbenchModal(viewer) {
       }
     } catch (_e) {}
 
-    // 3. MapProjectManager items (3D project store)
-    try {
-      const projectMgr = typeof window !== 'undefined' ? window.__mapProjectManager : null;
-      if (projectMgr && Array.isArray(projectMgr.items)) {
-        for (const item of projectMgr.items) {
-          if (item.type === 'circle' || item.drawingSubtype === 'circle' || item.name?.toLowerCase().includes('range ring')) {
-            let coords = item.coordinates;
-            if (typeof coords === 'string') {
-              try { coords = JSON.parse(coords); } catch (_e) {}
-            }
-            const center = parseCoord(item.center || (Array.isArray(coords) ? coords[0] : coords));
-            const radiusMeters = Number(item.radiusMeters || item.geodeticMetrics?.radiusMeters || 5000);
-            const radiusKm = radiusMeters / 1000;
-            const radiusNm = radiusMeters / 1852;
-            const color = item.color || '#00e5ff';
-            const ringId = item.id;
-
-            if (!ringsMap.has(ringId)) {
-              ringsMap.set(ringId, {
-                id: ringId,
-                name: item.name || `Range Ring (${radiusKm.toFixed(1)} km)`,
-                center,
-                radiusMeters,
-                radiusKm,
-                radiusNm,
-                color,
-                strokeWidth: 3,
-                entities: [],
-              });
-            }
-          }
-        }
-      }
-    } catch (_e) {}
-
     return Array.from(ringsMap.values());
   };
 
@@ -566,42 +531,36 @@ export function openRangeRingWorkbenchModal(viewer) {
           if (ring.center && ring.radiusMeters) {
             const center = parseCoord(ring.center);
             const radiusM = Number(ring.radiusMeters) || 5000;
-            if (Number.isFinite(center.lng) && Number.isFinite(center.lat)) {
-              const ringVerts = generateRangeRingVertices(center, radiusM, 16);
-              ringVerts.forEach(([lon, lat]) => {
-                if (Number.isFinite(lon) && Number.isFinite(lat)) {
-                  allCartesians.push(Cesium.Cartesian3.fromDegrees(lon, lat, 0));
-                }
-              });
-              allCartesians.push(Cesium.Cartesian3.fromDegrees(center.lng, center.lat, 0));
-            }
+            const ringVerts = generateRangeRingVertices(center, radiusM, 16);
+            ringVerts.forEach(([lon, lat]) => {
+              allCartesians.push(Cesium.Cartesian3.fromDegrees(lon, lat, 0));
+            });
+            allCartesians.push(Cesium.Cartesian3.fromDegrees(center.lng, center.lat, 0));
           }
         }
 
         if (allCartesians.length > 0) {
+          const bSphere = Cesium.BoundingSphere.fromPoints(allCartesians);
           try {
-            const bSphere = Cesium.BoundingSphere.fromPoints(allCartesians);
-            if (bSphere && Number.isFinite(bSphere.radius) && Number.isFinite(bSphere.center.x)) {
-              if (viewer.camera && typeof viewer.camera.flyToBoundingSphere === 'function') {
-                viewer.camera.flyToBoundingSphere(bSphere, {
-                  offset: new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-50), Math.max(2000, bSphere.radius * 2.5)),
-                  duration: 1.8,
-                });
-              } else if (viewer.camera) {
-                const cartoCenter = Cesium.Cartographic.fromCartesian(bSphere.center);
-                const alt = Math.max(2500, bSphere.radius * 3.0);
-                viewer.camera.flyTo({
-                  destination: Cesium.Cartesian3.fromDegrees(
-                    Cesium.Math.toDegrees(cartoCenter.longitude),
-                    Cesium.Math.toDegrees(cartoCenter.latitude),
-                    alt
-                  ),
-                  duration: 1.8,
-                });
-              }
+            if (viewer.camera && typeof viewer.camera.flyToBoundingSphere === 'function') {
+              viewer.camera.flyToBoundingSphere(bSphere, {
+                offset: new Cesium.HeadingPitchRange(0, Cesium.Math.toRadians(-50), Math.max(1500, bSphere.radius * 2.4)),
+                duration: 1.8,
+              });
+            } else if (viewer.camera) {
+              const cartoCenter = Cesium.Cartographic.fromCartesian(bSphere.center);
+              const alt = Math.max(2500, bSphere.radius * 3.0);
+              viewer.camera.flyTo({
+                destination: Cesium.Cartesian3.fromDegrees(
+                  Cesium.Math.toDegrees(cartoCenter.longitude),
+                  Cesium.Math.toDegrees(cartoCenter.latitude),
+                  alt
+                ),
+                duration: 1.8,
+              });
             }
           } catch (_err) {
-            console.warn('[RangeRingWorkbench] flyToBoundingSphere warning:', _err);
+            // Safe degrade
           }
 
           if (typeof window !== 'undefined') {
