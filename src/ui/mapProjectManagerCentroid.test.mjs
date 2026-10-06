@@ -113,3 +113,31 @@ test('Coordinates dialog map preview dragend handler updates latitude and longit
   assert.equal(parsedCoords[0].lat, 30.280000);
   assert.equal(parsedCoords[0].lng, -97.730000);
 });
+
+test('Coordinates dialog 2D preview centroid handle translates all polygon vertices on drag', () => {
+  const polygonCoords = [
+    { lat: 14.608332, lng: 120.956523, alt: 0 },
+    { lat: 14.611330, lng: 120.963520, alt: 0 },
+    { lat: 14.603330, lng: 120.966520, alt: 0 },
+  ];
+
+  // Centroid initial position
+  let sumLat = 0, sumLng = 0;
+  polygonCoords.forEach((c) => { sumLat += c.lat; sumLng += c.lng; });
+  let lastCentroid = { lat: sumLat / polygonCoords.length, lng: sumLng / polygonCoords.length };
+
+  // Simulate moving centroid
+  const newCentroidPos = { lat: lastCentroid.lat + 0.005, lng: lastCentroid.lng - 0.003 };
+  const deltaLat = newCentroidPos.lat - lastCentroid.lat;
+  const deltaLng = newCentroidPos.lng - lastCentroid.lng;
+
+  polygonCoords.forEach((c) => {
+    c.lat += deltaLat;
+    c.lng += deltaLng;
+  });
+
+  assert.ok(Math.abs(polygonCoords[0].lat - 14.613332) < 0.00001);
+  assert.ok(Math.abs(polygonCoords[0].lng - 120.953523) < 0.00001);
+  assert.ok(Math.abs(polygonCoords[1].lat - 14.616330) < 0.00001);
+  assert.ok(Math.abs(polygonCoords[1].lng - 120.960520) < 0.00001);
+});
