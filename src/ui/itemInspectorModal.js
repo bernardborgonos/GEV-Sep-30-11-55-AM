@@ -1716,7 +1716,7 @@ export function openItemInspectorModal({ item, mapId, onSave, onDelete, onFlyTo,
   const coordDisplay = modalRoot.querySelector('#coord-display');
   const statusMsg = modalRoot.querySelector('#coord-status-msg');
 
-  function updateCoordsUI(lat, lng, skipMapRefresh = false) {
+  function updateCoordsUI(lat, lng) {
     const safeLat = Number(lat) || 0;
     const safeLng = Number(lng) || 0;
     latInput.value = safeLat.toFixed(6);
@@ -1737,7 +1737,7 @@ export function openItemInspectorModal({ item, mapId, onSave, onDelete, onFlyTo,
     renderGeodeticTelemetry();
 
     // Auto-update interactive 2D map geometry
-    if (inspectorLeafletMap && !skipMapRefresh) {
+    if (inspectorLeafletMap) {
       updateMapGeometry();
     }
   }
@@ -1897,10 +1897,7 @@ export function openItemInspectorModal({ item, mapId, onSave, onDelete, onFlyTo,
       } else {
         icon = createVertexDivIcon(idx + 1, isPrimary);
       }
-      const m = L.marker([lat, lng], {
-        icon,
-        draggable: true,
-      });
+      const m = L.marker([lat, lng], { icon });
       if (itemData.type === 'marker') {
         const hoverMode = itemData.hoverBehavior || 'bubble';
         if (hoverMode !== 'none') {
@@ -1915,102 +1912,14 @@ export function openItemInspectorModal({ item, mapId, onSave, onDelete, onFlyTo,
           }
         }
       } else {
-        m.bindTooltip(`Node #${idx + 1}<br>${lat.toFixed(5)}°, ${lng.toFixed(5)}° (Drag to relocate)`, { direction: 'top' });
+        m.bindTooltip(`Node #${idx + 1}<br>${lat.toFixed(5)}°, ${lng.toFixed(5)}°`, { direction: 'top' });
       }
       m.addTo(markerGroup);
-
-      const onMarkerMove = (evt) => {
-        const newPos = evt.target.getLatLng();
-        if (parsedCoords[idx]) {
-          parsedCoords[idx].lat = newPos.lat;
-          parsedCoords[idx].lng = newPos.lng;
-        }
-        if (idx === 0) {
-          updateCoordsUI(newPos.lat, newPos.lng, true);
-        } else {
-          liveMetrics = extractGeodeticMetrics(parsedCoords, itemData.measurementType || itemData.type);
-          renderGeodeticTelemetry();
-        }
-        if (shapeLayer) {
-          shapeLayer.setLatLngs(parsedCoords.map((c) => [c.lat, c.lng]));
-        }
-      };
-
-      m.on('drag', onMarkerMove);
-      m.on('dragend', (evt) => {
-        onMarkerMove(evt);
-        if (inspectorLeafletMap) updateMapGeometry();
-      });
 
       m.on('click', () => {
         leafletMap.panTo([lat, lng]);
       });
     });
-
-    // Centroid MOVE handle for whole shape translation directly in 2D preview
-    if (parsedCoords.length > 1) {
-      let sumLat = 0, sumLng = 0;
-      parsedCoords.forEach((c) => { sumLat += c.lat; sumLng += c.lng; });
-      const centLat = sumLat / parsedCoords.length;
-      const centLng = sumLng / parsedCoords.length;
-
-      const centroidIcon = L.divIcon({
-        className: 'custom-leaflet-centroid-icon',
-        html: `
-          <div style="
-            background: #d97706;
-            color: #ffffff;
-            border: 2px solid #ffffff;
-            border-radius: 9999px;
-            padding: 2px 8px;
-            font-family: sans-serif;
-            font-weight: 700;
-            font-size: 11px;
-            white-space: nowrap;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.85);
-            display: flex;
-            align-items: center;
-            gap: 2px;
-          ">✥ MOVE</div>
-        `,
-        iconSize: [60, 24],
-        iconAnchor: [30, 12],
-      });
-
-      let lastCentroidPos = { lat: centLat, lng: centLng };
-      const centroidMarker = L.marker([centLat, centLng], {
-        icon: centroidIcon,
-        draggable: true,
-      }).addTo(markerGroup);
-
-      centroidMarker.bindTooltip("Drag centroid to move whole shape", { direction: 'top' });
-
-      const onCentroidMove = (evt) => {
-        const newPos = evt.target.getLatLng();
-        const deltaLat = newPos.lat - lastCentroidPos.lat;
-        const deltaLng = newPos.lng - lastCentroidPos.lng;
-        lastCentroidPos = { lat: newPos.lat, lng: newPos.lng };
-
-        parsedCoords.forEach((c) => {
-          c.lat += deltaLat;
-          c.lng += deltaLng;
-        });
-
-        const primaryL = parsedCoords[0]?.lat ?? 0;
-        const primaryG = parsedCoords[0]?.lng ?? 0;
-        updateCoordsUI(primaryL, primaryG, true);
-
-        if (shapeLayer) {
-          shapeLayer.setLatLngs(parsedCoords.map((c) => [c.lat, c.lng]));
-        }
-      };
-
-      centroidMarker.on('drag', onCentroidMove);
-      centroidMarker.on('dragend', (evt) => {
-        onCentroidMove(evt);
-        if (inspectorLeafletMap) updateMapGeometry();
-      });
-    }
 
     fitMapToCoordinates();
   }

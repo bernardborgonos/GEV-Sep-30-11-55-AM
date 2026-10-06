@@ -312,7 +312,6 @@ export class DrawingPlugin extends BaseTacticalPlugin {
             outlineColor: Cesium.Color.WHITE,
             outlineWidth: 2,
             heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-            disableDepthTestDistance: Number.POSITIVE_INFINITY,
           },
           label: {
             text: result.name || 'POI Marker',
@@ -324,7 +323,6 @@ export class DrawingPlugin extends BaseTacticalPlugin {
             verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
             pixelOffset: new Cesium.Cartesian2(0, -14),
             heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-            disableDepthTestDistance: Number.POSITIVE_INFINITY,
           },
         });
         this._createdEntities.push(ent);
@@ -364,7 +362,6 @@ export class DrawingPlugin extends BaseTacticalPlugin {
             style: Cesium.LabelStyle.FILL_AND_OUTLINE,
             pixelOffset: new Cesium.Cartesian2(0, -16),
             heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-            disableDepthTestDistance: Number.POSITIVE_INFINITY,
           },
         });
         this._createdEntities.push(shaftEnt, headEnt, labelEnt);
@@ -395,7 +392,6 @@ export class DrawingPlugin extends BaseTacticalPlugin {
             style: Cesium.LabelStyle.FILL_AND_OUTLINE,
             pixelOffset: new Cesium.Cartesian2(0, -14),
             heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-            disableDepthTestDistance: Number.POSITIVE_INFINITY,
           },
         });
         this._createdEntities.push(lineEnt, labelEnt);
@@ -501,7 +497,6 @@ export class DrawingPlugin extends BaseTacticalPlugin {
               outlineColor: cesiumColor,
               outlineWidth: 3,
               heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-              disableDepthTestDistance: Number.POSITIVE_INFINITY,
             },
             label: {
               text: `${wp.id} (${(Number(wp.cumulativeDistanceKm) || 0).toFixed(1)} km)`,
@@ -512,7 +507,6 @@ export class DrawingPlugin extends BaseTacticalPlugin {
               style: Cesium.LabelStyle.FILL_AND_OUTLINE,
               pixelOffset: new Cesium.Cartesian2(0, -14),
               heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
-              disableDepthTestDistance: Number.POSITIVE_INFINITY,
             },
           });
           this._createdEntities.push(wpEnt);

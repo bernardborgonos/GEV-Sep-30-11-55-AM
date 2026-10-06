@@ -295,13 +295,10 @@ export function openMapToolsAddonModal(registry, viewer = null) {
               saveInstalledAddons(currentSaved);
             }
 
-            // Immediately activate newly installed plugin for seamless UX
-            registry.activatePlugin(addonId);
-
             if (typeof window !== 'undefined') {
               window.dispatchEvent(
                 new CustomEvent('gev:toast', {
-                  detail: { text: `Installed and activated ${entry.name} modular addon.` },
+                  detail: { text: `Installed ${entry.name} modular addon.` },
                 })
               );
             }
@@ -397,13 +394,10 @@ export function openMapToolsAddonModal(registry, viewer = null) {
           });
           saveInstalledAddons(currentSaved);
 
-          // Activate newly imported manifest plugin
-          registry.activatePlugin(plugin.id);
-
           if (typeof window !== 'undefined') {
             window.dispatchEvent(
               new CustomEvent('gev:toast', {
-                detail: { text: `Successfully installed and activated external addon "${plugin.name}"!` },
+                detail: { text: `Successfully installed external addon "${plugin.name}"!` },
               })
             );
           }

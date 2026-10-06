@@ -866,42 +866,17 @@ export class MapToolsEngine {
    * @private
    */
   _removeCesiumEntity(featureId) {
-    const idsToRemove = [
-      `tactical-feature-${featureId}`,
-      `tactical-feature-${featureId}-center`,
-    ];
-    for (let i = 0; i < 16; i++) {
-      idsToRemove.push(`tactical-feature-${featureId}-ring-${i}`);
+    if (!this.viewer || !this.viewer.entities || typeof this.viewer.entities.removeById !== 'function') {
+      return;
     }
-
-    if (this.viewer && this.viewer.entities && typeof this.viewer.entities.removeById === 'function') {
-      for (const entId of idsToRemove) {
-        try {
-          this.viewer.entities.removeById(entId);
-        } catch {}
-      }
-    }
-
-    if (this.sandboxLayer && this.sandboxLayer.entities && typeof this.sandboxLayer.entities.removeById === 'function') {
-      for (const entId of idsToRemove) {
-        try {
-          this.sandboxLayer.entities.removeById(entId);
-        } catch {}
-      }
-    }
-
-    // Also remove from window.__mapProjectManager if present
     try {
-      const projMgr = typeof window !== 'undefined' ? window.__mapProjectManager : null;
-      if (projMgr && typeof projMgr.deleteItem === 'function') {
-        projMgr.deleteItem(featureId);
+      this.viewer.entities.removeById(`tactical-feature-${featureId}`);
+      this.viewer.entities.removeById(`tactical-feature-${featureId}-center`);
+      for (let i = 0; i < 16; i++) {
+        this.viewer.entities.removeById(`tactical-feature-${featureId}-ring-${i}`);
       }
-    } catch {}
-
-    if (this.viewer && this.viewer.scene && typeof this.viewer.scene.requestRender === 'function') {
-      try {
-        this.viewer.scene.requestRender();
-      } catch {}
+    } catch {
+      // Ignored
     }
   }
 }
