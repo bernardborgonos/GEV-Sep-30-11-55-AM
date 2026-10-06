@@ -502,6 +502,23 @@ export function initMappingToolsFloatingDialog(viewer, dataManager) {
       });
     }
 
+    // Top bar launcher button `#spatial-cad-service-btn` (Service - Spatial CAD & Geofence Surveillance)
+    const spatialCadBtn = document.getElementById('spatial-cad-service-btn');
+    if (spatialCadBtn) {
+      spatialCadBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (dialog.hidden) {
+          openFloatingDialog({ state: WINDOW_STATES.NORMAL });
+          syncFloatingDialogWithPlugin('workbench');
+        } else if (_currentState === WINDOW_STATES.MINIMIZED) {
+          setFloatingDialogState(WINDOW_STATES.NORMAL);
+          syncFloatingDialogWithPlugin('workbench');
+        } else {
+          syncFloatingDialogWithPlugin('workbench');
+        }
+      });
+    }
+
     // Global listener when a plugin is activated anywhere
     window.addEventListener('gev:map-tools-plugin-activated', (e) => {
       const pluginId = e.detail?.pluginId;
