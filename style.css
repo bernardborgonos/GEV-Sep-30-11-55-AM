@@ -15428,13 +15428,16 @@ body.scene-playback-mode #key-setup {
    Defense HUD aesthetics, drafting controls, roster cards, and sector bars.
    ========================================================================== */
 
-/* Top Application Bar Launcher Button */
+/* Top Application Bar Launcher Buttons */
+#active-tools-control-btn,
 #tactical-map-tools-btn {
   color: #5cf4ff;
   border-color: rgba(0, 229, 255, 0.35);
   background: rgba(15, 23, 42, 0.7);
 }
 
+#active-tools-control-btn:hover,
+#active-tools-control-btn:focus-visible,
 #tactical-map-tools-btn:hover,
 #tactical-map-tools-btn:focus-visible {
   border-color: #00e5ff;
