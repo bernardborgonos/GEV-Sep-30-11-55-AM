@@ -16,6 +16,7 @@ import unescoLayer from './data/unesco.js';
 import urlIntelligenceLayer from './data/urlIntelligence.js';
 import { initUrlIntelligenceUi } from './urlIntelligenceUi.js';
 import { initMappingToolsFloatingDialog } from './ui/mappingToolsModuleUi.js';
+import { initActiveToolsControl } from './ui/activeToolsControlModule.js';
 import { initMapToolsPluginSystem } from './plugins/mapToolsPluginRegistry.js';
 import { initMapProjectManager } from './ui/mapProjectManager.js';
 import { initFloatingMeasurementModule } from './ui/floatingMeasurementModuleUi.js';
@@ -271,6 +272,7 @@ async function init() {
     initTacticalPresetsBar(document.getElementById('tactical-presets-container'), dataManager);
     initUrlIntelligenceUi(dataManager, urlIntelligenceLayer, viewer);
     initMappingToolsFloatingDialog(viewer, dataManager);
+    initActiveToolsControl(viewer, dataManager);
     initMapToolsPluginSystem(viewer, dataManager);
     initFloatingMeasurementModule(viewer);
     const mapProjectMgr = initMapProjectManager(viewer);
